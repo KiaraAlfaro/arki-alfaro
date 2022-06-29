@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="es" class="HTMLcotizacion">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>ARKI.Arquitectura/cotizacion.com</title>
+</head>
+
+<body class="pageBodyCotizacion">
+
+    <!--HEADER-->
+
+    <header class="pagesHeaderProyectos">
+        <nav>
+
+            <div class="barraLogo"><a class="logoArki" href="../index.html"><img src="../assets/logo-arqui.png" alt="logo arki"></a></div>
+    
+            <ul class="pages">
+                <li><a class="pagesLink" href="../index.html">Inicio</a></li>
+                <li><a class="pagesLink" href="./arquitectura.html">Arquitectura</a></li>
+                <li><a class="pagesLink" href="./remodelacion.html">Remodelacion</a></li>
+                <li><a class="pagesLink" href="./cotizacion.html">Cotizacion</a></li>
+                <li><a class="pagesLink" href="./contacto.html">Contacto</a></li>
+            </ul>
+        
+        </nav>
+    </header>
+
+    <!--MAIN-->
+
+    <main class="mainCotizacion">
+       
+        <div>
+
+            <h2 class="tituloPageCotiza">Cotiza tu futura vivianda con ARKI</h2>
+            <p class="subTituloPageCotiza">Con estos formularios podremos mandarte un presupuesto estimado a base de las nesecidades de tu proyecto</p>
+            
+            <ul class="formulariosCotiza">
+                <il><a class="pagesLink" href="#arquitectura_cotiza">Tu vivienda de 0</a></il>
+                <il><a class="cotizaSector" href="#remodelacion_cotiza_sector">Remodela un sector de tu vivienda</a></il>
+                <il><a class="pagesLink" href="#remodelacion_cotizacion_vienda">Remodela tu vivienda completa</a></il>
+            </ul>
+
+        </div>
+
+        <h2 class="tituloFormularios">FORMULARIOS:</h2>
+
+        <!--FORM-ARQ VIVIENDA DE 0-->
+<div class="postTitulos">    
+    <div class="todosLosFormularios">   
+        <section class="nombreFormCotiza" id="arquitectura_cotiza">
+            
+            <h2>Arquitectura</h2>
+            <p>(Tu vivienda desde 0)</p>
+       
+            <form class="formArq">
+
+                    <div class="campoCompletaCotiza">
+                        <label for="campo-nombre">Nombre:</label>
+                        <input type="text" name="campo-nombre" id="campo-nombre" required placeholder="Kiara"> 
+                    </div>
+
+                    <div class="campoCompletaCotiza">
+                        <label for="campo-apellido">Apellido:</label>
+                        <input type="text" name="campo-apellido" id="campo-apellido" placeholder="Alfaro"> 
+                    </div>
+
+                    <div class="campoCompletaCotiza" >       
+                         <label class="labelLargos" for="campo-correo-electronico">Correo electronico:</label>
+                         <input type="email" name="campo-correo_electronico" id="campo-correo-electronico" placeholder="ejemplo@gmail.com"required>
+                    </div> 
+
+                    <div class="campoCompletaCotiza">
+                        <label for="campo-telefono">Telefono:</label>
+                        <input type="tel" name="campo-telefono" id="campo-telefono" placeholder="15 1111-1111" required>
+                    </div>
+
+                    <div class="campoCompletaCotiza">
+                        <label class="labelLargos" for="sector-ubicacion-terreno">Donde se encuentra ubicado tu terreno?</label>
+                        <input type="text" name="campo-ubicacion-terreno" id="campo-ubicacion-terreno" required>
+                    </div>
+
+                    <div class="campoCompletaCotiza">
+                        <label class="labelLargos" for="campo-caracteristica-terreno">Caracteristicas de tu terreno:</label>
+
+                        <textarea name="campo-caracteristica-terreno" id="campo-caracteristica-terreno" cols="30" rows="10" placeholder="Ejemplo: se encuentra en una esquina,con pendiente,entre medianeras..etc" required></textarea>
+                     </div> 
+
+                     <div class="campoInputSelectJunto">
+
+                         <label  for="campo-medida-terreno">Medidas del terreno</label>
+
+                        <div>
+                            <input name="campo-medida-terreno" id="campo-medida-terreno" type="text" required>
+                                <select name="campo-medida-terreno" id="campo-medida-terreno">
+                                        <option value="">Superficie de terreno</option>
+                                        <option   option value="">Medidas del terreno</option>
+                                </select>
+                        </div>
+                     </div>
+
+                     <div class="campoCompletaCotiza">
+
+                         <label class="labelLargos" for="campo-cuantos-metros-cuadrados">Cuantos metros cuadrados proyectas para tu futura vivienda?</label>
+
+                         <select name="campo-cuantos-metros-cuadrados" id="campo-cuantos-metros-cuadrados" required>
+                             <option value="">100m2 o menos</option>
+                             <option value="">200m2 o menos</option>
+                             <option value="">300m2 o menos</option>
+                             <option value="">Mas de 300m2</option>
+                         </select>
+                    </div>
+
+                    <div class="campoCompletaCotiza">
+                        <label class="labelLargos" for="campo-cantidad-plantas">Cantidades de plantas?</label>
+                        <input type="number" name="campo-cantidad-plantas" id="campo-cantidad-plantas" required>
+                    </div>
+
+                    <div class="campoCompletaCotiza">
+                        <label class="labelLargos" for="campo-caracteristicas-vivienda">Características principales de tu vivienda:</label>
+                        
+                        <textarea name="campo-caracteristicas-vivienda" id="campo-caracteristicas-vivienda" cols="30" rows="10" placeholder="Por ej. Debe tener un patio interno, espacios integrados, etc" required></textarea >
+                    </div>
+
+                    <div class="campoCompletaCotiza" >
+                        <label class="labelLargos" for="campo-cantidad-ambientes">Cantidad de ambientes requeridos para tu vivienda:</label>
+                        
+                        <textarea name="campo-cantidad-ambientes" id="campo-cantidad-ambientes" cols="30" rows="10" placeholder="habitación en suite, 2 habitaciones, lavadero, cocina , garaje para dos autos, etc." required></textarea >
+                    </div>
+
+                    <div class="inputEnvRest">
+                        <input  type="submit" value="Enviar Mensaje">
+                        <input  type="reset"  value="Restablecer formulario">
+                    </div>
+            </form>
+        </section>
+
+        <!--FORM- REM UN SECTOR DE TU VIVIENDA-->
+
+        <section class="nombreFormCotiza" id="remodelacion_cotiza_sector">
+
+            <h2>Remodelacion</h2>
+            <p>(Remodela un sector de tu vivienda)</p>
+
+            <form class="formRemSector">
+
+                    <div class="campoCompletaCotiza">
+                        <label for="campo-nombre">Nombre:</label>
+                        <input type="text" name="campo-nombre" id="campo-nombre" required placeholder="Kiara"> 
+                    </div>
+   
+                   <div class="campoCompletaCotiza">
+                       <label for="campo-apellido">Apellido:</label>
+                       <input type="text" name="campo-apellido" id="campo-apellido" placeholder="Alfaro"> 
+                   </div>
+
+                   <div class="campoCompletaCotiza" >       
+                        <label class="labelLargos" for="campo-correo-electronico">Correo electronico:</label>
+                        <input type="email" name="campo-correo-electronico" id="campo-correo-electronico" placeholder="ejemplo@gmail.com"required>
+                   </div> 
+
+                   <div class="campoCompletaCotiza">
+                       <label for="campo-telefono">Telefono:</label>
+                       <input type="tel" name="campo-telefono" id="campo-telefono" placeholder="15 1111-1111" required>
+                   </div>
+
+                   <div class="campoCompletaCotiza">
+                       <label class="labelLargos" for="campo-sector-remodelar">Sector a remodelar?</label>
+                       <input type="text" name="campo-sector-remodelar" id="campo-sector-remodelar" placeholder="Ejemplo..Bano, cocina..etc" required>
+                   </div>
+                   
+                   <div class="campoInputSelectJunto">
+
+                        <label  for="campo-medida-terreno">Medidas del Sector</label>
+
+                        <div>
+                            <input name="campo-medida-terreno" id="campo-medida-terreno" type="text" required>
+                                <select name="campo-medida-terreno" id="campo-medida-terreno">
+                                        <option value="">Superficie del sector</option>
+                                        <option   option value="">Medidas del sector</option>
+                                </select>
+                        </div>
+                    </div>
+                    <div class="inputEnvRest">
+                        <input  type="submit" value="Enviar Mensaje">
+                        <input  type="reset"  value="Restablecer formulario">
+                    </div>
+            </form>
+        </section>
+
+        <!--FROM- REM VIVIENDA COMPLETA-->
+
+        <section class="nombreFormCotiza" id="remodelacion_cotizacion_vienda">
+
+            <h2>Remodelacion 2</h2>
+            <p>(Remodela tu vivienda completa)</p>
+
+            <form class="formRemCompleta">
+                
+                <div class="campoCompletaCotiza">
+                    <label for="campo-nombre">Nombre:</label>
+                    <input type="text" name="campo-nombre" id="campo-nombre" required placeholder="Kiara"> 
+                </div>
+
+                <div class="campoCompletaCotiza">
+                    <label for="campo-apellido">Apellido:</label>
+                    <input type="text" name="campo-apellido" id="campo-apellido" placeholder="Alfaro"> 
+                </div>
+
+                <div class="campoCompletaCotiza" >       
+                     <label class="labelLargos" for="campo-correo-electronico">Correo electronico:</label>
+                     <input type="email" name="campo-correo_electronico" id="campo-correo-electronico" placeholder="ejemplo@gmail.com"required>
+                </div> 
+
+                <div class="campoCompletaCotiza">
+                    <label for="campo-telefono">Telefono:</label>
+                    <input type="tel" name="campo-telefono" id="campo-telefono" placeholder="15 1111-1111" required>
+                </div>
+
+                <div class="campoCompletaCotiza">
+                    <label class="labelLargos" for="sector-ubicacion-terreno">Donde se encuentra ubicado tu terreno?</label>
+                    <input type="text" name="campo-ubicacion-terreno" id="campo-ubicacion-terreno" required>
+                </div>
+
+                <div class="campoCompletaCotiza">
+
+                    <label class="labelLargos" for="">Adjuntas planos de la vivienda existente</label>
+                    <input type="file" name="archivo-plano" multiple>
+
+                </div>
+                
+             
+               <div class="campoCompletaCotiza">
+                    <label class="labelLargos" for="campo-cantidad-plantas">Cantidades de plantas deseadas?</label>
+                    <input type="number" name="campo-cantidad-plantas" id="campo-cantidad-plantas" required>
+                </div>
+
+                <div class="campoCompletaCotiza">
+                    <label class="labelLargos" for="campo-caracteristicas-vivienda">Características principales de tu vivienda:</label>
+                    
+                    <textarea name="campo-caracteristicas-vivienda" id="campo-caracteristicas-vivienda" cols="30" rows="10" placeholder="Por ej. Debe tener un patio interno, espacios integrados, etc" required></textarea >
+                </div>
+
+                <div class="campoCompletaCotiza" >
+                    <label class="labelLargos" for="campo-cantidad-ambientes">Cantidad de ambientes requeridos para tu vivienda:</label>
+                    
+                    <textarea name="campo-cantidad-ambientes" id="campo-cantidad-ambientes" cols="30" rows="10" placeholder="habitación en suite, 2 habitaciones, lavadero, cocina , garaje para dos autos, etc." required></textarea >
+                </div>
+
+                <div class="inputEnvRest">
+                    <input  type="submit" value="Enviar Mensaje">
+                    <input  type="reset"  value="Restablecer formulario">
+                </div>
+            </form>
+    </div>   
+        </section>
+        <aside class="asideCotizacion">
+        
+            <video class="video1" src="../assets/videos/pages-cotizacion/video1.mp4" width="540" height="300" autoplay muted loop ></video>
+        
+            <video class="video2" src="../assets/videos/pages-cotizacion/video2.mp4" width="540" height="300" autoplay muted loop></video>
+            <video class="video3" src="../assets/videos/pages-cotizacion/video3.mp4" width="540" height="300" autoplay muted loop></video>
+            <video class="video4" src="../assets/videos/pages-cotizacion/video4.mp4" width="540" height="300" autoplay muted loop></video>
+            <video class="video5" src="../assets/videos/pages-cotizacion/video5.mp4" width="540" height="300" autoplay muted loop></video>
+            <video class="video6" src="../assets/videos/pages-cotizacion/video6.mp4" width="540" height="300" autoplay muted loop></video>
+
+
+
+
+        </aside>
+</div>    
+    </main>
+
+    <!--FOOTER-->    
+
+    <footer class="pagesFooterProyectos">
+
+        <div class="contenedor1">
+            <a class="logosmobile" href="https://goo.gl/maps/byVVMgsuDNyeyyY98"target="_blank" ><i class="bi bi-geo-fill"></i></a>
+
+            <a class="logosmobile"  href="mailto:arcealfarokiara@gmail.com">  <i class="bi bi-envelope-fill"></i></a>
+            <a href="https://www.instagram.com/alfaro0o_/" target="_blank"><i class="bi-instagram"></i></a>
+            <a href="https://www.facebook.com/katrina.alfaro.75" target="_blank"><i class="bi-facebook"></i></a>
+            <a href="https://ar.pinterest.com/arcealfarokiara/_saved/" target="_blank"><i class="bi-pinterest"></i></a>
+            <a class="logosmobile"  href="https://wa.me/1121789061?text=Contactame por mas Informacion!" target="_blank"><i class="bi-whatsapp"></i></a>
+          
+            
+        </div>
+
+        <div class="contenedor2">
+    
+            <div class="tituloUbicacionFooter">
+                <img src="../assets/logos/ubicacion.png" width="25px" height="25px" alt="logo ubicacion">
+                <h4>Ubicacion:</h4>
+            </div>
+        
+            <div class="direccionFooter"><p><a href="https://goo.gl/maps/byVVMgsuDNyeyyY98"target="_blank" >Corrales 2312</a></p></div>
+
+            <div class="emailFooter">
+                <img src="../assets/logos/email.png " width="25px" height="25px" alt="">
+                <h4>Email: arcealfarokiara@gmail.com</h4>
+            </div>
+
+        </div>
+
+        <div class="contenedor3">
+
+            <img src="../assets/logo-arqui.png" alt="logo arki">
+            <div> &#169 2022 Todos los derechos reservados</div>
+
+        </div>
+
+        <div class="contenedor4">
+            
+            <a href="https://wa.me/1121789061?text=Contactame por mas Informacion!" target="_blank"><i class="bi-whatsapp"></i></a>
+            <h4>Tel:1121789061</h4>
+
+        </div>
+    
+    </footer>
+</body>
+</html>
