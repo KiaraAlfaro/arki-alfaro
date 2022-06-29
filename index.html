@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+
     <link rel="stylesheet" href="./css/styles.css">
     <title>ARKI.Arquitectura.com</title>
 
@@ -13,8 +16,8 @@
 <body >
 
     <!--HEADER-->
-    <header >
-        <nav>
+    <header class="row" >
+        <nav class="col-12" >
             <div class="barraLogo"><a class="logoArki" href="index.html"><img src="./assets/logo-arqui.png" alt="logo arki"></a>
             </div>
             
@@ -30,16 +33,16 @@
     </header>
 
     <!--MAIN-->
-    <main>
+    <main class="container--fluid">
         
         <!--PORTADA-->
-    <section class="portada">
+    <section class="row" >
 
-        <div class="portadaarkimobile">
+        <div class="col-12" id="portadaarkimobile" >
 
             <video src="./assets/videos/seccion-portada-arki.mp4" autoplay muted loop ></video>
 
-           <div class="textoportadamobile">
+           <div class="col-12" id="textoportadamobile">
             <h2>Bienvenidos a ARKI</h2>
             <h3>Puedes acceder a dos de nuestros servicios</h3>
             <a href="./pages.html/arquitectura.html">ARQUITECTURA</a>
@@ -49,17 +52,22 @@
          </div>
      
                  
-    </section>
+    </section class="row" >
 
         <!--SECCION NUESTROS PROYECTOS--> 
          
-        <section >
+        <section  >
             <h2 class=" titulo">Nuestros Proyectos:</h2>
         </section>   
 
-        <div class="seccionPostPortada">        
-            <section class="proyectos">   
-                <div class="nuestrosProyectos">
+        <div class="seccionPostPortada row">     
+
+        <div class="col-6">
+
+            <section>   
+                <div  id="nuestrosProyectos">
+                     
+                    
 
                     <img src="./assets/img/nuestros proyectos_1.jpg" alt="arquitectura casa_1">
                     <img src="./assets/img/nuestros_proyectos_2.jpg" alt="arquitectura casa 2">
@@ -71,30 +79,7 @@
                 </div>
             </section>
 
-            <!--ASIDE-->
-
-            <aside class="asideIndex">
-
-                <div class="logosRedes">
-
-                    <a href="https://www.instagram.com/alfaro0o_/" target="_blank"><i class="bi-instagram"></i></a>
-                    <a href="https://www.facebook.com/katrina.alfaro.75" target="_blank"><i class="bi-facebook"></i></a>
-                    <a href="https://ar.pinterest.com/arcealfarokiara/_saved/" target="_blank"><i class="bi-pinterest"></i></a>
-                    
-
-                </div>
-
-               
-
-                <div class="columnaInfo">   
-             
-                    <iframe width="300" height="180" src="https://www.youtube.com/embed/vbg-PWpWP4o?start=197" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <a href="https://www.ar.weber/"target="_blank"><img src="./assets/img/log_weber.jpg" width="300" height="180" alt="pagina weber"></a>
-                    <iframe width="300" height="180" src="https://www.youtube.com/embed/8Xi1WTBbLMo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <a href="https://retak.com.ar/"target="_blank"><img src="./assets/img/logo_retak.jpg" width="300" height="180" alt="pagina retak"></a>
-
-                </div>
-            </aside>
+            
 
             <!--UBICACION-->
 
@@ -110,15 +95,44 @@
                 <iframe class="ubicacion" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.92448520935!2d-58.434628785259015!3d-34.65660998044586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb96ce74406b%3A0x82d53b4ae1b5e6f0!2sCorrales%202312%2C%20C1437GMD%20CABA!5e0!3m2!1ses-419!2sar!4v1653619728708!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>">
 
             </section>
+
+        </div>
+            <!--ASIDE-->
+
+            <aside class="col-6 d-flex flex-row justify-content-center" id="asideIndex">
+
+                <div >
+                  
+                    <div id="logosRedes">
+
+                        <a href="https://www.instagram.com/alfaro0o_/" target="_blank"><i class="bi-instagram"></i></a>
+                        <a href="https://www.facebook.com/katrina.alfaro.75" target="_blank"><i class="bi-facebook"></i></a>
+                        <a href="https://ar.pinterest.com/arcealfarokiara/_saved/" target="_blank"><i class="bi-pinterest"></i></a>
+                        
+
+                    </div>
+
+               
+
+                <div class="columnaInfo">   
+             
+                    <iframe width="300" height="180" src="https://www.youtube.com/embed/vbg-PWpWP4o?start=197" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <a href="https://www.ar.weber/"target="_blank"><img src="./assets/img/log_weber.jpg" width="300" height="180" alt="pagina weber"></a>
+                    <iframe width="300" height="180" src="https://www.youtube.com/embed/8Xi1WTBbLMo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <a href="https://retak.com.ar/"target="_blank"><img src="./assets/img/logo_retak.jpg" width="300" height="180" alt="pagina retak"></a>
+
+                </div>
+            </div>
+            </aside>
         </div>
 
     </main>
     
     <!--FOOTER-->
 
-    <footer>
+    <footer class="row">
 
-        <div class="contenedor1">
+        <div class="contenedor1 bg-secondary bg-gradient col-12  d-flex flex-row justify-content-center  ">
             <a class="logosmobile" href="https://goo.gl/maps/byVVMgsuDNyeyyY98"target="_blank" ><i class="bi bi-geo-fill"></i></a>
 
             <a class="logosmobile"  href="mailto:arcealfarokiara@gmail.com">  <i class="bi bi-envelope-fill"></i></a>
@@ -129,35 +143,38 @@
           
             
         </div>
-
-        <div class="contenedor2">
         
-            <div class="tituloUbicacionFooter">
+        <section class="row">
+        <div class="contenedor2 col-4 h5" >
+        
+            <div class="tituloUbicacionFooter d-flex flex-row  h5">
                 <img src="./assets/logos/ubicacion.png" width="25px" height="25px" alt="logo ubicacion">
-                <h4>Ubicacion:</h4>
+                <p>Ubicacion:</p>
             </div>
             
-            <div class="direccionFooter"><p><a href="https://goo.gl/maps/byVVMgsuDNyeyyY98"target="_blank" >Corrales 2312</a></p></div>
+            <div class="direccionFooter h6"><p><a href="https://goo.gl/maps/byVVMgsuDNyeyyY98"target="_blank" >Corrales 2312</a></p></div>
 
             <div class="emailFooter">
                 <img src="./assets/logos/email.png " width="25px" height="25px" alt="">
-                <h4>Email: arcealfarokiara@gmail.com</h4>
+                <h5>Email: arcealfarokiara@gmail.com</h5>
             </div>
 
         </div>
 
-        <div class="contenedor3">
+        <div class="contenedor3 col-4">
             <img src="./assets/logo-arqui.png" alt="logo arki">
             <div> &#169 2022 Todos los derechos reservados</div>
         </div>
 
-        <div class="contenedor4">
+        <div class="contenedor4 col-4">
             
             <a href="https://wa.me/1121789061?text=Contactame por mas Informacion!" target="_blank"><i class="bi-whatsapp"></i></a>
-            <h4>Tel:1121789061</h4>
+            <h6>Tel:1121789061</h6>
 
         </div>
-        
+    </section>
     </footer>
+
+    <script src="./js/bootstrap.js"></script>
 </body>
 </html>
