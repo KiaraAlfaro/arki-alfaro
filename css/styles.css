@@ -574,6 +574,12 @@ footer{
 
     }
 
+    .proyecto:hover {
+
+        transform: scale(1.2);
+
+    }
+
     .pageTituloProyectos{
 
         font-size: 25px;
@@ -1169,5 +1175,24 @@ main{
         height:400px;
         margin-left: 70px;
     }
+
+    .asideCotizacion video {
+
+       animation-name: laterales;
+       animation-duration: 5s;
+       animation-iteration-count: infinite
+    }
 }
 
+@keyframes laterales{
+
+    0%{
+        padding-left: 0px;
+        padding-right: 100px;
+    }
+
+    100%{
+
+        padding-left: 100px;
+    }
+}
