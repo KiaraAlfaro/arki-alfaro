@@ -17,36 +17,79 @@
 
     <!--HEADER-->
     <header class="row" >
-        <nav class="col-12" >
-            <div class="barraLogo"><a class="logoArki" href="index.html"><img src="./assets/logo-arqui.png" alt="logo arki"></a>
-            </div>
+        
             
-            <ul class="pages">
-                <li><a class="pagesLink" href="./index.html">Inicio</a></li>
-                <li><a class="pagesLink" href="./pages.html/arquitectura.html">Arquitectura</a></li>
-                <li><a class="pagesLink" href="./pages.html/remodelacion.html">Remodelacion</a></li>
-                <li><a class="pagesLink" href="./pages.html/cotizacion.html">Cotizacion</a></li>
-                <li><a class="pagesLink" href="./pages.html/contacto.html">Contacto</a></li>
-            </ul>
+            <nav class="navbar navbar-expand-lg  d-flex flex-column justify-content-center col-12 ">
+
+                <div class="barraLogo col-12 d-flex flex-row justify-content-center"><a class="logoArki" href="index.html"><img src="./assets/logo-arqui.png" alt="logo arki"></a></div>
+                
+                <div class="container-fluid col-12 d-flex flex-column align-content-around" id="barranav">
+                  
+                    <div class="collapse navbar-collapse d-flex flex-column justify-content-around" id="navbarSupportedContent">
+
+                      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                        <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                        </li>
+
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="./pages.html/arquitectura.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Arquitectura
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <li><a class="dropdown-item" href="./pages.html/arquitectura.html">Nuestros proyectos</a></li>
+                              <li><a class="dropdown-item" href="./pages.html/cotizacion.html">Cotiza tu casa</a></li>
+                              
+                            </ul>
+                          </li>
+
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="./pages.html/remodelacion.html" id="navbarDropdownRemodelacion" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Remodelacion
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownRemodelacion">
+                                <li><a class="dropdown-item" href="./pages.html/remodelacion.html">Nuestros proyectos</a></li>  
+                              <li><a class="dropdown-item" href="./pages.html/cotizacion.html">Cotiza tu remodelacion</a></li>
+                    
+                            </ul>
+                          </li>
+
+
+                        <li class="nav-item">
+                          <a class="nav-link" href="./pages.html/cotizacion.html">Cotizacion</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages.html/contacto.html">Contacto</a>
+                          </li>
+
+                      </ul>
+                      
+                    </div>
+
+                  </div>
+              </nav>
             
-        </nav>
+        
     </header>
 
     <!--MAIN-->
-    <main class="container--fluid">
+    <main class="col-12 container--fluid ">
         
         <!--PORTADA-->
     <section class="row" >
 
         <div class="col-12" id="portadaarkimobile" >
 
-            <video src="./assets/videos/seccion-portada-arki.mp4" autoplay muted loop ></video>
+            <video class="col-12" src="./assets/videos/seccion-portada-arki.mp4" autoplay muted loop ></video>
 
-           <div class="col-12" id="textoportadamobile">
+           <div class="textoportadamobile col-12 ">
             <h2>Bienvenidos a ARKI</h2>
             <h3>Puedes acceder a dos de nuestros servicios</h3>
-            <a href="./pages.html/arquitectura.html">ARQUITECTURA</a>
-            <a href="./pages.html/remodelacion.html">REMODELACION</a>
+            <a class="h5" href="./pages.html/arquitectura.html">ARQUITECTURA</a>
+            <a class="h5" href="./pages.html/remodelacion.html">REMODELACION</a>
            </div>
         
          </div>
@@ -132,7 +175,7 @@
 
     <footer class="row">
 
-        <div class="contenedor1 bg-secondary bg-gradient col-12  d-flex flex-row justify-content-center  ">
+        <div class="contenedor1  col-12  d-flex flex-row justify-content-center  ">
             <a class="logosmobile" href="https://goo.gl/maps/byVVMgsuDNyeyyY98"target="_blank" ><i class="bi bi-geo-fill"></i></a>
 
             <a class="logosmobile"  href="mailto:arcealfarokiara@gmail.com">  <i class="bi bi-envelope-fill"></i></a>
@@ -176,5 +219,7 @@
     </footer>
 
     <script src="./js/bootstrap.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

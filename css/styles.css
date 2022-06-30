@@ -7,7 +7,7 @@
 
 /*-------------------------------------------INDEX---------------------------------------------------------*/
 
-body{width: 100%;}
+
 
 /*-----------HEADER---------*/
 
@@ -24,55 +24,22 @@ main{background: black;
 overflow: hidden;
 }
 
-/*------- nav------- */
 
-nav{
 
-    height: 150px;
+nav{ background-color: #b9b9b9;
 
-}
-.barraLogo{
-    
-    background-color:  rgb(122, 122, 122);
-    text-align: center;
-}
+height: 140px;}
 
-.pages {
+#barranav{background-color: #383838;
 
-    list-style-type:none ;
-    background-color: rgba(2, 2, 2, 0.863);
-    color: rgb(255, 255, 255);
-    font-size: 10px;
-    font-weight: bold;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    display: flex;
-    flex-direction: row;
-   justify-content: space-around;
-   
-}
-
-.pagesLink{
-
-    text-decoration: none;
-    color: white;
 
 }
-
 /* portada*/
 
 
 
-#portadaarkimobile{
 
-    width: 100%;
-    overflow: hidden;
-    
-}
-#portadaarkimobile video{
 
-    width: 100%;
-}
 
 
 #portadaarkimobile{ 
@@ -82,7 +49,7 @@ nav{
 
 }
 
-#textoportadamobile {
+.textoportadamobile {
     
     position: absolute;
     bottom: 30%;
@@ -96,10 +63,10 @@ nav{
     align-items: center;
     background-color: rgba(0, 0, 0, 0.603);
     line-height: 20px;
-    width: 100%;
+    
 }
 
-#textoportadamobile a{
+.textoportadamobile a{
 
     text-decoration: none;
     color: white;
@@ -178,7 +145,8 @@ nav{
 /*---------------------------FOOTER------------------------*/
 
 
-
+footer{background-color: #b9b9b9;
+}
 
 .contenedor1 a {
 
@@ -197,8 +165,7 @@ nav{
 .contenedor3 {
 
     text-align: center;    
-    grid-row: 2/3;
-    grid-column: 1/2;
+    
     font-size: 10px;
     margin-top: 2px;
    
@@ -347,17 +314,11 @@ nav{
 
 /*---FOOTER---*/
 
-    footer{
-    
-        background-color: rgba(94, 94, 94, 0.644);
-        
-       
-     
-    }
+   
 
     .contenedor1{
         font-size: 40px;
-           
+        background-color: #383838;  
 
     }
 
@@ -431,29 +392,9 @@ nav{
 /*-------------------------------ARQUITECTURA Y REMODELACION----------------------------------------------*/
 
 
-.pagesBodyProyectos{
 
-  
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 130px 350px 95px;
-   
-}
 
-.pagesHeaderProyectos{
 
-    grid-row: 1/2;
-}
-
-.pageMainProyectos{
-
-    grid-row: 2/3;
-}
-
-.pagesFooterProyectos{
-    grid-row: 3/4;
-
-}
 
 .pageTituloProyectos{
 
@@ -491,13 +432,7 @@ nav{
 
 @media(min-width:769px){
 
-    .pagesBodyProyectos{
-
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 144px 350px 200px;
-       
-    }
+    
 }
 
 
@@ -505,26 +440,8 @@ nav{
 
 @media(min-width:1024px){
 
-    .pagesBodyProyectos{
-
-  
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 144px 700px 200px;
-       
-    }
-    .pageProyectos{
-
-        flex: none;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 50% 50%;
-        row-gap: 20px;
-        column-gap: 20px;
-        justify-items: center;
-        overflow: hidden;
-
-    }
+   
+    
 
     .proyecto:hover {
 

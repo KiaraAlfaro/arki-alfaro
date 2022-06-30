@@ -1,35 +1,78 @@
 <!DOCTYPE html>
 <html lang="es" class="HTMLcotizacion">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../assets/img/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="../css/styles.css">
-    <title>ARKI.Arquitectura/cotizacion.com</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="../assets/img/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/styles.css">
+        <title>ARKI.Arquitectura.com</title>
+    </head>
 
 <body class="pageBodyCotizacion">
 
     <!--HEADER-->
 
-    <header class="pagesHeaderProyectos">
-        <nav>
-
-            <div class="barraLogo"><a class="logoArki" href="../index.html"><img src="../assets/logo-arqui.png" alt="logo arki"></a></div>
-    
-            <ul class="pages">
-                <li><a class="pagesLink" href="../index.html">Inicio</a></li>
-                <li><a class="pagesLink" href="./arquitectura.html">Arquitectura</a></li>
-                <li><a class="pagesLink" href="./remodelacion.html">Remodelacion</a></li>
-                <li><a class="pagesLink" href="./cotizacion.html">Cotizacion</a></li>
-                <li><a class="pagesLink" href="./contacto.html">Contacto</a></li>
-            </ul>
+    <header class="row" >
         
-        </nav>
-    </header>
+            
+        <nav class="navbar navbar-expand-lg  d-flex flex-column justify-content-center col-12 ">
+
+            <div class="barraLogo col-12 d-flex flex-row justify-content-center"><a class="logoArki" href="../index.html"><img src="../assets/logo-arqui.png" alt="logo arki"></a></div>
+            
+            <div class="container-fluid col-12 d-flex flex-column align-content-around" id="barranav">
+              
+                <div class="collapse navbar-collapse d-flex flex-column justify-content-around" id="navbarSupportedContent">
+
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="../pages.html/arquitectura.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Arquitectura
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="../pages.html/arquitectura.html">Nuestros proyectos</a></li>
+                          <li><a class="dropdown-item" href="../pages.html/cotizacion.html">Cotiza tu casa</a></li>
+                          
+                        </ul>
+                      </li>
+
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="../pages.html/remodelacion.html" id="navbarDropdownRemodelacion" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Remodelacion
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownRemodelacion">
+                            <li><a class="dropdown-item" href="../pages.html/remodelacion.html">Nuestros proyectos</a></li>  
+                          <li><a class="dropdown-item" href="../pages.html/cotizacion.html">Cotiza tu remodelacion</a></li>
+                
+                        </ul>
+                      </li>
+
+
+                    <li class="nav-item">
+                      <a class="nav-link" href="../pages.html/cotizacion.html">Cotizacion</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages.html/contacto.html">Contacto</a>
+                      </li>
+
+                  </ul>
+                  
+                </div>
+
+              </div>
+          </nav>
+        
+    
+</header>
 
     <!--MAIN-->
 
@@ -278,9 +321,9 @@
 
     <!--FOOTER-->    
 
-    <footer class="pagesFooterProyectos">
+    <footer class="row">
 
-        <div class="contenedor1">
+        <div class="contenedor1  col-12  d-flex flex-row justify-content-center  ">
             <a class="logosmobile" href="https://goo.gl/maps/byVVMgsuDNyeyyY98"target="_blank" ><i class="bi bi-geo-fill"></i></a>
 
             <a class="logosmobile"  href="mailto:arcealfarokiara@gmail.com">  <i class="bi bi-envelope-fill"></i></a>
@@ -291,38 +334,40 @@
           
             
         </div>
-
-        <div class="contenedor2">
-    
-            <div class="tituloUbicacionFooter">
-                <img src="../assets/logos/ubicacion.png" width="25px" height="25px" alt="logo ubicacion">
-                <h4>Ubicacion:</h4>
-            </div>
         
-            <div class="direccionFooter"><p><a href="https://goo.gl/maps/byVVMgsuDNyeyyY98"target="_blank" >Corrales 2312</a></p></div>
+        <section class="row">
+        <div class="contenedor2 col-4 h5" >
+        
+            <div class="tituloUbicacionFooter d-flex flex-row  h5">
+                <img src="../assets/logos/ubicacion.png" width="25px" height="25px" alt="logo ubicacion">
+                <p>Ubicacion:</p>
+            </div>
+            
+            <div class="direccionFooter h6"><p><a href="https://goo.gl/maps/byVVMgsuDNyeyyY98"target="_blank" >Corrales 2312</a></p></div>
 
             <div class="emailFooter">
                 <img src="../assets/logos/email.png " width="25px" height="25px" alt="">
-                <h4>Email: arcealfarokiara@gmail.com</h4>
+                <h5>Email: arcealfarokiara@gmail.com</h5>
             </div>
 
         </div>
 
-        <div class="contenedor3">
-
+        <div class="contenedor3 col-4">
             <img src="../assets/logo-arqui.png" alt="logo arki">
             <div> &#169 2022 Todos los derechos reservados</div>
-
         </div>
 
-        <div class="contenedor4">
+        <div class="contenedor4 col-4">
             
             <a href="https://wa.me/1121789061?text=Contactame por mas Informacion!" target="_blank"><i class="bi-whatsapp"></i></a>
-            <h4>Tel:1121789061</h4>
+            <h6>Tel:1121789061</h6>
 
         </div>
-    
+    </section>
     </footer>
-    <script src="./js/bootstrap.js"></script>
+    
+    <script src="../js/bootstrap.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
