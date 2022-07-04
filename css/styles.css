@@ -4,7 +4,12 @@
     box-sizing:border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
+/*root------------------------*/
 
+:root{
+
+    --color-principal:#242b34 ;
+}
 /*-------------------------------------------INDEX---------------------------------------------------------*/
 
 
@@ -18,119 +23,149 @@ header{
     z-index: 2;
 }
 
+.row{
+
+    --bs-gutter-x:0rem !important;
+}
 /*MAIN*/
 
-main{background: black;
-overflow: hidden;
+main{background:var(--color-principal);
+    height: auto;
+    padding: 0% !important;
 }
 
 
 
-nav{ background-color: #b9b9b9;
-    
 
-height: 140px;
-z-index: 2;
+nav{ 
+    
+    background-color:var(--color-principal)   !important ;
+    font-size: 17px;
+
 }
 nav a{
 
-    color: white !important;
-}
-.dropdown-menu{
-
-    background-color: #383838 !important; 
-}
-
-#barranav{background-color: #383838;
-
+    color: rgb(219, 219, 219) !important;
 
 }
-/* portada*/
-
-
-
-
-
-
-
-#portadaarkimobile{ 
     
-    position: relative; 
+.navbar-brand{
 
-
+    background-color: #aaa;
 }
 
-.textoportadamobile {
-    
-    position: absolute;
-    bottom: 30%;
-    top: 30%;
-    font-family: Arial;
-    font-weight: bold;
-    font-size: 10px;
-    color: rgb(255, 255, 255);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.603);
-    line-height: 20px;
+.portada {
+
+    width: 100%;
+    height: 300px;
+    background-image: url(../assets/img/portada.jpg) ;
+    background-size:cover;
+    filter: opacity(75%);
     
 }
+.portada h1{
 
-.textoportadamobile a{
-
-    text-decoration: none;
-    color: white;
+    padding-top: 30px;
+    
 }
+.portada h1, .blockquote-footer::before {
+
+    padding-left: 20px;
+}
+
+
+
 
 /*titulo*/
 
 .titulo{
     color: white;
     font-weight: bold;
-    background-color: rgb(94, 94, 94, 0.644);
-    border: solid 5px rgb(46, 45, 45);
-    font-size: 15px;
+    background-color:var(--color-principal);
+    text-align: center;
+    font-size: 13px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 0%;
 
 }
 
+#carouselExampleCaptions {
 
+    width: 100% !important;
+}
 
 /*-----------POST-PORTADA---------*/
 
+#contenedorproyectos{
 
+    height: 145px;
+    
+    color: white !important;
+    
+    background-color: #14181dd5;
+    margin-top: 5px;
+}
 
+#contenedorproyectos h6, figcaption{
+
+    
+    padding-left: 10px;
+   
+}
+
+#contenedorproyectos a{
+
+    color: white !important;
+    text-decoration: none!important;
+    width: 100%;
+    height: 25px;
+    margin: 0% !important;
+    padding: 0% !important;
+    text-align: center;
+}
 
 
 /*-----------ASIDE--------------------------------------*/
 
-#asideIndex{ display: none;}
+#asideIndex div { display: none;}
 
 /*----------UBICACION------------*/
 
 .seccionUbi{
 
     width: 100%;
+    height:380px;
+    
  }
  
 .tituloUbicacion{
     
-    font-size: 10px;
-     margin-top: 20px;
-     color: white;
-     font-weight: bold;
-     background-color: rgb(94, 94, 94, 0.644);
-     border: solid 5px rgb(46, 45, 45);
+    color: white;
+    font-weight: bold;
+    background-color:var(--color-principal);
+    justify-content: center;
+    font-size: 13px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    
      width: 100%;
      display: flex;
      flex-direction: row;
-     align-items: center;
+    align-content: center;
+    
+ }
+
+ .tituloUbicacion p {
+
+    margin: 0%;
  }
 
  .tituloUbicacion img {
 
-    width: 25px;
-    height: 25px;
+    width: 15px;
+    height: 15px;
 }
 
 
@@ -138,47 +173,30 @@ nav a{
 
     width: 100%;
     height: 350px;
-    margin-top: 20PX;
+   
       
         
 }
+
+
+
 /*---------------------------FOOTER------------------------*/
 
-
-footer{background-color: #b9b9b9;
+footer{ background-color: var(--color-principal);
+padding-bottom: 10px;
+padding-top: 10px;
 }
 
-.contenedor1 a {
+footer i {
 
-    text-decoration: none;
-    color: black;
-
+    color: white;
 }
 
-.contenedor1 i{
 
-    margin-left: 5px;
-}
+.derechos{
 
-.contenedor2{display: none;}
-
-.contenedor3 {
-
-    text-align: center;    
-    
     font-size: 10px;
-    margin-top: 2px;
-   
-    
 }
-.contenedor3 img{
-
-    width: 50px;
-    height: 50px;
-}
-
-.contenedor4{ display: none;}
-
 /*--------------------------------------RESONSIVE INDEX (769px)--------------------------*/
 
 @media(min-width:769px){

@@ -13,65 +13,69 @@
     <title>ARKI.Arquitectura.com</title>
 
 </head>
-<body >
+<body class="col-12">
 
     <!--HEADER-->
     <header class="row" >
-        
+      
+      <nav class="navbar navbar-expand-lg col-12">
+        <div class="container-fluid ">
+          <a id="logo" class="navbar-brand rounded-2 opacity-75 " href="#">
+            <img  src="./assets/logo-arqui.png" alt="logo arki" width="60" height="54" class="d-inline-block rounded-2 ">
             
-            <nav class="navbar navbar-expand-lg  d-flex flex-column justify-content-center col-12 ">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-                <div class="barraLogo col-12 d-flex flex-row justify-content-center"><a class="logoArki" href="index.html"><img src="./assets/logo-arqui.png" alt="logo arki"></a></div>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+              </li>
+
+              <li class="nav-item dropdown">
                 
-                <div class="container-fluid col-12 d-flex flex-column align-content-around" id="barranav">
-                  
-                    <div class="collapse navbar-collapse d-flex flex-column justify-content-around" id="navbarSupportedContent">
+                <a class="nav-link dropdown-toggle" href="./pages.html/arquitectura.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Arquitectura
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
 
-                      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li><a class="dropdown-item" href="./pages.html/arquitectura.html">Proyectos</a></li>
+                  <li><a class="dropdown-item" href="./pages.html/cotizacion.html">Cotiza tu casa</a></li>
+              
+                </ul>
+              </li>
 
-                        <li class="nav-item">
-                          <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
-                        </li>
+              <li class="nav-item dropdown">
+                
+                <a class="nav-link dropdown-toggle" href="./pages.html/remodelacion.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Remodelacion
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
 
+                  <li><a class="dropdown-item" href="./pages.html/remodelacion.html">Proyectos</a></li>
+                  <li><a class="dropdown-item" href="./pages.html/cotizacion.html">Cotiza tu remodelacion</a></li>
+              
+                </ul>
+              </li>
 
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="./pages.html/arquitectura.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Arquitectura
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                              <li><a class="dropdown-item" href="./pages.html/arquitectura.html">Nuestros proyectos</a></li>
-                              <li><a class="dropdown-item" href="./pages.html/cotizacion.html">Cotiza tu casa</a></li>
-                              
-                            </ul>
-                          </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages.html/cotizacion.html">Cotiza tu proyecto</a>
+              </li>
 
-                          <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="./pages.html/remodelacion.html" id="navbarDropdownRemodelacion" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Remodelacion
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownRemodelacion">
-                                <li><a class="dropdown-item" href="./pages.html/remodelacion.html">Nuestros proyectos</a></li>  
-                              <li><a class="dropdown-item" href="./pages.html/cotizacion.html">Cotiza tu remodelacion</a></li>
-                    
-                            </ul>
-                          </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages.html/contacto.html">Contactanos</a>
+              </li>
 
-
-                        <li class="nav-item">
-                          <a class="nav-link" href="./pages.html/cotizacion.html">Cotizacion</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="./pages.html/contacto.html">Contacto</a>
-                          </li>
-
-                      </ul>
-                      
-                    </div>
-
-                  </div>
-              </nav>
+            </ul>
             
+          </div>
+        </div>
+      </nav>
+            
+          
         
     </header>
 
@@ -81,31 +85,51 @@
         <!--PORTADA-->
     <section class="row" >
 
-        <div class="col-12" id="portadaarkimobile" >
-
-            <video class="col-12" src="./assets/videos/seccion-portada-arki.mp4" autoplay muted loop ></video>
-
-           <div class="textoportadamobile col-12 ">
-            <h2>Bienvenidos a ARKI</h2>
-            <h3>Puedes acceder a dos de nuestros servicios</h3>
-            <a class="h5" href="./pages.html/arquitectura.html">ARQUITECTURA</a>
-            <a class="h5" href="./pages.html/remodelacion.html">REMODELACION</a>
-           </div>
-        
-         </div>
+     <div class="portada" >
+      <h1>ARKI</h1>
+      <figcaption class="blockquote-footer">
+        <cite title="Source Title">Studio arquitectura.</cite>
+      </figcaption>
+    </div>
      
-                 
+     <!--post portada-->
+     <div class="d-flex flex-row align-items-start">
+
+     <div id="contenedorproyectos" class="d-flex flex-column justify-content-between  col-6  border-end border-dark border-3 ">
+    
+        <h6>Arquitectura</h6>
+        <figcaption class="blockquote-footer">
+          <cite title="Source Title">Proyecta tu casa desde cero.</cite>
+        </figcaption>
+        <a href="./pages.html/arquitectura.html" class="stretched-link p-3 mb-2 bg-secondary text-white bg-opacity-25  ">Mas info +</a>
+      
+    </div>
+
+    <div id="contenedorproyectos" class="d-flex flex-column justify-content-between col-6 ">
+      
+      <h6>Remodelacion</h6>
+
+      <figcaption class="blockquote-footer">
+        <cite title="Source Title">Remodelaciones desde cero o por ambientes.</cite>
+      </figcaption>
+     
+      <a href="./pages.html/remodelacion.html" class="stretched-link p-3 mb-2 bg-secondary text-white bg-opacity-25">Mas info +</a>
+    
+    </div>
+
+  </div>  
+
     </section class="row" >
 
         <!--SECCION NUESTROS PROYECTOS--> 
          
         <section  >
-            <h2 class=" titulo">Nuestros Proyectos:</h2>
+            <h2 class=" titulo">Proyectos Destacados</h2>
         </section>   
 
         <div class="seccionPostPortada row">     
 
-        <div class="col-6">
+        <div >
 
             <div id="carouselExampleCaptions" class="carousel slide " data-bs-ride="false">
                 <div class="carousel-indicators">
@@ -185,7 +209,7 @@
                 <div class="tituloUbicacion">
 
                     <img src="./assets/logos/ubicacion.png" width="50px" height="50px" alt="logo ubicacion">
-                    <h3> Donde encontrarnos? </h3>
+                    <p> Nuestra Ubicacion</p>
                 
                 </div>
 
@@ -227,49 +251,32 @@
     
     <!--FOOTER-->
 
-    <footer class="row">
+    <footer>
 
-        <div class="contenedor1  col-12  d-flex flex-row justify-content-center  ">
-            <a class="logosmobile" href="https://goo.gl/maps/byVVMgsuDNyeyyY98"target="_blank" ><i class="bi bi-geo-fill"></i></a>
+      <div class="d-flex flex-row align-items-center ">
 
-            <a class="logosmobile"  href="mailto:arcealfarokiara@gmail.com">  <i class="bi bi-envelope-fill"></i></a>
-            <a href="https://www.instagram.com/alfaro0o_/" target="_blank"><i class="bi-instagram"></i></a>
+      <a class="logofooter d-flex flex-column align-items-center col-3 border-end border-2 border-white" href="./index.html">
+        <img src="./assets/logo-arqui.png" alt="logo arki" width="50" height="50" class="d-inline-block ">
+      </a>
+
+      <div class="d-flex flex-row flex-column align-items-center  col-9">
+
+        <div >
+
+          <a href="https://www.instagram.com/alfaro0o_/" target="_blank"><i class="bi-instagram"></i></a>
             <a href="https://www.facebook.com/katrina.alfaro.75" target="_blank"><i class="bi-facebook"></i></a>
             <a href="https://ar.pinterest.com/arcealfarokiara/_saved/" target="_blank"><i class="bi-pinterest"></i></a>
-            <a class="logosmobile"  href="https://wa.me/1121789061?text=Contactame por mas Informacion!" target="_blank"><i class="bi-whatsapp"></i></a>
-          
-            
-        </div>
-        
-        <section class="row">
-        <div class="contenedor2 col-4 h5" >
-        
-            <div class="tituloUbicacionFooter d-flex flex-row  h5">
-                <img src="./assets/logos/ubicacion.png" width="25px" height="25px" alt="logo ubicacion">
-                <p>Ubicacion:</p>
-            </div>
-            
-            <div class="direccionFooter h6"><p><a href="https://goo.gl/maps/byVVMgsuDNyeyyY98"target="_blank" >Corrales 2312</a></p></div>
-
-            <div class="emailFooter">
-                <img src="./assets/logos/email.png " width="25px" height="25px" alt="">
-                <h5>Email: arcealfarokiara@gmail.com</h5>
-            </div>
-
-        </div>
-
-        <div class="contenedor3 col-4">
-            <img src="./assets/logo-arqui.png" alt="logo arki">
-            <div> &#169 2022 Todos los derechos reservados</div>
-        </div>
-
-        <div class="contenedor4 col-4">
-            
             <a href="https://wa.me/1121789061?text=Contactame por mas Informacion!" target="_blank"><i class="bi-whatsapp"></i></a>
-            <h6>Tel:1121789061</h6>
-
+            <a href="https://goo.gl/maps/byVVMgsuDNyeyyY98" target="_blank"><i class="bi bi-geo-fill"></i></a>
+            <a href="mailto:arcealfarokiara@gmail.com" target="_blank"><i class="bi-envelope-fill"></i></a>
         </div>
-    </section>
+
+        <div> <p class="derechos text-white" >&#169 2022 Todos los derechos reservados</p> </div>
+       
+
+      </div>
+
+    </div>
     </footer>
 
     <script src="./js/bootstrap.js"></script>
