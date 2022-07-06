@@ -1,0 +1,23 @@
+.portada {
+
+    width: 100%;
+    height: 300px;
+    background-image: url(../assets/img/portada.jpg) ;
+    background-size:cover;
+    filter: opacity(75%);
+
+    h1{  padding-top: 30px; }
+       
+    
+    .blockquote-footer::before {
+
+
+        padding-left: 20px;
+        
+
+    }
+}
+
+    
+
+

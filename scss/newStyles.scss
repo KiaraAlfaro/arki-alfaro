@@ -1,0 +1,37 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+
+
+@import "variables";
+@import "row";
+@import "header";
+@import "main";
+
+/*----------------------------Index----------------------------*/
+
+@import "portada";
+
+/*---post portada---*/
+
+@import "contenedor";
+@import "carrusel";
+
+/*---aside---*/
+
+@import "aside";
+
+/*---ubicacion---*/
+
+@import "ubicacion";
+
+/*---footer---*/
+
+@import "footer";
+
+
+/* realizado solo vista mobile de index */
