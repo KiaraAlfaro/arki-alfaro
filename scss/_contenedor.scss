@@ -1,20 +1,75 @@
-#contenedorproyectos{
+@import "maps";
 
-    height: 145px;
-    color: white !important;
-    background-color: #14181dd5;
-    margin-top: 5px;
+.seccionProyectos{
 
-    h6, figcaption{ padding-left: 10px; }
 
-    a{
+    #contenedorproyectos{
 
-        color: white !important;
-        text-decoration: none!important;
-        width: 100%;
-        height: 25px;
-        margin: 0% !important;
-        padding: 0% !important;
-        text-align: center;
+        height: 145px;
+        color:map-get($colores,"principal");
+        background-color: #14181dd5;
+        margin-top: 5px;
+    
+        h6, figcaption{ padding-left: 10px; }
+    
+        a{
+    
+            color: map-get($colores,"principal");
+            text-decoration: none!important;
+            width: 100%;
+            height: 25px;
+            margin: 0% !important;
+            padding: 0% !important;
+            text-align: center;
+        }
+    }
+  
+   
+}
+
+.seccionProyectos2{
+        
+    display: none !important;
+    h4 , h6{ color:map-get($colores,"principal");}
+    h4{
+        margin-top: 20px;
+    }
+
+}
+
+
+
+@media(min-width:1064px){
+
+    .seccionProyectos2{
+        
+        display: flex!important;
+        margin-bottom: 50px;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        
+        img{
+            height: 300px;
+            width: 300px;
+            
+            border-radius: 50%;
+            margin-top: 50px;
+            &:hover{
+
+                filter: opacity(60%);
+                transform: scale(1.1);
+                
+            }
+           
+        }
+        margin-bottom:50px ;
+       
+     
+
+    }
+    #contenedorproyectos{
+
+        display: none !important;
     }
 }

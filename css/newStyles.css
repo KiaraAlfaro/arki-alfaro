@@ -5,7 +5,8 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; }
 
 :root {
-  --color-principal:#242b34 ; }
+  --color-principal:#242b34 ;
+  --color-principal-transparente:#242b3481 ; }
 
 .row {
   --bs-gutter-x:0rem !important; }
@@ -22,7 +23,22 @@ nav {
     color: #dbdbdb !important; }
   nav .navbar-brand {
     background-color: #aaa; }
+  nav .logosNav {
+    display: none; }
 
+@media (min-width: 1064px) {
+  nav {
+    font-size: 17px; }
+    nav .dropdown-menu {
+      background-color: var(--color-principal); }
+    nav a {
+      font-size: 15px;
+      background-color: var(--color-principal); }
+    nav .logosNav {
+      display: block; }
+      nav .logosNav a {
+        font-size: 30px;
+        margin-left: 5px; } }
 main {
   background: var(--color-principal);
   height: auto;
@@ -40,22 +56,70 @@ main {
   .portada .blockquote-footer::before {
     padding-left: 20px; }
 
+@media (min-width: 1064px) {
+  h1 {
+    font-size: 100px !important;
+    padding-left: 70px !important;
+    padding-top: 70px !important; }
+
+  .portada {
+    background-image: url(../assets/img/portada-2.jpg);
+    background-size: cover;
+    filter: opacity(60%);
+    height: 800px;
+    width: 100%; }
+
+  .blockquote-footer {
+    font-size: 25px !important; }
+
+  .blockquote-footer::before {
+    padding-left: 100px !important; } }
 /*---post portada---*/
-#contenedorproyectos {
+.seccionProyectos #contenedorproyectos {
   height: 145px;
-  color: white !important;
+  color: white;
   background-color: #14181dd5;
   margin-top: 5px; }
-  #contenedorproyectos h6, #contenedorproyectos figcaption {
+  .seccionProyectos #contenedorproyectos h6, .seccionProyectos #contenedorproyectos figcaption {
     padding-left: 10px; }
-  #contenedorproyectos a {
-    color: white !important;
+  .seccionProyectos #contenedorproyectos a {
+    color: white;
     text-decoration: none !important;
     width: 100%;
     height: 25px;
     margin: 0% !important;
     padding: 0% !important;
     text-align: center; }
+
+.seccionProyectos2 {
+  display: none !important; }
+  .seccionProyectos2 h4, .seccionProyectos2 h6 {
+    color: white; }
+  .seccionProyectos2 h4 {
+    margin-top: 20px; }
+
+@media (min-width: 1064px) {
+  .seccionProyectos2 {
+    display: flex !important;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 50px; }
+    .seccionProyectos2 img {
+      height: 300px;
+      width: 300px;
+      border-radius: 50%;
+      margin-top: 50px; }
+      .seccionProyectos2 img:hover {
+        filter: opacity(60%);
+        transform: scale(1.1); }
+
+  #contenedorproyectos {
+    display: none !important; } }
+:root {
+  --color-principal:#242b34 ;
+  --color-principal-transparente:#242b3481 ; }
 
 .titulo {
   color: white;
@@ -70,47 +134,180 @@ main {
 #carouselExampleCaptions {
   width: 100% !important; }
 
-/*---aside---*/
-#asideIndex div {
+.principalesProyectos {
   display: none; }
 
-/*---ubicacion---*/
-.seccionUbi {
-  height: 500px; }
-  .seccionUbi div {
-    color: white;
-    font-weight: bold;
-    background-color: var(--color-principal);
-    justify-content: center;
-    font-size: 13px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    width: 100%;
-    display: flex;
+@media (min-width: 1064px) {
+  .titulo {
+    display: none; }
+
+  #carouselExampleCaptions {
+    display: none; }
+
+  .fondos, .principalesProyectos {
+    background-position: center;
+    background-size: cover;
+    position: relative; }
+
+  .principalesProyectos {
+    background-image: url(../assets/img/fondo-nuestros-proyectos.jpg); }
+
+  .principalesProyectos::before {
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; }
+
+  .principalesProyectos {
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 540px 540px 1fr;
+    grid-template-rows: 60px 220px 140px 210px 90px 30px;
+    grid-column-gap: 5px; }
+    .principalesProyectos img {
+      font-size: 60px;
+      position: relative; }
+      .principalesProyectos img:hover {
+        transform: scale(1.1); }
+    .principalesProyectos div {
+      color: white;
+      position: relative;
+      grid-row: 5/6;
+      grid-column: 3/4;
+      align-self: center; }
+      .principalesProyectos div a {
+        color: white !important; }
+    .principalesProyectos h3 {
+      color: white;
+      position: relative;
+      grid-row: 1/2;
+      grid-column: 2/4;
+      text-align: center;
+      align-self: center; }
+    .principalesProyectos .proyecto1 {
+      grid-row: 2/4;
+      grid-column: 2/3; }
+    .principalesProyectos .proyecto2 {
+      grid-row: 2/4;
+      grid-column: 3/4; }
+    .principalesProyectos .proyecto3 {
+      grid-row: 4/6;
+      grid-column: 2/3; }
+    .principalesProyectos .proyecto4 {
+      grid-row: 3/5;
+      grid-column: 3/4; } }
+/*---aside---*/
+.informacion {
+  display: none; }
+  .informacion .card-title {
+    height: 30px;
+    width: 200px;
+    border-bottom: solid red 1px; }
+  .informacion .card {
+    background-color: inherit !important;
+    border: inherit !important;
+    color: white !important; }
+    .informacion .card img:hover {
+      filter: opacity(70%);
+      transform: scale(1.1); }
+
+@media (min-width: 1064px) {
+  .informacion {
+    margin-top: 30px;
+    display: flex !important;
     flex-direction: row;
-    align-content: center; }
-    .seccionUbi div p {
-      margin: 0%; }
-    .seccionUbi div img {
-      width: 15px;
-      height: 15px; }
-    .seccionUbi div iframe {
-      height: 200px; }
+    flex-wrap: wrap;
+    justify-content: space-around; } }
+/*---ubicacion
+
+@import "ubicacion";
 
 /*---footer---*/
 :root {
-  --color-principal:#242b34 ; }
+  --color-principal:#242b34 ;
+  --color-principal-transparente:#242b3481 ; }
 
 footer {
-  background-color: var(--color-principal);
+  position: relative;
   padding-bottom: 10px;
-  padding-top: 10px; }
+  padding-top: 10px;
+  height: 430px;
+  background-image: url(../assets/imagenes-arq/pexels-lucas-pezeta-5924836.jpg);
+  background-position: center center;
+  background-size: cover;
+  position: relative; }
   footer i {
-    color: white; }
+    color: #b1b0b0;
+    font-size: 25px; }
   footer p {
-    font-size: 10px;
-    color: white; }
+    font-size: 15px;
+    color: #b1b0b0;
+    position: relative; }
+  footer .ubicacion {
+    color: #b1b0b0;
+    font-weight: bold; }
+    footer .ubicacion img {
+      width: 15px;
+      height: 15px;
+      position: relative; }
+    footer .ubicacion iframe {
+      height: 250px;
+      width: 250px;
+      position: relative; }
+  footer .logos {
+    position: relative;
+    font-style: oblique; }
+    footer .logos h4 {
+      color: #b1b0b0; }
+  footer .nosotros {
+    color: #b1b0b0;
+    position: relative;
+    font-style: oblique;
+    font-size: 20px; }
+    footer .nosotros li {
+      list-style-type: none; }
+      footer .nosotros li a {
+        text-decoration: none;
+        color: #b1b0b0; }
+  footer .seccion2 {
+    position: relative;
+    border-top: solid 2px #b1b0b0; }
+    footer .seccion2 a, footer .seccion2 h6 {
+      position: relative;
+      color: #b1b0b0;
+      font-style: oblique; }
 
+footer::before {
+  content: "";
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0; }
+
+@media (max-width: 1064px) {
+  footer {
+    height: 120px; }
+    footer .ubicacion {
+      display: none !important; }
+    footer .nosotros {
+      display: none !important; }
+    footer .contenederlogo {
+      width: 100% !important;
+      display: flex !important;
+      flex-direction: row !important;
+      justify-content: center !important; }
+      footer .contenederlogo h4, footer .contenederlogo i {
+        font-size: 10px !important; }
+    footer .seccion2 a img {
+      width: 60px;
+      height: 60px; }
+    footer .seccion2 h6, footer .seccion2 p {
+      font-size: 10px !important; } }
 /* realizado solo vista mobile de index */
 
 /*# sourceMappingURL=newStyles.css.map */

@@ -1,16 +1,162 @@
 
 @import "variables";
 
+@import "mixin";
+@import "maps";
+
 footer{ 
     
-    background-color: var(--color-principal);
+    position: relative;
+    
     padding-bottom: 10px;
     padding-top: 10px;
+    height:430px;
 
-    i { color: white;}
+    background-image: url(../assets/imagenes-arq/pexels-lucas-pezeta-5924836.jpg);
+        background-position: center center;
+        background-size: cover;
+        position: relative;
+
+    i { 
+        color:map-get($colores,"footer");
+        font-size: 25px;
+    }
     
     p{ 
         
-        font-size: 10px;
-        color: white;}
+        font-size: 15px;
+        color:map-get($colores,"footer");
+        position: relative;
     }
+
+    .ubicacion{
+    
+        color:map-get($colores,"footer");
+        font-weight: bold;
+        
+        
+       
+        
+        
+        
+        
+        img {
+
+            width: 15px;
+            height: 15px;
+            position: relative;
+        }
+
+        iframe { 
+
+            height: 250px;
+            width: 250px;
+            position: relative;
+            
+        }
+    }
+
+    .logos{
+
+        h4{ color: map-get($colores,"footer");}
+        position: relative;
+        font-style: oblique;
+
+        
+        
+    }
+    .nosotros{
+
+        color:map-get($colores,"footer");
+        position: relative;
+        font-style: oblique;
+        font-size: 20px;
+        li{
+            
+            list-style-type: none;
+            
+            a{
+                text-decoration: none;
+                color:map-get($colores,"footer");
+            }
+        }
+
+        
+    }
+
+    .seccion2{
+
+        position: relative;
+        border-top: solid 2px map-get($colores,"footer");
+
+        a, h6{
+
+            position: relative;
+            color: map-get($colores,"footer");
+            font-style: oblique;
+        }
+    }
+
+
+}
+
+footer::before{
+
+    content: "";        
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+}
+
+@media(max-width:1064px){
+
+    footer{
+
+        height: 120px;
+
+        .ubicacion{
+
+            display: none !important;
+        }
+        .nosotros{
+    
+            display: none !important;
+    
+        }
+    
+      
+
+        .contenederlogo {
+    
+            width: 100% !important;
+
+            @include d-flex(row, center);
+           
+            h4, i{ @include texto(10px); }
+            
+        }
+        .seccion2{
+
+            a{
+
+                img{
+
+                    width: 60px;
+                    height: 60px;
+                }
+            }
+            h6,p {
+                @include texto(10px);
+            }
+        }
+    }
+    
+}
+
+
+
+

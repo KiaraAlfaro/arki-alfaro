@@ -2,22 +2,46 @@
 
     width: 100%;
     height: 300px;
-    background-image: url(../assets/img/portada.jpg) ;
+    background-image: url(../assets/img/portada.jpg)  ;
     background-size:cover;
     filter: opacity(75%);
 
-    h1{  padding-top: 30px; }
+    h1{  padding-top: 30px;}
        
     
     .blockquote-footer::before {
 
 
-        padding-left: 20px;
+        padding-left: 20px ;
         
 
     }
 }
 
-    
+@media(min-width:1064px){
+
+    h1{
+
+        font-size:100px !important;
+        padding-left: 70px !important;
+        padding-top: 70px !important;
+    }
+    .portada {
+        background-image: url(../assets/img/portada-2.jpg)  ;
+        background-size:cover;
+        filter: opacity(60%);
+        height: 800px;
+        width: 100%;
+    }
+
+    .blockquote-footer{
+
+        font-size: 25px !important;
+    }
+    .blockquote-footer::before{
+
+        padding-left: 100px !important;
+    }
+}  
 
 

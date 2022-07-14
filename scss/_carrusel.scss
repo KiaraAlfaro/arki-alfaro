@@ -1,3 +1,5 @@
+@import "variables";
+
 .titulo{
     color: white;
     font-weight: bold;
@@ -16,3 +18,121 @@
 
 
 }
+.principalesProyectos{ display: none}
+
+
+@media(min-width:1064px){
+
+    .titulo{display: none;}
+    #carouselExampleCaptions {
+
+        display: none;
+    
+    }
+
+    .fondos{
+
+        background-position:center;
+        background-size: cover;
+        position: relative;
+
+
+    }
+    
+    .principalesProyectos{
+
+        @extend.fondos;
+        background-image: url(../assets/img/fondo-nuestros-proyectos.jpg);
+        
+    }
+    .principalesProyectos::before{
+
+        content: "";        
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.8);
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+
+    }
+
+    
+
+    
+    .principalesProyectos{
+
+        img{
+
+            font-size: 60px;
+            position: relative;
+            &:hover{
+
+                
+                transform: scale(1.1);
+                
+            }
+        }
+
+        div{
+
+            color: white;
+            position: relative;
+            grid-row: 5/6;
+            grid-column: 3/4;
+            align-self: center;
+
+            a{color: white !important;}
+        }
+
+       
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr 540px 540px 1fr;
+        grid-template-rows: 60px 220px 140px 210px 90px 30px;
+        grid-column-gap: 5px;
+        
+        h3{
+
+            color: white;
+            position: relative;
+            grid-row: 1/2;
+            grid-column: 2/4;
+            text-align: center;
+            align-self: center;
+
+        }
+
+        .proyecto1{
+
+            grid-row: 2/4;
+            grid-column: 2/3;
+            
+        }
+
+        .proyecto2{
+
+            grid-row: 2/4;
+            grid-column: 3/4;
+        }
+
+        .proyecto3{
+
+            grid-row: 4/6;
+            grid-column: 2/3;
+        }
+
+        .proyecto4{
+
+            grid-row: 3/5;
+            grid-column: 3/4;
+        }
+       
+        
+    }
+    
+
+}
+
+
+

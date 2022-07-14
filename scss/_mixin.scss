@@ -1,0 +1,14 @@
+@mixin texto($justify){
+
+    font-size: $justify !important;
+    
+}
+
+@mixin d-flex ($justify, $align){
+
+    display: flex !important;
+    flex-direction: $justify !important;
+    justify-content: $align !important;
+
+}
+    

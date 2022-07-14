@@ -1,0 +1,37 @@
+.informacion{ 
+
+     display: none;
+
+    .card-title{
+
+        height: 30px;
+        width: 200px;
+        border-bottom: solid red 1px;
+    }
+    .card{
+
+        background-color: inherit !important;
+        border: inherit !important;
+        color: white !important;
+
+        img:hover{
+
+            filter: opacity(70%);
+            transform: scale(1.1);
+            
+        }
+        
+    }
+}
+
+@media (min-width: 1064px) {
+
+    .informacion{ 
+
+        margin-top: 30px;
+        display: flex !important;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
