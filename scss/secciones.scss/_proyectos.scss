@@ -1,0 +1,121 @@
+
+
+
+.tituloproyectos1{ 
+    display: none !important;
+}
+
+.mainproyectos{
+
+    display: grid;
+    grid-template-columns: 1fr 700px;
+    grid-template-rows: 300px 950px;
+
+    
+
+
+    .arquitectura{
+
+        grid-column: 1/2;
+        grid-row: 2/3;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+
+        justify-items: center;
+        padding-top: 50px;
+    }
+
+   
+}
+
+
+.offcanvas{
+
+    margin-top: 70px;
+}
+
+
+
+.arquitectura{
+
+    .card-title{
+
+        height: 30px;
+        width: 270px;
+        border-bottom: solid red 1px;
+        font-style: oblique;
+    }
+    .card-text{
+        line-height: 8px;
+        margin-top: 20px;
+    
+    }
+    .card{
+
+        background-color: inherit !important;
+        border: inherit !important;
+        color: white !important;
+
+       
+    }
+
+    .imagenButton{
+
+        border: inherit !important;
+        background-color: inherit !important;
+        width: 300px;
+        height: 300px;
+        overflow: hidden;
+
+        img:hover{
+
+            filter: opacity(70%);
+            transform: scale(1.1);
+            transition-duration: 2s;
+            
+        }
+    }
+
+    .offcanvas {
+
+        background-color: rgb(6, 32, 48);
+        color: white;
+    }
+    .offcanvas-title{
+
+        font-style: oblique;
+        border-bottom: solid 2px red;
+    }
+    .informaciondeproyecto{
+
+        p{
+
+            margin-top: 10px;
+            font-size: 14px;
+        }
+
+    }
+}
+
+@media(max-width:1064px){
+
+    .mainproyectos{
+
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 200px 2600px;
+        padding-top: 0%;
+
+        .arquitectura{
+
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+            padding-top: 30px;
+            padding-right: 10px;
+           
+        }
+    }
+}

@@ -16,18 +16,17 @@
 
 @import "portada";
 
-/*---post portada---*/
+/*---secciones servicios---*/
 
-@import "contenedor";
-@import "carrusel";
+@import "secciones-servicios";
 
-/*---aside---*/
+/*---muestra proyectos--*/
+
+@import "proyectos-destacados";
+
+/*---informacion---*/
 
 @import "informacion";
-
-/*---ubicacion
-
-@import "ubicacion";
 
 /*---footer---*/
 
@@ -35,3 +34,16 @@
 
 
 /* realizado solo vista mobile de index */
+
+/*----------------------------secciones----------------------------*/
+
+@import "../scss/secciones.scss/portada-secciones";
+
+@import "../scss/secciones.scss/proyectos";
+
+@import "../scss/secciones.scss/aside-secciones";
+
+
+/*----------------------------Cotizacion----------------------------*/
+
+

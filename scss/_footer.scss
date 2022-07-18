@@ -6,83 +6,49 @@
 
 footer{ 
     
-    position: relative;
     
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: auto;
+    transition: all .25s ease;
+    backface-visibility: hidden;
+    perspective: 800px;
     padding-bottom: 10px;
     padding-top: 10px;
-    height:430px;
+    height:250px;
 
-    background-image: url(../assets/imagenes-arq/pexels-lucas-pezeta-5924836.jpg);
-        background-position: center center;
-        background-size: cover;
+    background-image: url(../assets/imagenes-arq/portada-seccion.jpg);
+    background-position: center center;
+    background-size: cover;
+    position: fixed;
+      
+    .seccion1{
+
         position: relative;
 
-    i { 
-        color:map-get($colores,"footer");
-        font-size: 25px;
-    }
-    
-    p{ 
-        
-        font-size: 15px;
-        color:map-get($colores,"footer");
-        position: relative;
-    }
+        h5{
 
-    .ubicacion{
-    
-        color:map-get($colores,"footer");
-        font-weight: bold;
-        
-        
-       
-        
-        
-        
-        
-        img {
-
-            width: 15px;
-            height: 15px;
-            position: relative;
-        }
-
-        iframe { 
-
-            height: 250px;
-            width: 250px;
-            position: relative;
+            color: map-get($colores, "footer");
+            font-style: oblique;
             
         }
-    }
 
-    .logos{
+        i{
+            color: white;
+            font-size:17px;
 
-        h4{ color: map-get($colores,"footer");}
-        position: relative;
-        font-style: oblique;
-
-        
-        
-    }
-    .nosotros{
-
-        color:map-get($colores,"footer");
-        position: relative;
-        font-style: oblique;
-        font-size: 20px;
-        li{
-            
-            list-style-type: none;
-            
             a{
                 text-decoration: none;
-                color:map-get($colores,"footer");
+                color: white;
             }
         }
-
         
     }
+
+    
+    
+    
 
     .seccion2{
 
@@ -95,6 +61,15 @@ footer{
             color: map-get($colores,"footer");
             font-style: oblique;
         }
+        img{
+
+            background-color:#aaa!important;
+            border-radius: 5px;
+            margin-right: 5px;
+            width: 40px;
+            height:40px;
+        }
+        p{ color: map-get($colores, "footer" );}
     }
 
 
@@ -116,39 +91,21 @@ footer::before{
 
     footer{
 
-        height: 120px;
+        height: 60px;
 
-        .ubicacion{
-
-            display: none !important;
-        }
-        .nosotros{
-    
-            display: none !important;
-    
-        }
-    
-      
-
-        .contenederlogo {
-    
-            width: 100% !important;
-
-            @include d-flex(row, center);
-           
-            h4, i{ @include texto(10px); }
-            
-        }
+        .seccion1{display: none !important;}
         .seccion2{
 
+            border-top:inherit !important;
             a{
 
                 img{
 
-                    width: 60px;
-                    height: 60px;
+                    width: 20px;
+                    height: 20px;
                 }
             }
+            
             h6,p {
                 @include texto(10px);
             }

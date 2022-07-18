@@ -3,5 +3,18 @@ main{
     background:var(--color-principal);
     height: auto;
     padding: 0% !important;
+    z-index: 1;
+    position: relative;
+    margin-bottom: 250px;
     
+}
+
+@media(max-width:1064px){
+
+    main{
+
+        margin-bottom: 60px !important;
+        padding-bottom: 20px !important;
+
+    }
 }

@@ -1,0 +1,51 @@
+
+.asidesecciones{
+
+    grid-row: 2/3;
+    grid-column: 2/3;
+
+    
+    border-left: solid 2px white;
+    padding-left: 50px;
+
+    .atencion{
+
+        color: rgb(192, 191, 191);
+        .imgatencion{
+
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            overflow: hidden;
+            
+            img{
+
+                border-radius: 50%;
+                width: 200px;
+                height: 200px;
+
+                &:hover{
+
+                    filter: opacity(60%);
+                    transform: scale(1.2);
+                    transition-duration: 2s;
+                    
+                }
+            }
+        }
+
+        h5{
+
+            font-style: oblique;
+        }
+        p{
+            width: 380px;
+            margin-left: 30px;
+        }
+    }
+}
+
+@media(max-width:1064px){
+
+    .asidesecciones{display: none !important;}
+}

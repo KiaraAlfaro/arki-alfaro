@@ -4,18 +4,11 @@
     height: 300px;
     background-image: url(../assets/img/portada.jpg)  ;
     background-size:cover;
-    filter: opacity(75%);
+    filter: opacity(80%);
 
     h1{  padding-top: 30px;}
        
-    
-    .blockquote-footer::before {
-
-
-        padding-left: 20px ;
-        
-
-    }
+    .blockquote-footer::before { padding-left: 20px ;}
 }
 
 @media(min-width:1064px){
@@ -25,23 +18,22 @@
         font-size:100px !important;
         padding-left: 70px !important;
         padding-top: 70px !important;
+
     }
+
     .portada {
+
         background-image: url(../assets/img/portada-2.jpg)  ;
         background-size:cover;
-        filter: opacity(60%);
-        height: 800px;
+        filter: opacity(40%);
+        height:670px;
         width: 100%;
+
     }
 
-    .blockquote-footer{
+    .blockquote-footer{ font-size: 25px !important; }
 
-        font-size: 25px !important;
-    }
-    .blockquote-footer::before{
-
-        padding-left: 100px !important;
-    }
+    .blockquote-footer::before{ padding-left: 100px !important; }
 }  
 
 

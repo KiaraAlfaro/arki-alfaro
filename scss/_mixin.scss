@@ -12,3 +12,24 @@
 
 }
     
+@mixin contenedor($rds, $h, $w) {
+    
+    border-radius:$rds;
+    overflow: hidden;
+
+    img{
+        height: $h;
+        width: $w;
+        border-radius: $rds;
+      
+        
+        &:hover{
+
+            filter: opacity(60%);
+            transform: scale(1.2);
+            transition-duration: 2s;
+            
+        }
+       
+    }
+}
