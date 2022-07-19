@@ -1,0 +1,39 @@
+
+.subtitulo{
+
+    padding-top: 20px;
+    
+   text-align: center;
+}
+
+@media(min-width:1064px){
+
+    
+    .subtitulo{
+
+       text-align: left;
+       padding-left: 30px;
+
+       h6{ font-size: 30px;}
+       .blockquote-footer{
+
+        font-size: 20px !important;
+        margin-top: 10px;
+
+       }
+    }
+
+    .accordion{
+
+        width: 700px;
+        margin-left: 50px;
+    }
+
+    .postTitulo{
+
+        display: grid;
+        grid-template-columns: 1fr 700px;
+        grid-template-rows: auto;
+        padding-bottom: 30px;
+    }
+}

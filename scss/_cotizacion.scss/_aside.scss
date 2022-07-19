@@ -1,0 +1,32 @@
+
+
+.asideCotizacion{ display: none !important;}
+
+@media(min-width:1064px){
+
+    .asideCotizacion{ 
+        display: block !important;
+        video {
+
+            animation-name: laterales;
+            animation-duration: 5s;
+            animation-iteration-count: infinite
+        }
+    }
+}
+
+
+
+
+@keyframes laterales{
+
+    0%{
+        padding-left: 0px;
+        padding-right: 100px;
+    }
+
+    100%{
+
+        padding-left: 100px;
+    }
+}

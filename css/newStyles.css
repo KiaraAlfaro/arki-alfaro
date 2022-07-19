@@ -426,9 +426,94 @@ footer::before {
     display: none !important; } }
 /*----------------------------Cotizacion----------------------------*/
 .subtitulo {
-  color: red; }
+  padding-top: 20px;
+  text-align: center; }
 
+@media (min-width: 1064px) {
+  .subtitulo {
+    text-align: left;
+    padding-left: 30px; }
+    .subtitulo h6 {
+      font-size: 30px; }
+    .subtitulo .blockquote-footer {
+      font-size: 20px !important;
+      margin-top: 10px; }
+
+  .accordion {
+    width: 700px;
+    margin-left: 50px; }
+
+  .postTitulo {
+    display: grid;
+    grid-template-columns: 1fr 700px;
+    grid-template-rows: auto;
+    padding-bottom: 30px; } }
 .asideCotizacion {
   display: none !important; }
+
+@media (min-width: 1064px) {
+  .asideCotizacion {
+    display: block !important; }
+    .asideCotizacion video {
+      animation-name: laterales;
+      animation-duration: 5s;
+      animation-iteration-count: infinite; } }
+@keyframes laterales {
+  0% {
+    padding-left: 0px;
+    padding-right: 100px; }
+  100% {
+    padding-left: 100px; } }
+/*----------------------------Contacto----------------------------*/
+.formulario {
+  width: 500px;
+  margin-top: 50px;
+  color: white;
+  justify-self: center; }
+  .formulario .botones2 {
+    display: none !important; }
+
+@media (max-width: 1064px) {
+  .formulario {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px; }
+    .formulario .botones2 {
+      display: flex !important;
+      height: 100px; }
+    .formulario .botones {
+      display: none !important; } }
+.contacto {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-bottom: 30px; }
+
+@media (max-width: 1064px) {
+  .contacto {
+    display: grid;
+    grid-template-columns: 100%; } }
+.asidePagesContacto {
+  grid-column: 2/3;
+  justify-self: center;
+  width: 500px;
+  height: 450px;
+  margin-top: 50px;
+  font-style: oblique;
+  color: white; }
+  .asidePagesContacto i {
+    color: white; }
+  .asidePagesContacto .datos {
+    width: 500px; }
+    .asidePagesContacto .datos a {
+      text-decoration: none;
+      color: white; }
+  .asidePagesContacto .redescontacto i {
+    font-size: 27px; }
+  .asidePagesContacto iframe {
+    border-radius: 15px; }
+
+@media (max-width: 1064px) {
+  .asidePagesContacto {
+    display: none !important; } }
 
 /*# sourceMappingURL=newStyles.css.map */

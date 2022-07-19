@@ -1,0 +1,44 @@
+
+.asidePagesContacto{
+
+    grid-column: 2/3;
+
+    justify-self: center;
+
+    width: 500px;
+    height: 450px;
+    margin-top: 50px;
+    font-style: oblique;
+    color: white;
+    
+
+    i{
+        color: white;
+    }
+
+    .datos{
+
+        width: 500px;
+        a{
+            text-decoration: none;
+            color: white;
+        }
+    }
+    
+    .redescontacto{
+
+        i{
+
+            font-size: 27px;
+        }
+    }
+    iframe{
+
+        border-radius: 15px;
+    }
+}
+
+@media(max-width:1064px){
+
+    .asidePagesContacto{display: none !important;}
+}

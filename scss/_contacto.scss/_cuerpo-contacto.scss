@@ -1,0 +1,17 @@
+
+.contacto{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 30px;
+}
+
+@media(max-width:1064px){
+
+    .contacto{
+
+        display: grid;
+        grid-template-columns: 100%;
+       
+    }
+}
