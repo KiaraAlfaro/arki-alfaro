@@ -8,22 +8,22 @@
     <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <link rel="stylesheet" href="./css/newStyles.css">
     <title>ARKI.Inicio.com</title>
 
 </head>
-<body >
+<body class="bodyindex" >
 
     <!--HEADER-->
     <header class="row" >
       
-      <nav class="navbar navbar-expand-lg col-12">
+      <nav  class="navbar  navbar-expand-lg col-12">
 
         <div class="container-fluid ">
 
-          <a id="logo" class="navbar-brand rounded-2 opacity-75 " href="#">
+          <a id="logo" class="navbar-brand rounded-2 opacity-75 " href="./index.html">
             
             <img  src="./assets/logo-arqui.png" alt="logo arki" width="60" height="54" class="d-inline-block rounded-2 ">
             
@@ -31,7 +31,7 @@
 
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             
-            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"><i class="bi bi-list"></i> </span>
           
           </button>
           
@@ -102,6 +102,7 @@
 
         </div>
       </nav>
+
        
     </header>
 
@@ -111,87 +112,69 @@
         <!--PORTADA-->
     <section class="row" >
 
-      <div class="portada col-12" >
+      <div class="portada d-flex flex-row">
+
+      <div data-aos="fade-up-right" class="portadatitulo  d-flex flex-column " >
         
-        <h1>ARKI</h1>
+        <span> arki </span>
+         
+        <span>estudio de</span>
+          
+        <span>arquitectura</span>
+          
+        <span>proyecta tu casa </span>
+          
+        <span>con nosotros</span>
         
-        <figcaption class="blockquote-footer">
-          <cite title="Source Title">Studio arquitectura.</cite>
-        </figcaption>
-      
       </div>
+
+      <div data-aos="fade-up-left" class="imgportada ">
+
+        <img src="./assets/imagenes-arq/proyecto-3-vivienda-terrazas/portada-casa-terrazas (1).jpg" alt="">
+        <img class="img2" src="./assets/imagenes-arq/proyecto-6-casa-jardin/portada-casa-jardin (1).jpg" alt="">
+
+      </div>
+
+    </div>
+    
      
-     <!--post portada-->
-      <div class="seccionProyectos d-flex flex-row align-items-start">
+     <!--servicios-->
 
-        <div  class="contenedorproyectos d-flex flex-column justify-content-between  col-6  border-end border-dark border-3 ">
-      
-          <h6>Arquitectura</h6>
-          
-          <figcaption class="blockquote-footer">
-            
-            <cite title="Source Title">Proyecta tu casa desde cero.</cite>
-          
-          </figcaption>
-          
-          <a href="./pages.html/arquitectura.html" class="stretched-link p-3 mb-2 bg-secondary text-white bg-opacity-25  ">Mas info +</a>
-        
-        </div>
-
-        <div class="contenedorproyectos d-flex flex-column justify-content-between col-6 ">
-        
-          <h6>Remodelacion</h6>
-
-          <figcaption class="blockquote-footer">
-            <cite title="Source Title">Remodelaciones desde cero o por ambientes.</cite>
-          </figcaption>
-        
-          <a href="./pages.html/remodelacion.html" class="stretched-link p-3 mb-2 bg-secondary text-white bg-opacity-25">Mas info +</a>
-      
-        </div>
-
-      </div> 
-  
-  
-
-    <section class=" seccionProyectos2" >
+    <section  class=" seccionProyectos2" >
       
       <div class=" d-flex flex-column align-items-center" >
 
-        <div class="contenedor"><a href="./pages.html/arquitectura.html"><img src="./assets/img/seccion-arquitectura.jpg" alt="logo arquitectura">
+        <div data-aos="zoom-in" class="contenedor"><a href="./pages.html/arquitectura.html"><img src="./assets/img/seccion-arquitectura.jpg" alt="logo arquitectura">
         </a></div>
         <h5>PROYECTA TU CASA</h5>
         <p>Realiza tu casa </p>
         <p>desde cero </p>
-        <p>con ARKI</p>
-        <a href="./pages.html/cotizacion.html"><button type="button" class="btn btn-outline-light">Cotiza YA</button>
-        </a>
+       
+        
         
       </div>
       
-      <div class=" d-flex flex-column align-items-center" >
+      <div data-aos="zoom-in" class=" d-flex flex-column align-items-center" >
         
         <div class="contenedor"><a href="./pages.html/remodelacion.html"><img src="./assets/img/seccion-remodelacion.jpg" alt="logo remodelacion completa">
         </a></div>
         <h5>REMODELACIONES COMPLETAS</h5>
-        <p>Podes remodelar tu casa</p>
-        <p>como si fuera desde 0 con ARKI</p>
-        <p>con ARKI</p>
-        <a href="./pages.html/cotizacion.html"><button type="button" class="btn btn-outline-light">Cotiza YA</button>
-        </a>
+        <p>Remodela tu casa</p>
+        <p>como si fuera desde 0 </p>
+        
+        
         
       </div>
       
-      <div class="d-flex flex-column align-items-center">
+      <div data-aos="zoom-in" class="d-flex flex-column align-items-center">
         
         <div class="contenedor"><a href="./pages.html/remodelacion.html"><img src="./assets/img/seccion-remodelacion-sector.jpg" alt="logo remodelacion seccion">
         </a></div>
         <h5>REMODELACION DE SECTORES</h5>
-        <p>Con ARKI tambien podes solo remodelar </p>
-        <p>algun sector de tu casa </p>
-        <p>como cocinas, habitaciones,etc...</p>
-        <a href="./pages.html/cotizacion.html"><button type="button" class="btn btn-outline-light">Cotiza YA</button>
-        </a>
+        <p>Remodela algun sector de tu casa</p>
+        <p>como cocinas, habitaciones,etc..</p>
+        
+        
 
       </div>
       
@@ -203,154 +186,167 @@
 
         <!--SECCION NUESTROS PROYECTOS--> 
          
-        <div>
-
-          <h2 class=" titulo">Proyectos Destacados</h2>
-
-        </div>   
-
         <div class="seccionPostPortada row">     
 
         
 
-          <div id="carouselExampleCaptions" class="carousel slide " data-bs-ride="false">
-
-            <div class="carousel-indicators">
-
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
-            
-            </div>
-
-              <div class="carousel-inner">
-
-                <div class="carousel-item active">
-
-                  <img src="./assets/img/nuestros proyectos_1.jpg" class="d-block w-100" alt="proyectos 1">
-                  
-                  <div class="carousel-caption d-none d-md-block">
-
-                    <h5>First slide label</h5>
-                    <p>Some representative placeholder content for the first slide.</p>
-
-                  </div>
-
-                </div>
-
-                <div class="carousel-item">
-
-                  <img src="./assets/img/nuestros_proyectos_2.jpg" class="d-block w-100" alt="proyectos 2">
-                    
-                  <div class="carousel-caption d-none d-md-block">
-
-                    <h5>Second slide label</h5>
-                    <p>Some representative placeholder content for the second slide.</p>
-                    
-                  </div>
-
-                </div>
-
-                <div class="carousel-item">
-
-                  <img src="./assets/img/nuestros_proyectos_3.jpg" class="d-block w-100" alt="proyectos 3">
-                    
-                  <div class="carousel-caption d-none d-md-block">
-
-                    <h5>Third slide label</h5>
-                    <p>Some representative placeholder content for the third slide.</p>
-
-                  </div>
-
-                </div>
-
-                <div class="carousel-item">
-
-                  <img src="./assets/img/nuestros_proyectos_4.jpg" class="d-block w-100" alt="proyectos 4">
-                    
-                  <div class="carousel-caption d-none d-md-block">
-
-                    <h5>REMODELACION </h5>
-                    <p>Remodelacion casa completa.</p>
-
-                  </div>
-
-                </div>
-
-                <div class="carousel-item">
-
-                  <img src="./assets/img/nuestros_proyectos_5.jpg" class="d-block w-100" alt="proyectos 5">
-                    
-                  <div class="carousel-caption d-none d-md-block">
-                      
-                    <h5>REMODELACION</h5>
-                    <p>Remodelacion cocina.</p>
-                    
-                  </div>
-
-                </div>
-
-                <div class="carousel-item">
-                  
-                    <img src="./assets/img/nuestros_proyectos_6.jpg" class="d-block w-100" alt="proyectos 6">
-                    
-                    <div class="carousel-caption d-none d-md-block">
-                      
-                      <h5>REMODELACION</h5>
-                      <p>Remodelacion casa completa.</p>
-                    
-                    </div>
-                
-                  </div>
-
-
-              </div>
-
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                  
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                
-                </button>
-
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                  
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                
-                </button>
-
-          </div>
-
+          
               <div class="principalesProyectos">
                 
-                <h3>CONOCE ALGUNOS DE NUESTROS PROYECTOS DESTACADOS</h3>
+                <h3 class="tituloproyectos" data-aos="zoom-in" >CONOCE ALGUNOS DE NUESTROS PROYECTOS DESTACADOS</h3>
                 
-                <div class="contenedor proyecto1"><img  src="./assets/img/nuestros proyectos_1.jpg" alt="casa de la seccion arquitectura"></div>
-                <div class="contenedor proyecto2"><img  src="./assets/img/nuestros_proyectos_4.jpg" alt="remodelacion de casa commpleta"></div>
-                <div class="contenedor proyecto3"><img  src="./assets/img/nuestros_proyectos_5.jpg" alt="remodelacion de cocina antes y despues"></div>
-                <div class="contenedor proyecto4"><img  src="./assets/img/nuestros_proyectos_3.jpg" alt="casa de la seccion arquitectura"></div>
-                
-                <div class="d-flex flex-row justify-content-around">
-                  
-                  <a href="./pages.html/arquitectura.html"> <button type="button" class="btn btn-outline-light">+PROYECTOS</button></a>
-                 
-                  <a href="./pages.html/remodelacion.html"><button type="button" class="btn btn-outline-light">+REMODELACIONES</button></a>
-                  
+               
+                  <div  id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel" data-aos="zoom-in">
 
+                    <div class="carousel-inner">
+                    
+                      <div class="carousel-item active">
+                        <img src="./assets/imagenes-arq/proyecto-1-dos-casas-metalicas/portada-proyecto-dos-casas-metalicas.jpg" class="d-block w-100" alt="proyecto dos casas metalicas">
+                      </div>
+                      
+                      <div class="carousel-item">
+                        <img src="./assets/imagenes-arq/proyecto-2-casa-3-elementos/portada-casa-3-elementos (1).jpg" class="d-block w-100" alt="proyecto casa 3 elementos">
+                      </div>
+                      
+                      <div class="carousel-item">
+                        <img src="./assets/imagenes-arq/proyecto-3-vivienda-terrazas/portada-casa-terrazas (1).jpg" class="d-block w-100" alt="proyecto casa terrazas">
+                      </div>
+      
+                      <div class="carousel-item">
+                        <img src="./assets/imagenes-rem/proyecto-1-cajas-articuladas/portada-cajas-articuladas (1).jpg" class="d-block w-100" alt="proyecto cajas articuladas">
+                      </div>
+      
+                      <div class="carousel-item">
+                        <img src="./assets/imagenes-rem/proyecto-2-la-lucila/portada-la-lucila- (1).jpg" class="d-block w-100" alt="proyecto la lucila">
+                      </div>
+
+                      <div class="carousel-item">
+                        <img src="./assets/imagenes-rem/proyecto-3-cocina-pequena/portada-cocina-pequena- (1).jpg" class="d-block w-100" alt="proyecto cocina">
+                      </div>
+                    
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+
+
+
+
+                <div class="proyectos2">  
+
+                  <div data-aos="zoom-in" class="contenedor proyecto1"><img  src="./assets/img/nuestros proyectos_1.jpg" alt="casa de la seccion arquitectura"></div>
+                  <div data-aos="zoom-in" class="contenedor proyecto2"><img  src="./assets/img/nuestros_proyectos_4.jpg" alt="remodelacion de casa commpleta"></div>
+                  <div data-aos="zoom-in" class="contenedor proyecto3"><img  src="./assets/img/nuestros_proyectos_5.jpg" alt="remodelacion de cocina antes y despues"></div>
+                  <div data-aos="zoom-in" class="contenedor proyecto4"><img  src="./assets/img/nuestros_proyectos_3.jpg" alt="casa de la seccion arquitectura"></div>
+                  
+                  <div data-aos="zoom-in" class="d-flex flex-row justify-content-around">
+                    
+                    <a href="./pages.html/arquitectura.html"> <button type="button" class="btn btn-outline-light">+PROYECTOS</button></a>
+                  
+                    <a href="./pages.html/remodelacion.html"><button type="button" class="btn btn-outline-light">+REMODELACIONES</button></a>
+                    
+
+                  </div>
+                
                 </div>
-                
-                
               </div>
             
                 <!--INFORMACION-->
 
-                <section class="informacion" >
+                <section class="seccioninformacion"  >
 
-                          <div class="card" style="width: 18rem;">
+                  <div>
+
+
+                  <div  id="carouselExampleFade2" class="carousel slide carousel-fade" data-bs-ride="carousel" data-aos="zoom-in">
+
+                    <div class="carousel-inner">
+                    
+                      <div class="carousel-item active">
+                        
+                        <div data-aos="zoom-in" class="card" style="width: 18rem;">
+                            
+                          <a href="https://www.youtube.com/watch?v=vbg-PWpWP4o&t=205s" target="_blank"><img src="./assets/img/steel-framing.jpg" class="card-img-top" alt="steel framing"></a>
+                          
+                          <div class="card-body">
+
+                            <h5 class="card-title">STEEL FRAMING</h5>
+                            <p class="card-text">Mejor aislación térmica, aislación acústica, velocidad de obra, resistencia y consistencia estructural, entre muchos otros beneficios</p>
+
+                          </div>
+
+                        </div>
+
+                        <div data-aos="zoom-in" class="card" style="width: 18rem;">
+                            
+                          <a href="https://www.ar.weber/" target="_blank"><img src="./assets/img/image-weber.jpg" class="card-img-top" alt="weber"></a>
+                          
+                          <div class="card-body">
+
+                            <h5 class="card-title">WEBER</h5>
+                            <p class="card-text">Materiales para la construcción. Una línea completa de soluciones para todos tus proyectos</p>
+
+                          </div>
+                          
+                        </div>
+
+                      </div>
+                      
+                      
+                      
+                      <div class="carousel-item">
+
+                        <div data-aos="zoom-in" class="card" style="width: 18rem;">
+                            
+                            <a href="https://www.youtube.com/watch?v=8Xi1WTBbLMo&t=2s" target="_blank"><img src="./assets/img/pvc-vs-aluminio.jpg" class="card-img-top" alt="ventanas PVC vs Aluminio: Ventajas y desventajas"></a>
+                            
+                            <div class="card-body">
+
+                              <h5 class="card-title">PVC O ALUMINIO?</h5>
+                              <p class="card-text">Ventanas PVC vs Aluminio.Muy distintos entre sí, con diferentes características, diseñados y fabricados para atender a distintas necesidades. </p>
+
+                            </div>
+                            
+                        </div>
+
+                        <div data-aos="zoom-in" class="card" style="width: 18rem;">
+                            
+                          <a href="https://retak.com.ar/" target="_blank"><img src="./assets/img/retak.jpg" class="card-img-top" alt="ladrillos de retak"></a>
+                          
+                          <div class="card-body">
+
+                            <h5 class="card-title">RETAK</h5>
+                            <p class="card-text">Ladrillos de HCCA para construir todo tipo de muros exteriores, interiores, portantes, tabiques divisorios. </p>
+
+                          </div>
+                          
+                        </div>
+
+                      </div>
+      
+                    
+      
+                      
+                    
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade2" data-bs-slide="prev"></button>
+
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade2" data-bs-slide="next"></button>
+
+                  </div>
+
+                  </div>
+
+                  <div class="informacion">
+
+                          <div data-aos="zoom-in" class="card" style="width: 18rem;">
                             
                             <a href="https://www.youtube.com/watch?v=vbg-PWpWP4o&t=205s" target="_blank"><img src="./assets/img/steel-framing.jpg" class="card-img-top" alt="steel framing"></a>
                             
@@ -363,7 +359,7 @@
 
                           </div>
 
-                          <div class="card" style="width: 18rem;">
+                          <div data-aos="zoom-in" class="card" style="width: 18rem;">
                             
                             <a href="https://www.ar.weber/" target="_blank"><img src="./assets/img/image-weber.jpg" class="card-img-top" alt="weber"></a>
                             
@@ -376,7 +372,7 @@
                             
                           </div>
 
-                          <div class="card" style="width: 18rem;">
+                          <div data-aos="zoom-in" class="card" style="width: 18rem;">
                             
                             <a href="https://www.youtube.com/watch?v=8Xi1WTBbLMo&t=2s" target="_blank"><img src="./assets/img/pvc-vs-aluminio.jpg" class="card-img-top" alt="ventanas PVC vs Aluminio: Ventajas y desventajas"></a>
                             
@@ -389,7 +385,7 @@
                             
                           </div>
 
-                          <div class="card" style="width: 18rem;">
+                          <div data-aos="zoom-in" class="card" style="width: 18rem;">
                             
                             <a href="https://retak.com.ar/" target="_blank"><img src="./assets/img/retak.jpg" class="card-img-top" alt="ladrillos de retak"></a>
                             
@@ -401,6 +397,7 @@
                             </div>
                             
                           </div>
+                  </div>
 
                 </section>
 
@@ -413,7 +410,25 @@
 
     <footer class="row">
 
-        <section class=" seccion1 d-flex flex-row justify-content-around">
+      <section class="seccionmobile">
+
+        
+        <a href="https://goo.gl/maps/byVVMgsuDNyeyyY98" target="_blank"><i class="bi bi-geo-alt"></i></a>
+
+        <a href="mailto:arcealfarokiara@gmail.com" target="_blank"><i class="bi bi-envelope"></i></a>
+
+
+        <a href="https://wa.me/1121789061?text=Contactame%20por%20mas%20imformacion%20!" target="_blank"><i class="bi bi-whatsapp"></i></a>
+
+        <a href=https://www.instagram.com/alfaroarcekiara_/ target="_blank"><i class="bi-instagram"></i></a>
+
+        <a href="https://www.facebook.com/katrina.alfaro.75" target="_blank"><i class="bi-facebook"></i></a>
+
+        <a href="https://ar.pinterest.com/arcealfarokiara/_saved/" target="_blank"><i class="bi-pinterest"></i></a>
+
+      </section>
+
+      <section class=" seccion1 d-flex flex-row justify-content-around">
           
           <div class="d-flex flex-column align-items-center">
 
@@ -455,12 +470,12 @@
             </div>
           </div>
 
-        </section>
+      </section>
 
 
-        <div class="seccion2 col-12 d-flex flex-column align-items-center justify-content-center ">
+      <section class="seccion2 col-12 d-flex flex-column align-items-center justify-content-center ">
           
-          <div class="d-flex flex-row align-items-baseline">
+          <div class=" tituloarki d-flex flex-row align-items-baseline">
 
             <a href="./index.html"><img src="./assets/logo-arqui.png" alt="logo arki"></a>
             <h6>STUDIO ARQUITECTURA</h6>
@@ -470,12 +485,20 @@
           <p>&#169 2022 Todos los derechos reservados</p>
           
 
-        </div>
+      </section>
 
     </footer>
+
+   
 
     <script src="./js/bootstrap.js"></script>
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  
+
 </body>
 </html>

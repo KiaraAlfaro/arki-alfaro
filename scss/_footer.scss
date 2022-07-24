@@ -14,9 +14,9 @@ footer{
     transition: all .25s ease;
     backface-visibility: hidden;
     perspective: 800px;
-    padding-bottom: 10px;
+    
     padding-top: 10px;
-    height:250px;
+    height:190px;
 
     background-image: url(../assets/imagenes-arq/portada-seccion.jpg);
     background-position: center center;
@@ -46,7 +46,7 @@ footer{
         
     }
 
-    
+    .seccionmobile{display: none;}
     
     
 
@@ -54,6 +54,8 @@ footer{
 
         position: relative;
         border-top: solid 2px map-get($colores,"footer");
+
+        
 
         a, h6{
 
@@ -69,7 +71,13 @@ footer{
             width: 40px;
             height:40px;
         }
-        p{ color: map-get($colores, "footer" );}
+        p{ 
+
+         color: map-get($colores, "footer" );
+         margin-top: 10px;
+         height: 10px;
+        
+        }
     }
 
 
@@ -91,12 +99,17 @@ footer::before{
 
     footer{
 
-        height: 60px;
+        height: 90px;
+
+        
 
         .seccion1{display: none !important;}
+
         .seccion2{
 
             border-top:inherit !important;
+
+            .tituloarki{ margin-top: 5px;}
             a{
 
                 img{
@@ -109,6 +122,30 @@ footer::before{
             h6,p {
                 @include texto(10px);
             }
+            
+            p{
+                margin-top:inherit;
+            }
+        }
+
+        .seccionmobile{
+            
+          
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+
+            border-bottom: solid 0.05px white;
+            padding-bottom: 5px;
+
+            a{
+                i{
+                    color: map-get($colores,"footer");
+
+                }
+            }
+        
         }
     }
     

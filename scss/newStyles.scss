@@ -37,11 +37,13 @@
 
 /*----------------------------secciones----------------------------*/
 
-@import "../scss/secciones.scss/portada-secciones";
+@import "../scss/_secciones.scss/body-secciones";
 
-@import "../scss/secciones.scss/proyectos";
+@import "../scss/_secciones.scss/portada-secciones";
 
-@import "../scss/secciones.scss/aside-secciones";
+@import "../scss/_secciones.scss/proyectos";
+
+@import "../scss/_secciones.scss/aside-secciones";
 
 
 /*----------------------------Cotizacion----------------------------*/

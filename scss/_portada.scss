@@ -1,39 +1,116 @@
-.portada {
 
+ .portada {
+
+
+    background-image: url(../assets/img/fondo-nuestros-proyectos.jpg);
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-size: 100% 245px;
+    position: relative;
+    z-index: 1;
+    height: 245px;
+
+    .portadatitulo{
+ 
     width: 100%;
-    height: 300px;
-    background-image: url(../assets/img/portada.jpg)  ;
-    background-size:cover;
-    filter: opacity(80%);
+    color: white;
+    padding-top: 50px;
+    padding-left: 30px;
+    overflow: hidden;
+    
+    span{
 
-    h1{  padding-top: 30px;}
-       
-    .blockquote-footer::before { padding-left: 20px ;}
+        font-size: 30px ;
+        font-weight: 300 ;
+        text-transform: uppercase ;
+        line-height: 0.9em  ;
+        letter-spacing: -2.5px ;
+        font-weight: bolder !important;
+      position: relative;
+    }
+
 }
+
+
+}
+
+.portada::before{
+
+    content: "";        
+    position: absolute;
+   width: 100%;
+   height: 245px;
+   background-color: black;
+   position: absolute;
+   opacity: 0.7;
+ 
+ }
+
+ .imgportada {
+    
+    display: none;
+}
+
+
+
 
 @media(min-width:1064px){
 
-    h1{
+    .portada{
 
-        font-size:100px !important;
-        padding-left: 70px !important;
-        padding-top: 70px !important;
+        background-size: 100% 670px;
+        height: 670px;
 
     }
 
-    .portada {
+    .portada::before{
 
-        background-image: url(../assets/img/portada-2.jpg)  ;
-        background-size:cover;
-        filter: opacity(40%);
-        height:670px;
-        width: 100%;
+        
+       height: 670px;
+       
+     
+     }
+
+    .portadatitulo {
+
+       
+        
+        padding-top: 150px !important;
+        padding-left: 50px;
+        
+        span{
+
+            font-size: 60px !important;
+            font-weight: 300 ;
+            letter-spacing: -5px ;
+        }
 
     }
 
     .blockquote-footer{ font-size: 25px !important; }
 
     .blockquote-footer::before{ padding-left: 100px !important; }
-}  
+    
+    .imgportada {
 
+        
+        
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+
+        margin-right: 80px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        
+        
+        .img2{
+
+            grid-row: 2/3;
+            grid-column: 2/3;
+            
+        }
+    }
+}  
 

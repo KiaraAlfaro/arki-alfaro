@@ -4,179 +4,222 @@
   box-sizing: border-box;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; }
 
-:root {
-  --color-principal:#242b34 ;
-  --color-principal-transparente:#242b3481 ; }
-
 .row {
   --bs-gutter-x:0rem !important; }
 
 header {
   position: sticky;
   top: 0%;
-  z-index: 2; }
+  z-index: 3; }
 
 nav {
-  background-color: var(--color-principal) !important;
-  font-size: 17px; }
+  height: 50px;
+  background-color: #0c0c0c;
+  font-size: 17px;
+  padding-top: 5px !important; }
   nav a {
     color: #dbdbdb !important; }
-  nav .navbar-brand {
-    background-color: #aaa; }
+  nav .dropdown-menu {
+    background-color: #0c0c0c; }
+  nav .container-fluid {
+    background-color: #0c0c0c; }
+  nav .dropdown-item:hover {
+    background-color: #444444; }
   nav .logosNav {
     display: none; }
+  nav #logo {
+    background-color: #aaa;
+    height: 40px;
+    width: 40px; }
+    nav #logo img {
+      height: 40px;
+      width: 40px; }
+  nav .navbar-toggler-icon {
+    background-image: inherit; }
+    nav .navbar-toggler-icon i {
+      color: white;
+      font-size: 30px; }
 
 @media (min-width: 1064px) {
   nav {
     font-size: 17px; }
-    nav .dropdown-menu {
-      background-color: var(--color-principal); }
-    nav a {
-      font-size: 15px;
-      background-color: var(--color-principal); }
     nav .logosNav {
       display: block; }
       nav .logosNav a {
         font-size: 30px;
         margin-left: 5px; } }
 main {
-  background: var(--color-principal);
   height: auto;
   padding: 0% !important;
   z-index: 1;
   position: relative;
-  margin-bottom: 250px; }
+  margin-bottom: 190px; }
 
 @media (max-width: 1064px) {
   main {
-    margin-bottom: 60px !important;
+    margin-bottom: 70px !important;
     padding-bottom: 20px !important; } }
 /*----------------------------Index----------------------------*/
 .portada {
+  background-image: url(../assets/img/fondo-nuestros-proyectos.jpg);
+  background-position-x: center;
+  background-repeat: no-repeat;
+  background-size: 100% 245px;
+  position: relative;
+  z-index: 1;
+  height: 245px; }
+  .portada .portadatitulo {
+    width: 100%;
+    color: white;
+    padding-top: 50px;
+    padding-left: 30px;
+    overflow: hidden; }
+    .portada .portadatitulo span {
+      font-size: 30px;
+      font-weight: 300;
+      text-transform: uppercase;
+      line-height: 0.9em;
+      letter-spacing: -2.5px;
+      font-weight: bolder !important;
+      position: relative; }
+
+.portada::before {
+  content: "";
+  position: absolute;
   width: 100%;
-  height: 300px;
-  background-image: url(../assets/img/portada.jpg);
-  background-size: cover;
-  filter: opacity(80%); }
-  .portada h1 {
-    padding-top: 30px; }
-  .portada .blockquote-footer::before {
-    padding-left: 20px; }
+  height: 245px;
+  background-color: black;
+  position: absolute;
+  opacity: 0.7; }
+
+.imgportada {
+  display: none; }
 
 @media (min-width: 1064px) {
-  h1 {
-    font-size: 100px !important;
-    padding-left: 70px !important;
-    padding-top: 70px !important; }
-
   .portada {
-    background-image: url(../assets/img/portada-2.jpg);
-    background-size: cover;
-    filter: opacity(40%);
-    height: 670px;
-    width: 100%; }
+    background-size: 100% 670px;
+    height: 670px; }
+
+  .portada::before {
+    height: 670px; }
+
+  .portadatitulo {
+    padding-top: 150px !important;
+    padding-left: 50px; }
+    .portadatitulo span {
+      font-size: 60px !important;
+      font-weight: 300;
+      letter-spacing: -5px; }
 
   .blockquote-footer {
     font-size: 25px !important; }
 
   .blockquote-footer::before {
-    padding-left: 100px !important; } }
-/*---secciones servicios---*/
-.seccionProyectos .contenedorproyectos {
-  height: 145px;
-  color: white;
-  background-color: #14181dd5;
-  margin-top: 5px; }
-  .seccionProyectos .contenedorproyectos h6, .seccionProyectos .contenedorproyectos figcaption {
-    padding-left: 10px; }
-  .seccionProyectos .contenedorproyectos a {
-    color: white;
-    text-decoration: none !important;
-    width: 100%;
-    height: 25px;
-    margin: 0% !important;
-    padding: 0% !important;
-    text-align: center; }
+    padding-left: 100px !important; }
 
+  .imgportada {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-right: 80px;
+    margin-top: 20px;
+    margin-bottom: 20px; }
+    .imgportada .img2 {
+      grid-row: 2/3;
+      grid-column: 2/3; } }
+/*---secciones servicios---*/
 .seccionProyectos2 {
-  display: none !important; }
+  background-color: #0c0c0c;
+  display: flex !important;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around; }
+  .seccionProyectos2 .contenedor {
+    border-radius: 50%;
+    overflow: hidden; }
+    .seccionProyectos2 .contenedor img {
+      height: 200px;
+      width: 200px;
+      border-radius: 50%; }
+      .seccionProyectos2 .contenedor img:hover {
+        filter: opacity(60%);
+        transform: scale(1.2);
+        transition-duration: 2s; }
   .seccionProyectos2 p, .seccionProyectos2 h5 {
     color: white; }
   .seccionProyectos2 h5 {
     margin-top: 20px;
-    border-bottom: solid 2px red; }
+    border-bottom: solid 2px red;
+    font-size: 17px; }
+  .seccionProyectos2 p {
+    line-height: 0.02px;
+    margin-top: 10px;
+    font-size: 13px; }
+
+@media (min-width: 480px) {
+  h5 {
+    font-size: 12px !important; } }
+@media (min-width: 1064px) {
+  .seccionProyectos2 .contenedor {
+    border-radius: 50%;
+    overflow: hidden; }
+    .seccionProyectos2 .contenedor img {
+      height: 250px;
+      width: 250px !important;
+      border-radius: 50%; }
+      .seccionProyectos2 .contenedor img:hover {
+        filter: opacity(60%);
+        transform: scale(1.2);
+        transition-duration: 2s; }
+  .seccionProyectos2 h5 {
+    font-size: 20px !important; }
   .seccionProyectos2 p {
     line-height: 0.05px;
-    margin-top: 10px; }
-
-@media (min-width: 1064px) {
-  .seccionProyectos2 {
-    display: flex !important;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around; }
-    .seccionProyectos2 .contenedor {
-      border-radius: 50%;
-      overflow: hidden; }
-      .seccionProyectos2 .contenedor img {
-        height: 250px;
-        width: 250px;
-        border-radius: 50%; }
-        .seccionProyectos2 .contenedor img:hover {
-          filter: opacity(60%);
-          transform: scale(1.2);
-          transition-duration: 2s; }
-
-  .seccionProyectos {
-    display: none !important; } }
+    font-size: 18px; } }
 /*---muestra proyectos--*/
-:root {
-  --color-principal:#242b34 ;
-  --color-principal-transparente:#242b3481 ; }
-
-.titulo {
-  color: white;
-  font-weight: bold;
-  background-color: var(--color-principal);
-  text-align: center;
-  font-size: 13px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  margin: 0%; }
-
-#carouselExampleCaptions {
-  width: 100% !important;
-  padding-top: 15px; }
-
-.principalesProyectos {
+.proyectos2 {
   display: none; }
 
-/*--VISTA DESKTOP--*/
+.fondos, .principalesProyectos {
+  background-position: center;
+  background-size: cover;
+  position: relative; }
+
+.principalesProyectos {
+  background-image: url(../assets/img/fondo-nuestros-proyectos.jpg);
+  width: 100%;
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .principalesProyectos .tituloproyectos {
+    font-size: 15px;
+    margin-top: 5px;
+    color: white;
+    position: relative;
+    text-align: center;
+    align-self: center;
+    font-weight: bolder; }
+
+.principalesProyectos::before {
+  content: "";
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0; }
+
+#carouselExampleFade {
+  width: 250px;
+  height: 250px;
+  padding: inherit; }
+
 @media (min-width: 1064px) {
-  .titulo {
+  #carouselExampleFade {
     display: none; }
-
-  #carouselExampleCaptions {
-    display: none; }
-
-  .fondos, .principalesProyectos {
-    background-position: center;
-    background-size: cover;
-    position: relative; }
-
-  .principalesProyectos {
-    background-image: url(../assets/img/fondo-nuestros-proyectos.jpg); }
-
-  .principalesProyectos::before {
-    content: "";
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.8);
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0; }
 
   .principalesProyectos {
     height: auto;
@@ -203,13 +246,10 @@ main {
       align-self: center; }
       .principalesProyectos div a {
         color: white !important; }
-    .principalesProyectos h3 {
-      color: white;
-      position: relative;
+    .principalesProyectos .tituloproyectos {
+      font-size: 25PX;
       grid-row: 1/2;
-      grid-column: 2/4;
-      text-align: center;
-      align-self: center; }
+      grid-column: 2/4; }
     .principalesProyectos .proyecto1 {
       grid-row: 2/4;
       grid-column: 2/3; }
@@ -225,31 +265,54 @@ main {
       grid-column: 3/4; } }
 /*---informacion---*/
 .informacion {
-  display: none; }
-  .informacion .card-title {
-    height: 30px;
-    width: 200px;
-    border-bottom: solid red 1px; }
-  .informacion .card {
-    background-color: inherit !important;
-    border: inherit !important;
-    color: white !important; }
-    .informacion .card img:hover {
-      filter: opacity(70%);
-      transform: scale(1.1); }
+  display: none !important; }
+
+.seccioninformacion {
+  background-color: #0c0c0c; }
+
+.informacion .card-title, .carousel .card-title {
+  height: 30px;
+  width: 200px;
+  border-bottom: solid red 1px; }
+.informacion .card, .carousel .card {
+  background-color: inherit !important;
+  border: inherit !important;
+  color: white !important; }
+  .informacion .card img:hover, .carousel .card img:hover {
+    filter: opacity(70%);
+    transform: scale(1.1); }
+
+.carousel {
+  padding-top: 20px;
+  padding-bottom: 20px; }
+  .carousel .carousel-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; }
+  .carousel .card-body {
+    padding: inherit; }
+  .carousel .card-title {
+    height: 35px;
+    width: 120px;
+    font-size: 15px;
+    margin-top: 5px; }
+  .carousel .card-text {
+    font-size: 10px; }
+  .carousel .card {
+    width: 120px !important; }
 
 @media (min-width: 1064px) {
+  .carousel {
+    display: none; }
+
   .informacion {
-    margin-top: 30px;
     display: flex !important;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around; } }
+    justify-content: space-around;
+    background-color: #0c0c0c;
+    padding-top: 30px; } }
 /*---footer---*/
-:root {
-  --color-principal:#242b34 ;
-  --color-principal-transparente:#242b3481 ; }
-
 footer {
   right: 0;
   bottom: 0;
@@ -258,9 +321,8 @@ footer {
   transition: all .25s ease;
   backface-visibility: hidden;
   perspective: 800px;
-  padding-bottom: 10px;
   padding-top: 10px;
-  height: 250px;
+  height: 190px;
   background-image: url(../assets/imagenes-arq/portada-seccion.jpg);
   background-position: center center;
   background-size: cover;
@@ -276,6 +338,8 @@ footer {
       footer .seccion1 i a {
         text-decoration: none;
         color: white; }
+  footer .seccionmobile {
+    display: none; }
   footer .seccion2 {
     position: relative;
     border-top: solid 2px #b1b0b0; }
@@ -290,7 +354,9 @@ footer {
       width: 40px;
       height: 40px; }
     footer .seccion2 p {
-      color: #b1b0b0; }
+      color: #b1b0b0;
+      margin-top: 10px;
+      height: 10px; }
 
 footer::before {
   content: "";
@@ -303,24 +369,51 @@ footer::before {
 
 @media (max-width: 1064px) {
   footer {
-    height: 60px; }
+    height: 90px; }
     footer .seccion1 {
       display: none !important; }
     footer .seccion2 {
       border-top: inherit !important; }
+      footer .seccion2 .tituloarki {
+        margin-top: 5px; }
       footer .seccion2 a img {
         width: 20px;
         height: 20px; }
       footer .seccion2 h6, footer .seccion2 p {
-        font-size: 10px !important; } }
+        font-size: 10px !important; }
+      footer .seccion2 p {
+        margin-top: inherit; }
+    footer .seccionmobile {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      border-bottom: solid 0.05px white;
+      padding-bottom: 5px; }
+      footer .seccionmobile a i {
+        color: #b1b0b0; } }
 /* realizado solo vista mobile de index */
 /*----------------------------secciones----------------------------*/
+.bodypages {
+  background-image: url(../../assets/imagenes-arq/portada-seccion.jpg);
+  background-position-x: center;
+  background-repeat: no-repeat;
+  background-size: 100% 380px;
+  position: relative;
+  z-index: 1; }
+
+.bodypages::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  position: absolute;
+  opacity: 0.7; }
+
 .tituloarquitectura {
   width: 100%;
   height: 300px;
-  background-image: url(../../assets/imagenes-arq/portada-seccion.jpg);
-  background-size: cover;
-  filter: opacity(80%);
   grid-row: 1/2;
   grid-column: 1/3;
   text-align: center;
@@ -337,7 +430,7 @@ footer::before {
 
 .mainproyectos {
   display: grid;
-  grid-template-columns: 1fr 700px;
+  grid-template-columns: 1fr 50px;
   grid-template-rows: 300px 950px; }
   .mainproyectos .arquitectura {
     grid-column: 1/2;
@@ -346,7 +439,8 @@ footer::before {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     justify-items: center;
-    padding-top: 50px; }
+    padding-top: 50px;
+    background-color: #0c0c0c; }
 
 .offcanvas {
   margin-top: 70px; }
@@ -374,7 +468,7 @@ footer::before {
     transform: scale(1.1);
     transition-duration: 2s; }
 .arquitectura .offcanvas {
-  background-color: #062030;
+  background-color: #444444;
   color: white; }
 .arquitectura .offcanvas-title {
   font-style: oblique;
@@ -398,10 +492,21 @@ footer::before {
 .asidesecciones {
   grid-row: 2/3;
   grid-column: 2/3;
-  border-left: solid 2px white;
-  padding-left: 50px; }
+  z-index: 1; }
+  .asidesecciones .info3 {
+    height: 50px;
+    width: 100%;
+    border: inherit;
+    border-radius: 0%;
+    background-color: #444444;
+    transform: rotate(90deg); }
+    .asidesecciones .info3 button {
+      height: 100% !important;
+      width: 100% !important;
+      transform: rotate(90deg) !important; }
   .asidesecciones .atencion {
-    color: #c0bfbf; }
+    color: white;
+    margin-top: 50px; }
     .asidesecciones .atencion .imgatencion {
       border-radius: 50%;
       width: 200px;
@@ -420,6 +525,13 @@ footer::before {
     .asidesecciones .atencion p {
       width: 380px;
       margin-left: 30px; }
+  .asidesecciones .offcanvas {
+    width: 650PX !important;
+    background-color: #444444; }
+    .asidesecciones .offcanvas .offcanvas-title {
+      font-weight: bolder;
+      color: white;
+      font-size: 30px; }
 
 @media (max-width: 1064px) {
   .asidesecciones {

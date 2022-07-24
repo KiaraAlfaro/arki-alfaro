@@ -3,14 +3,33 @@
 
     grid-row: 2/3;
     grid-column: 2/3;
-
+    z-index: 1;
     
-    border-left: solid 2px white;
-    padding-left: 50px;
+    .info3{
+
+        height: 50px;
+        width: 100%;
+        
+        border: inherit;
+        border-radius: 0%;
+        background-color: $color-secundario ;
+        transform: rotate(90deg);
+
+        button{
+
+            height:100% !important;
+            width: 100% !important;
+            transform: rotate(90deg) !important;
+        }
+    }
+    
+    
+    
 
     .atencion{
 
-        color: rgb(192, 191, 191);
+        color:white;
+        margin-top: 50px;
         .imgatencion{
 
             border-radius: 50%;
@@ -43,7 +62,22 @@
             margin-left: 30px;
         }
     }
+    
+    .offcanvas{
+
+        width: 650PX !important;
+        background-color: $color-secundario;
+
+        .offcanvas-title{
+
+            font-weight: bolder;
+            color: white;
+            font-size: 30px;
+        }
+    }
+    
 }
+
 
 @media(max-width:1064px){
 

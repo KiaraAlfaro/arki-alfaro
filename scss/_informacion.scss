@@ -1,6 +1,12 @@
-.informacion{ 
 
-     display: none;
+.informacion{ display: none !important; }
+.seccioninformacion{
+
+    background-color: $color-principal;
+}
+.informacion, .carousel{ 
+
+    
 
     .card-title{
 
@@ -24,14 +30,58 @@
     }
 }
 
+
+
+.carousel{
+
+  
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    .carousel-item{
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+    }
+
+    .card-body{
+
+        padding: inherit;
+    }
+    .card-title{
+
+        height: 35px;
+        width: 120px;
+       font-size: 15px;
+       margin-top: 5px;
+       
+    }
+
+    .card-text{
+
+        font-size: 10px;
+    }
+
+    .card{
+
+        width: 120px !important;
+    }
+
+}
+
 @media (min-width: 1064px) {
 
-    .informacion{ 
-
-        margin-top: 30px;
+    .carousel{display: none;}
+    .informacion{
+        
         display: flex !important;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;
+        background-color: $color-principal;
+        padding-top: 30px;
     }
+   
 }

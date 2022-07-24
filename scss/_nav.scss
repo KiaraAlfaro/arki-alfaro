@@ -1,27 +1,63 @@
+@import "variables";
 
 nav{
 
-    background-color:var(--color-principal)   !important ;
+    height: 50px;
+    background-color:$color-principal;
     font-size: 17px;
+    padding-top: 5px !important;
+
 
     a{color: rgb(219, 219, 219) !important;}
 
-    .navbar-brand{ background-color: #aaa;}
+    .dropdown-menu{ background-color: $color-principal; }
+
+    .container-fluid {background-color: $color-principal;}
+    
+    .dropdown-item:hover{
+
+        background-color:$color-secundario;
+     }
     .logosNav{ display: none;}
+
+    #logo{
+        background-color: #aaa;
+        height: 40px;
+        width: 40px;
+        
+
+        img{
+
+            height: 40px;
+            width: 40px;
+           
+        }
+    }
+
+    .navbar-toggler-icon{
+
+      background-image: inherit;
+
+      i{
+
+        color: white;
+        font-size: 30px;
+      }
+    }
+
 }
 
-@media(min-width:1064px){
 
+
+@media(min-width:1064px){
+    
+    
     nav{
     font-size: 17px;
     
-    .dropdown-menu{
-        background-color: var(--color-principal);
-    }
-    a{
-        font-size: 15px;
-        background-color: var(--color-principal);
-    }
+    
+   
+  
 
     .logosNav{
 
@@ -33,4 +69,5 @@ nav{
     }
     }
 }
+
 

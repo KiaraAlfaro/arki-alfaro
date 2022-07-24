@@ -1,50 +1,53 @@
 
 @import "maps";
 @import "mixin";
+@import "variables";
 
-.seccionProyectos{
-
-
-    .contenedorproyectos{
-
-        height: 145px;
-        color:map-get($colores,"principal");
-        background-color: #14181dd5;
-        margin-top: 5px;
-    
-        h6, figcaption{ padding-left: 10px; }
-    
-        a{
-    
-            color: map-get($colores,"principal");
-            text-decoration: none!important;
-            width: 100%;
-            height: 25px;
-            margin: 0% !important;
-            padding: 0% !important;
-            text-align: center;
-        }
-    }
-  
-   
-}
 
 .seccionProyectos2{
         
-    display: none !important;
+    background-color: $color-principal;
+    display: flex!important;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+        
+
+    .contenedor{
+            
+        @include contenedor (50%,200px,200px);
+            
+    }
+
     p , h5{ color:map-get($colores,"principal");}
 
     h5{
         margin-top: 20px;
         border-bottom: solid 2px red;
+        font-size: 17px ;
     }
     
     p{
-        line-height:0.05px;
+        line-height:0.02px;
         margin-top: 10px;
+        font-size: 13px;
     }
+    
+
 
 }
+
+@media(min-width:480px){
+
+   
+        h5{font-size: 12px !important;}
+    
+  
+     
+}
+
 
 
 
@@ -52,25 +55,23 @@
 
     .seccionProyectos2{
         
-        display: flex!important;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: space-around;
-        
-
-        .contenedor{
+    .contenedor{
             
-            @include contenedor (50%,250px,250px);
+        @include contenedor (50%,250px,250px !important);
             
-        }
+    }
+    h5{
        
-
+        font-size: 20px !important;
     }
     
-    .seccionProyectos{
-
-        display: none !important;
+   
+    p{
+        line-height:0.05px;
+       
+        font-size: 18px;
     }
 }
+}
+
+
