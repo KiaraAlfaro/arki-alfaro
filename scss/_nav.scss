@@ -10,6 +10,11 @@ nav{
 
     a{color: rgb(219, 219, 219) !important;}
 
+    a:hover{
+
+        color: $color-sub !important;
+    }
+
     .dropdown-menu{ background-color: $color-principal; }
 
     .container-fluid {background-color: $color-principal;}
@@ -21,7 +26,7 @@ nav{
     .logosNav{ display: none;}
 
     #logo{
-        background-color: #aaa;
+        background-color: $color-logo;
         height: 40px;
         width: 40px;
         

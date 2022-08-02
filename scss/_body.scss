@@ -1,0 +1,13 @@
+body::-webkit-scrollbar {  
+
+    width:7px;
+    background-color: $color-principal;
+    
+}
+
+body::-webkit-scrollbar-thumb {
+    
+    background-color:$color-sub;
+    border-radius: 7px;
+
+}

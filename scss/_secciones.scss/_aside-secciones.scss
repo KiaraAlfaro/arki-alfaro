@@ -1,11 +1,14 @@
 
+
 .asidesecciones{
 
     grid-row: 2/3;
     grid-column: 2/3;
     z-index: 1;
+
     
-    .info3{
+    
+    .btn{
 
         height: 50px;
         width: 100%;
@@ -14,18 +17,11 @@
         border-radius: 0%;
         background-color: $color-secundario ;
         transform: rotate(90deg);
-
-        button{
-
-            height:100% !important;
-            width: 100% !important;
-            transform: rotate(90deg) !important;
-        }
+        
+       
     }
     
     
-    
-
     .atencion{
 
         color:white;
@@ -67,19 +63,32 @@
 
         width: 650PX !important;
         background-color: $color-secundario;
+        margin-top: 50px;
 
         .offcanvas-title{
 
-            font-weight: bolder;
             color: white;
-            font-size: 30px;
+            font-weight: bolder;
+            font-size: 18px;
+            border-bottom: solid 1px rgb(0, 0, 0);
+                
         }
     }
     
 }
 
+@media(max-width:768px){
 
-@media(max-width:1064px){
+    .asidesecciones{
 
-    .asidesecciones{display: none !important;}
+        .btn{
+
+            height: 25px !important;
+        }
+    
+    }    
+    
+
+
 }
+

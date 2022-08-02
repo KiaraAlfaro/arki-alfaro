@@ -1,21 +1,13 @@
 
-
-
-.tituloproyectos1{ 
-    display: none !important;
-}
-
 .mainproyectos{
 
     
     display: grid;
     grid-template-columns: 1fr 50px;
-    grid-template-rows: 300px 950px;
+    grid-template-rows: 300px 1fr;
 
-    
+    .presentacionproyectos{
 
-
-    .arquitectura{
 
         grid-column: 1/2;
         grid-row: 2/3;
@@ -27,99 +19,179 @@
         justify-items: center;
         padding-top: 50px;
         background-color: $color-principal;
-    }
 
-   
-}
+        .card{
+
+            background: inherit;
+            border: inherit;
+            border-radius: inherit;
+            color: white;
+            width: 300px;
+            height: 400px;
+            margin-bottom: 30px;
+          
+
+            .btn{
+
+                background: inherit;
+                border: inherit;
+                padding: inherit;
+                height: 250px;
+                width: 250px;
+                overflow: hidden;
+
+                img{ 
+                    
+                    border-radius: 5px;
+                    height: 250px;
+                    width: 250px;
+                    
+                    &:hover{
+
+                        filter: opacity(70%);
+                        transform: scale(1.1);
+                        transition-duration: 2s;
+                        
+                    }
+                }
+            }
+
+            .titulocard {
+
+                text-transform: uppercase ;
+                font-weight: bolder;
+                font-size: 18px;
+                border-bottom: solid 1px $color-sub;
+                width: 250px;
+               
+            }
+
+            .offcanvas-title{
+
+                text-transform: uppercase ;
+                font-weight: bolder;
+                font-size: 18px;
+                border-bottom: solid 1px rgb(0, 0, 0);
+                
+            }
+
+            .textocard{
+
+                font-weight: bold;
+            }
+
+            .card-body{
+
+                padding: inherit;
+            }
 
 
-.offcanvas{
+            .offcanvas{
 
-    margin-top: 70px;
-}
-
-
-
-.arquitectura{
-
-    .card-title{
-
-        height: 30px;
-        width: 270px;
-        border-bottom: solid red 1px;
-        font-style: oblique;
-    }
-    .card-text{
-        line-height: 8px;
-        margin-top: 20px;
-    
-    }
-    .card{
-
-        background-color: inherit !important;
-        border: inherit !important;
-        color: white !important;
-
-       
-    }
-
-    .imagenButton{
-
-        border: inherit !important;
-        background-color: inherit !important;
-        width: 300px;
-        height: 300px;
-        overflow: hidden;
-
-        img:hover{
-
-            filter: opacity(70%);
-            transform: scale(1.1);
-            transition-duration: 2s;
-            
+                background-color: $color-secundario;
+                margin-top: 50px;
+            }
         }
     }
-
-    .offcanvas {
-
-        background-color:$color-secundario;
-        color: white;
-    }
-    .offcanvas-title{
-
-        font-style: oblique;
-        border-bottom: solid 2px red;
-    }
-    .informaciondeproyecto{
-
-        p{
-
-            margin-top: 10px;
-            font-size: 14px;
-        }
-
-    }
 }
+
+
+
 
 @media(max-width:1064px){
 
     .mainproyectos{
+    
+        .presentacionproyectos{
+        
+        
+            display: grid;
+            grid-template-columns:1fr 1fr;
+            grid-template-rows:1fr 1fr 1fr;
+             
+        }
+        
+    
+    }
 
+
+}
+
+@media(max-width:768px){
+
+    .mainproyectos{
+    
         display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 200px 2600px;
-        padding-top: 0%;
+        grid-template-columns: 1fr 25px;
+        grid-template-rows: 200px 1fr;
 
-        .arquitectura{
-
+        .presentacionproyectos{
+        
+        
             display: grid;
             grid-template-columns: 100%;
-            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-            padding-top: 30px;
-            padding-right: 10px;
+            grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr;
+            justify-items: center; 
+        }
+        
+    
+    }
+
+
+}
+
+@media(max-width:480px){
+
+    .mainproyectos{
+    
+        display: grid;
+        grid-template-rows: 150px 1fr;
+
+
+        .card{
+
+           
+            width: 150px !important;
+            
+          
+
+            .btn{
+            
+                height: 150px !important;
+                width: 150px !important;
+               
+
+                img{ 
+                    
+                    
+                    height: 150px !important;
+                    width: 150px !important;
+                    
+                   
+                }
+            }
+
+            .titulocard {
+
+                font-size: 15px !important;
+                width: 150px !important;
+               
+            }
+
+            .textocard{
+
+                font-size: 13px !important;
+                width: 150px !important;
+            }
+
+            .card-body{
+
+               width: 150PX  !important;
+            }
 
             
-           
-        }
+        }    
     }
+
 }
+

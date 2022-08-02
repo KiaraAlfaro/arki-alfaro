@@ -11,7 +11,7 @@
 @import "row";
 @import "header";
 @import "main";
-
+@import "body";
 /*----------------------------Index----------------------------*/
 
 @import "portada";
@@ -37,9 +37,9 @@
 
 /*----------------------------secciones----------------------------*/
 
-@import "../scss/_secciones.scss/body-secciones";
 
-@import "../scss/_secciones.scss/portada-secciones";
+
+@import "../scss/portada-secciones";
 
 @import "../scss/_secciones.scss/proyectos";
 
@@ -50,8 +50,6 @@
 
 
 @import "../scss/_cotizacion.scss/main-cotizacion";
-@import "../scss/_cotizacion.scss/aside";
-
 /*----------------------------Contacto----------------------------*/
 @import "../scss/_contacto.scss/formulario";
 @import "../scss/_contacto.scss/cuerpo-contacto";

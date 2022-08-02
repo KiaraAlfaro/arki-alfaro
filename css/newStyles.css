@@ -14,15 +14,17 @@ header {
 
 nav {
   height: 50px;
-  background-color: #0c0c0c;
+  background-color: #181818;
   font-size: 17px;
   padding-top: 5px !important; }
   nav a {
     color: #dbdbdb !important; }
+  nav a:hover {
+    color: #7184a7 !important; }
   nav .dropdown-menu {
-    background-color: #0c0c0c; }
+    background-color: #181818; }
   nav .container-fluid {
-    background-color: #0c0c0c; }
+    background-color: #181818; }
   nav .dropdown-item:hover {
     background-color: #444444; }
   nav .logosNav {
@@ -59,6 +61,14 @@ main {
   main {
     margin-bottom: 70px !important;
     padding-bottom: 20px !important; } }
+body::-webkit-scrollbar {
+  width: 7px;
+  background-color: #181818; }
+
+body::-webkit-scrollbar-thumb {
+  background-color: #7184a7;
+  border-radius: 7px; }
+
 /*----------------------------Index----------------------------*/
 .portada {
   background-image: url(../assets/img/fondo-nuestros-proyectos.jpg);
@@ -72,8 +82,7 @@ main {
     width: 100%;
     color: white;
     padding-top: 50px;
-    padding-left: 30px;
-    overflow: hidden; }
+    padding-left: 30px; }
     .portada .portadatitulo span {
       font-size: 30px;
       font-weight: 300;
@@ -129,7 +138,7 @@ main {
       grid-column: 2/3; } }
 /*---secciones servicios---*/
 .seccionProyectos2 {
-  background-color: #0c0c0c;
+  background-color: #181818;
   display: flex !important;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -151,7 +160,7 @@ main {
     color: white; }
   .seccionProyectos2 h5 {
     margin-top: 20px;
-    border-bottom: solid 2px red;
+    border-bottom: solid 2px #7184a7;
     font-size: 17px; }
   .seccionProyectos2 p {
     line-height: 0.02px;
@@ -159,7 +168,7 @@ main {
     font-size: 13px; }
 
 @media (min-width: 480px) {
-  h5 {
+  .seccionProyectos2 h5 {
     font-size: 12px !important; } }
 @media (min-width: 1064px) {
   .seccionProyectos2 .contenedor {
@@ -202,6 +211,10 @@ main {
     text-align: center;
     align-self: center;
     font-weight: bolder; }
+  .principalesProyectos #carouselExampleFade {
+    width: 250px;
+    height: 250px;
+    padding: inherit; }
 
 .principalesProyectos::before {
   content: "";
@@ -212,21 +225,15 @@ main {
   left: 0;
   right: 0; }
 
-#carouselExampleFade {
-  width: 250px;
-  height: 250px;
-  padding: inherit; }
-
 @media (min-width: 1064px) {
-  #carouselExampleFade {
-    display: none; }
-
   .principalesProyectos {
     height: auto;
     display: grid;
     grid-template-columns: 1fr 540px 540px 1fr;
     grid-template-rows: 60px 220px 140px 210px 90px 30px;
     grid-column-gap: 5px; }
+    .principalesProyectos #carouselExampleFade {
+      display: none; }
     .principalesProyectos .contenedor {
       border-radius: 0%;
       overflow: hidden; }
@@ -268,49 +275,46 @@ main {
   display: none !important; }
 
 .seccioninformacion {
-  background-color: #0c0c0c; }
-
-.informacion .card-title, .carousel .card-title {
-  height: 30px;
-  width: 200px;
-  border-bottom: solid red 1px; }
-.informacion .card, .carousel .card {
-  background-color: inherit !important;
-  border: inherit !important;
-  color: white !important; }
-  .informacion .card img:hover, .carousel .card img:hover {
-    filter: opacity(70%);
-    transform: scale(1.1); }
-
-.carousel {
-  padding-top: 20px;
-  padding-bottom: 20px; }
-  .carousel .carousel-item {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around; }
-  .carousel .card-body {
-    padding: inherit; }
-  .carousel .card-title {
-    height: 35px;
-    width: 120px;
-    font-size: 15px;
-    margin-top: 5px; }
-  .carousel .card-text {
-    font-size: 10px; }
-  .carousel .card {
-    width: 120px !important; }
+  background-color: #181818; }
+  .seccioninformacion .informacion .card-title, .seccioninformacion .carousel .card-title {
+    height: 30px;
+    width: 200px;
+    border-bottom: solid #7184a7 1px; }
+  .seccioninformacion .informacion .card, .seccioninformacion .carousel .card {
+    background-color: inherit !important;
+    border: inherit !important;
+    color: white !important; }
+    .seccioninformacion .informacion .card img:hover, .seccioninformacion .carousel .card img:hover {
+      filter: opacity(70%);
+      transform: scale(1.1); }
+  .seccioninformacion .carousel {
+    padding-top: 20px;
+    padding-bottom: 20px; }
+    .seccioninformacion .carousel .carousel-item {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around; }
+    .seccioninformacion .carousel .card-body {
+      padding: inherit; }
+    .seccioninformacion .carousel .card-title {
+      height: 35px;
+      width: 120px;
+      font-size: 15px;
+      margin-top: 5px; }
+    .seccioninformacion .carousel .card-text {
+      font-size: 10px; }
+    .seccioninformacion .carousel .card {
+      width: 120px !important; }
 
 @media (min-width: 1064px) {
-  .carousel {
+  .seccioninformacion .carousel {
     display: none; }
-
-  .informacion {
+  .seccioninformacion .informacion {
     display: flex !important;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    background-color: #0c0c0c;
+    background-color: #181818;
     padding-top: 30px; } }
 /*---footer---*/
 footer {
@@ -394,45 +398,50 @@ footer::before {
         color: #b1b0b0; } }
 /* realizado solo vista mobile de index */
 /*----------------------------secciones----------------------------*/
-.bodypages {
-  background-image: url(../../assets/imagenes-arq/portada-seccion.jpg);
-  background-position-x: center;
-  background-repeat: no-repeat;
-  background-size: 100% 380px;
-  position: relative;
-  z-index: 1; }
-
-.bodypages::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: black;
-  position: absolute;
-  opacity: 0.7; }
-
-.tituloarquitectura {
+.titulos {
   width: 100%;
   height: 300px;
   grid-row: 1/2;
   grid-column: 1/3;
   text-align: center;
-  padding-right: 100px; }
+  background-image: url(../../assets/imagenes-arq/portada-seccion.jpg);
+  background-position-x: center;
+  background-repeat: no-repeat;
+  background-size: 100% 300px;
+  position: relative;
+  padding-bottom: 120px; }
+  .titulos span {
+    font-size: 30px;
+    font-weight: 300;
+    text-transform: uppercase;
+    line-height: 0.9em;
+    letter-spacing: -2.5px;
+    font-weight: bolder !important; }
+  .titulos .ahora {
+    color: #181818; }
 
-@media (max-width: 1064px) {
-  .tituloarquitectura {
-    background-position: center;
-    padding-right: 0%;
-    padding-bottom: 40px;
-    height: 200px; } }
-.tituloproyectos1 {
-  display: none !important; }
-
+@media (max-width: 768px) {
+  .titulos {
+    height: 200px;
+    background-size: 100% 200px;
+    padding-bottom: 90px; } }
+@media (max-width: 480px) {
+  .titulos {
+    height: 150px;
+    background-size: 100% 150px;
+    padding-bottom: 60px; }
+    .titulos span {
+      font-size: 20px;
+      font-weight: 300;
+      text-transform: uppercase;
+      line-height: 0.9em;
+      letter-spacing: -2.5px;
+      font-weight: bolder !important; } }
 .mainproyectos {
   display: grid;
   grid-template-columns: 1fr 50px;
-  grid-template-rows: 300px 950px; }
-  .mainproyectos .arquitectura {
+  grid-template-rows: 300px 1fr; }
+  .mainproyectos .presentacionproyectos {
     grid-column: 1/2;
     grid-row: 2/3;
     display: grid;
@@ -440,70 +449,95 @@ footer::before {
     grid-template-rows: 1fr 1fr;
     justify-items: center;
     padding-top: 50px;
-    background-color: #0c0c0c; }
-
-.offcanvas {
-  margin-top: 70px; }
-
-.arquitectura .card-title {
-  height: 30px;
-  width: 270px;
-  border-bottom: solid red 1px;
-  font-style: oblique; }
-.arquitectura .card-text {
-  line-height: 8px;
-  margin-top: 20px; }
-.arquitectura .card {
-  background-color: inherit !important;
-  border: inherit !important;
-  color: white !important; }
-.arquitectura .imagenButton {
-  border: inherit !important;
-  background-color: inherit !important;
-  width: 300px;
-  height: 300px;
-  overflow: hidden; }
-  .arquitectura .imagenButton img:hover {
-    filter: opacity(70%);
-    transform: scale(1.1);
-    transition-duration: 2s; }
-.arquitectura .offcanvas {
-  background-color: #444444;
-  color: white; }
-.arquitectura .offcanvas-title {
-  font-style: oblique;
-  border-bottom: solid 2px red; }
-.arquitectura .informaciondeproyecto p {
-  margin-top: 10px;
-  font-size: 14px; }
+    background-color: #181818; }
+    .mainproyectos .presentacionproyectos .card {
+      background: inherit;
+      border: inherit;
+      border-radius: inherit;
+      color: white;
+      width: 300px;
+      height: 400px;
+      margin-bottom: 30px; }
+      .mainproyectos .presentacionproyectos .card .btn {
+        background: inherit;
+        border: inherit;
+        padding: inherit;
+        height: 250px;
+        width: 250px;
+        overflow: hidden; }
+        .mainproyectos .presentacionproyectos .card .btn img {
+          border-radius: 5px;
+          height: 250px;
+          width: 250px; }
+          .mainproyectos .presentacionproyectos .card .btn img:hover {
+            filter: opacity(70%);
+            transform: scale(1.1);
+            transition-duration: 2s; }
+      .mainproyectos .presentacionproyectos .card .titulocard {
+        text-transform: uppercase;
+        font-weight: bolder;
+        font-size: 18px;
+        border-bottom: solid 1px #7184a7;
+        width: 250px; }
+      .mainproyectos .presentacionproyectos .card .offcanvas-title {
+        text-transform: uppercase;
+        font-weight: bolder;
+        font-size: 18px;
+        border-bottom: solid 1px black; }
+      .mainproyectos .presentacionproyectos .card .textocard {
+        font-weight: bold; }
+      .mainproyectos .presentacionproyectos .card .card-body {
+        padding: inherit; }
+      .mainproyectos .presentacionproyectos .card .offcanvas {
+        background-color: #444444;
+        margin-top: 50px; }
 
 @media (max-width: 1064px) {
+  .mainproyectos .presentacionproyectos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr; } }
+@media (max-width: 768px) {
   .mainproyectos {
     display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 200px 2600px;
-    padding-top: 0%; }
-    .mainproyectos .arquitectura {
+    grid-template-columns: 1fr 25px;
+    grid-template-rows: 200px 1fr; }
+    .mainproyectos .presentacionproyectos {
       display: grid;
       grid-template-columns: 100%;
       grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-      padding-top: 30px;
-      padding-right: 10px; } }
+      justify-items: center; } }
+@media (max-width: 480px) {
+  .mainproyectos {
+    display: grid;
+    grid-template-rows: 150px 1fr; }
+    .mainproyectos .card {
+      width: 150px !important; }
+      .mainproyectos .card .btn {
+        height: 150px !important;
+        width: 150px !important; }
+        .mainproyectos .card .btn img {
+          height: 150px !important;
+          width: 150px !important; }
+      .mainproyectos .card .titulocard {
+        font-size: 15px !important;
+        width: 150px !important; }
+      .mainproyectos .card .textocard {
+        font-size: 13px !important;
+        width: 150px !important; }
+      .mainproyectos .card .card-body {
+        width: 150PX  !important; } }
 .asidesecciones {
   grid-row: 2/3;
   grid-column: 2/3;
   z-index: 1; }
-  .asidesecciones .info3 {
+  .asidesecciones .btn {
     height: 50px;
     width: 100%;
     border: inherit;
     border-radius: 0%;
     background-color: #444444;
     transform: rotate(90deg); }
-    .asidesecciones .info3 button {
-      height: 100% !important;
-      width: 100% !important;
-      transform: rotate(90deg) !important; }
   .asidesecciones .atencion {
     color: white;
     margin-top: 50px; }
@@ -527,102 +561,256 @@ footer::before {
       margin-left: 30px; }
   .asidesecciones .offcanvas {
     width: 650PX !important;
-    background-color: #444444; }
+    background-color: #444444;
+    margin-top: 50px; }
     .asidesecciones .offcanvas .offcanvas-title {
+      color: white;
+      font-weight: bolder;
+      font-size: 18px;
+      border-bottom: solid 1px black; }
+
+@media (max-width: 768px) {
+  .asidesecciones .btn {
+    height: 25px !important; } }
+/*----------------------------Cotizacion----------------------------*/
+/*mobile*/
+video {
+  display: none; }
+
+.form1 {
+  background-color: #181818; }
+
+.form2 {
+  background-color: #1e1e1e; }
+
+.form3 {
+  background-color: #282828; }
+
+.form1, .form2, .form3 {
+  display: grid;
+  grid-template-rows: 50px 1fr; }
+  .form1 .aside, .form2 .aside, .form3 .aside {
+    grid-row: 1/2; }
+  .form1 .texto, .form2 .texto, .form3 .texto {
+    margin-top: 15px;
+    font-size: 25px;
+    font-weight: 300;
+    text-transform: uppercase;
+    line-height: 0.9em;
+    letter-spacing: -2.5px;
+    font-weight: bolder;
+    color: white;
+    text-align: center !important;
+    position: relative;
+    font-style: oblique;
+    width: 100%; }
+  .form1 form, .form2 form, .form3 form {
+    justify-self: center;
+    background-color: #7184a7;
+    width: 100%;
+    height: 400px;
+    border: solid 2px #444444;
+    overflow: hidden;
+    overflow: auto; }
+    .form1 form .tituloform, .form2 form .tituloform, .form3 form .tituloform {
+      font-size: 20px;
+      font-weight: 300;
+      text-transform: uppercase;
+      line-height: 0.9em;
+      letter-spacing: -2.5px;
       font-weight: bolder;
       color: white;
-      font-size: 30px; }
+      text-align: center;
+      margin-top: 20px;
+      position: relative; }
+    .form1 form label, .form2 form label, .form3 form label {
+      font-size: 13px;
+      position: relative;
+      font-weight: 300;
+      text-transform: uppercase;
+      line-height: 0.9em;
+      font-weight: bolder;
+      color: white; }
+    .form1 form label, .form1 form input, .form1 form textarea, .form1 form select, .form2 form label, .form2 form input, .form2 form textarea, .form2 form select, .form3 form label, .form3 form input, .form3 form textarea, .form3 form select {
+      position: relative;
+      width: 90%;
+      margin-left: 5%; }
+    .form1 form .form-check, .form2 form .form-check, .form3 form .form-check {
+      position: relative; }
+      .form1 form .form-check input, .form2 form .form-check input, .form3 form .form-check input {
+        width: 16px !important;
+        margin-left: 5px; }
+      .form1 form .form-check label, .form2 form .form-check label, .form3 form .form-check label {
+        width: 200px !important;
+        margin-left: 5px !important; }
+      .form1 form .form-check .input2, .form2 form .form-check .input2, .form3 form .form-check .input2 {
+        width: 30px !important; }
+    .form1 form .form-switch, .form2 form .form-switch, .form3 form .form-switch {
+      padding-left: 23px !important; }
+  .form1 .botones, .form2 .botones, .form3 .botones {
+    position: relative;
+    margin-left: 20px; }
+    .form1 .botones button, .form2 .botones button, .form3 .botones button {
+      color: white;
+      border: solid 1px white;
+      margin-top: 20px; }
+      .form1 .botones button:hover, .form2 .botones button:hover, .form3 .botones button:hover {
+        background-color: #444444;
+        color: white !important; }
+  .form1 form::-webkit-scrollbar, .form2 form::-webkit-scrollbar, .form3 form::-webkit-scrollbar {
+    width: 7px; }
+  .form1 form::-webkit-scrollbar-thumb, .form2 form::-webkit-scrollbar-thumb, .form3 form::-webkit-scrollbar-thumb {
+    background-color: #b2cfd9;
+    border-radius: 7px; }
 
-@media (max-width: 1064px) {
-  .asidesecciones {
-    display: none !important; } }
-/*----------------------------Cotizacion----------------------------*/
-.subtitulo {
-  padding-top: 20px;
+@keyframes laterales {
+  0% {
+    margin-left: 0; }
+  50% {
+    margin-left: 200px; }
+  100% {
+    margin-left: 0; } }
+@media (min-width: 1064px) {
+  .form1, .form2, .form3 {
+    height: 500px; }
+
+  video {
+    display: flex; }
+
+  .form2 .aside {
+    grid-column: 1/2 !important; }
+
+  .form1, .form2, .form3 {
+    display: grid;
+    grid-template-columns: 50% 50%; }
+    .form1 .aside, .form2 .aside, .form3 .aside {
+      justify-self: center;
+      display: flex;
+      flex-direction: column;
+      grid-column: 2/3; }
+    .form1 video, .form2 video, .form3 video {
+      margin-top: 50px;
+      border-radius: 10px;
+      animation-name: laterales;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+      transition: 5s;
+      animation-timing-function: linear; }
+    .form1 .texto, .form2 .texto, .form3 .texto {
+      font-size: 30px;
+      margin-top: 50px; }
+    .form1 form, .form2 form, .form3 form {
+      margin-left: 30px;
+      margin-top: 50px;
+      width: 600px;
+      border-radius: 10px; }
+      .form1 form .tituloform, .form2 form .tituloform, .form3 form .tituloform {
+        font-size: 30px; }
+      .form1 form label, .form2 form label, .form3 form label {
+        font-size: 15px; }
+      .form1 form label, .form1 form input, .form1 form textarea, .form1 form select, .form2 form label, .form2 form input, .form2 form textarea, .form2 form select, .form3 form label, .form3 form input, .form3 form textarea, .form3 form select {
+        width: 500px;
+        margin-left: 50px; }
+      .form1 form .form-check input, .form2 form .form-check input, .form3 form .form-check input {
+        margin-left: 50px; }
+      .form1 form .botones, .form2 form .botones, .form3 form .botones {
+        margin-left: 230px; }
+        .form1 form .botones button, .form2 form .botones button, .form3 form .botones button {
+          margin-left: 20px; } }
+/*----------------------------Contacto----------------------------*/
+.seccionformulario {
+  margin-top: 50px;
+  color: white;
+  justify-self: center;
+  width: 100% !important;
+  padding-left: 10px;
+  padding-right: 10px; }
+
+@media (min-width: 480px) {
+  .seccionformulario .formulario {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 20px; } }
+@media (min-width: 768px) {
+  .seccionformulario .formulario {
+    width: 70%;
+    margin-left: 15%; } }
+@media (min-width: 1064px) {
+  .seccionformulario .formulario {
+    width: 60%;
+    margin-left: 20%; } }
+.posttitulo {
+  display: grid;
+  grid-template-rows: 1fr 1fr 200px;
+  background-color: #181818; }
+  .posttitulo .seccionformulario {
+    grid-row: 1/2;
+    justify-self: center; }
+  .posttitulo aside {
+    grid-row: 2/3; }
+  .posttitulo .ubicacion {
+    grid-column: 1/2;
+    grid-row: 3/4; }
+  .posttitulo iframe {
+    width: 100%;
+    height: 200px; }
+
+.titulocontacto {
+  color: white;
+  font-size: 20px !important;
+  font-weight: 300;
+  text-transform: uppercase;
+  line-height: 0.9em;
+  letter-spacing: -1px;
+  font-weight: bolder !important;
+  text-decoration: underline #7184a7;
   text-align: center; }
 
 @media (min-width: 1064px) {
-  .subtitulo {
-    text-align: left;
-    padding-left: 30px; }
-    .subtitulo h6 {
-      font-size: 30px; }
-    .subtitulo .blockquote-footer {
-      font-size: 20px !important;
-      margin-top: 10px; }
-
-  .accordion {
-    width: 700px;
-    margin-left: 50px; }
-
-  .postTitulo {
+  .posttitulo {
     display: grid;
-    grid-template-columns: 1fr 700px;
-    grid-template-rows: auto;
-    padding-bottom: 30px; } }
-.asideCotizacion {
-  display: none !important; }
+    grid-template-rows: 700px  200px;
+    grid-template-columns: 1fr 1fr; }
 
-@media (min-width: 1064px) {
-  .asideCotizacion {
-    display: block !important; }
-    .asideCotizacion video {
-      animation-name: laterales;
-      animation-duration: 5s;
-      animation-iteration-count: infinite; } }
-@keyframes laterales {
-  0% {
-    padding-left: 0px;
-    padding-right: 100px; }
-  100% {
-    padding-left: 100px; } }
-/*----------------------------Contacto----------------------------*/
-.formulario {
-  width: 500px;
+  aside {
+    grid-row: 1/2 !important; }
+
+  .seccionformulario {
+    grid-row: 1/2 !important;
+    grid-column: 2/3;
+    justify-self: center; }
+
+  .ubicacion {
+    grid-column: 1/3 !important;
+    grid-row: 2/3 !important; } }
+aside {
   margin-top: 50px;
-  color: white;
-  justify-self: center; }
-  .formulario .botones2 {
-    display: none !important; }
-
-@media (max-width: 1064px) {
-  .formulario {
-    width: 100%;
-    padding-left: 10px;
-    padding-right: 10px; }
-    .formulario .botones2 {
-      display: flex !important;
-      height: 100px; }
-    .formulario .botones {
-      display: none !important; } }
-.contacto {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding-bottom: 30px; }
-
-@media (max-width: 1064px) {
-  .contacto {
-    display: grid;
-    grid-template-columns: 100%; } }
-.asidePagesContacto {
-  grid-column: 2/3;
-  justify-self: center;
-  width: 500px;
-  height: 450px;
-  margin-top: 50px;
-  font-style: oblique;
-  color: white; }
-  .asidePagesContacto i {
-    color: white; }
-  .asidePagesContacto .datos {
-    width: 500px; }
-    .asidePagesContacto .datos a {
-      text-decoration: none;
-      color: white; }
-  .asidePagesContacto .redescontacto i {
-    font-size: 27px; }
-  .asidePagesContacto iframe {
-    border-radius: 15px; }
+  text-align: center;
+  width: 80%;
+  margin-left: 10%; }
+  aside i {
+    color: white;
+    font-size: 20px; }
+  aside a:hover {
+    color: #7184a7 !important; }
+  aside .nosotros {
+    margin-top: 20PX; }
+    aside .nosotros p {
+      color: white;
+      font-size: 15px;
+      font-weight: 300;
+      font-weight: bolder !important; }
+    aside .nosotros i {
+      font-size: 15px; }
+      aside .nosotros i a {
+        color: white;
+        text-decoration: none; }
+  aside .logoaside img {
+    background-color: #aaa;
+    border-radius: 10px;
+    margin-top: 50px;
+    width: 140px;
+    height: 140px; }
 
 @media (max-width: 1064px) {
   .asidePagesContacto {

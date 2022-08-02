@@ -1,42 +1,86 @@
 
-.asidePagesContacto{
+aside{
 
-    grid-column: 2/3;
-
-    justify-self: center;
-
-    width: 500px;
-    height: 450px;
+    
     margin-top: 50px;
-    font-style: oblique;
+    text-align: center;
+    width: 80% ;
+    margin-left: 10%;
+ 
+
+  i{
+
     color: white;
+    font-size: 20px;
     
+  }
 
-    i{
-        color: white;
-    }
+  
 
-    .datos{
+  a:hover{
 
-        width: 500px;
-        a{
-            text-decoration: none;
+    color: $color-sub !important;}
+
+    .nosotros{
+
+        margin-top: 20PX;
+        p{
+
             color: white;
+        font-size: 15px ;
+        font-weight: 300 ;
+        font-weight: bolder !important;
+
         }
-    }
-    
-    .redescontacto{
 
         i{
 
-            font-size: 27px;
+            font-size: 15px;
+            a{
+                color: white;
+                text-decoration:none ;
+            }
         }
     }
-    iframe{
 
-        border-radius: 15px;
+    .logoaside{
+
+        img{
+
+            background-color:$color-logo;
+            border-radius: 10px;
+            margin-top: 50px;
+            width: 140px;
+            height: 140px;
+        }
     }
 }
+
+
+       
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media(max-width:1064px){
 

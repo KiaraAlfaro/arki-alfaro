@@ -8,6 +8,7 @@
         <link rel="shortcut icon" href="../assets/img/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
         <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <link rel="stylesheet" href="../css/newStyles.css">
         <title>ARKI.Remodelacion.com</title>
     </head>
@@ -19,11 +20,11 @@
 
     <header class="row" >
       
-      <nav class="navbar navbar-expand-lg col-12">
+      <nav  class="navbar  navbar-expand-lg col-12">
 
         <div class="container-fluid ">
 
-          <a id="logo" class="navbar-brand rounded-2 opacity-75 " href="#">
+          <a id="logo" class="navbar-brand rounded-2 opacity-75 " href="../index.html">
             
             <img  src="../assets/logo-arqui.png" alt="logo arki" width="60" height="54" class="d-inline-block rounded-2 ">
             
@@ -31,7 +32,7 @@
 
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             
-            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"><i class="bi bi-list"></i> </span>
           
           </button>
           
@@ -109,60 +110,46 @@
   
     <main class="mainproyectos row">
 
-      <div class="tituloarquitectura d-flex flex-column justify-content-center text-white">
+      <div class="titulos d-flex flex-column justify-content-center text-white">
     
-        <h2 class="pageTituloProyectos">REMODELACION</h2>
-        <figcaption class="blockquote-footer">
-          <cite title="Source Title">Cotiza tu remodelacion <a class="subTitulo text-white" href="./Cotizacion.html">YA</a></cite>
-        </figcaption>
+        <span data-aos="fade-up-right" >remodelacion</span>
+        <span data-aos="fade-up-right" >podes cotizar con nosotros</span>
+        <a data-aos="fade-up-right" class="ahora" href="./cotizacion.html"><span>¡ahora!</span></a>
+        
+    
       </div>
-    
-      <div class="tituloproyectos1 text-white"><h6> Proyectos Destacados</h6></div>
 
-      <section class="arquitectura">
 
-        <div>
+      <div class="presentacionproyectos">
+
+        <div  class="card" style="width: 18rem;">
     
-          <div class="card" style="width: 18rem;">  
-          
-            <button class="imagenButton" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
-    
-            <img src="../assets/imagenes-rem/proyecto-1-cajas-articuladas/portada-cajas-articuladas (1).jpg" alt=" reforma cajas articuladas">
-          
-            </button>
-    
-            <div class="card-body">
-    
-              <h5 class="card-title">RFM.CAJAS ARTICULADAS</h5>
-    
-              <div class="card-text" >
-    
-                <p>Ciudad : La Plata </p>
-                <p>Pais : Argentina </p>
-              
-              </div>
-              
-            </div>
-          </div>  
+          <button data-aos="fade-up-right" class="btn " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
             
-          <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+            <img src="../assets/imagenes-rem/proyecto-1-cajas-articuladas/portada-cajas-articuladas (1).jpg" class="card-img-top" alt="reforma cajas articuladas">
+          
+          </button>
     
+          <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
     
             <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="staticBackdropLabel">RFM.CAJAS ARTICULADAS</h5>
+    
+              <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">rfm. cajas articuladas</h5>
+              
               <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              
             </div>
     
+            <div class="offcanvas-body">
     
-            <div class="informaciondeproyecto offcanvas-body">
               <div>
-    
+      
                 <div class="d-flex flex-column justify-content-center">
     
                   <i class="bi bi-people-fill"> Arquitecta: Kiara Alfaro</i>
                   <i class="bi bi-square"> Area: 120 m2</i>
                   <i class="bi bi-table"> Año: 2020</i>
-                  <i class="bi bi-pin"> Ubicaicon: Argentina</i>
+                
     
                 </div>
     
@@ -172,23 +159,23 @@
                   <div class="carousel-inner">
                   
                     <div class="carousel-item active">
-                      <img src="../assets/imagenes-rem/proyecto-1-cajas-articuladas/imagen-1-caja-articulada (1).jpg" class="d-block w-100" alt="...">
+                      <img src="../assets/imagenes-rem/proyecto-1-cajas-articuladas/imagen-1-caja-articulada (1).jpg" class="d-block w-100" alt="imagen de proyecto">
                     </div>
                     
                     <div class="carousel-item">
-                      <img src="../assets/imagenes-rem/proyecto-1-cajas-articuladas/imagen-2-cajas-articuladas (1).jpg" class="d-block w-100" alt="...">
+                      <img src="../assets/imagenes-rem/proyecto-1-cajas-articuladas/imagen-2-cajas-articuladas (1).jpg" class="d-block w-100" alt="imagen de proyecto">
                     </div>
                     
                     <div class="carousel-item">
-                      <img src="../assets/imagenes-rem/proyecto-1-cajas-articuladas/imagen-3-cajas-articuladas (1).jpg" class="d-block w-100" alt="...">
+                      <img src="../assets/imagenes-rem/proyecto-1-cajas-articuladas/imagen-3-cajas-articuladas (1).jpg" class="d-block w-100" alt="imagen de proyecto">
                     </div>
     
                     <div class="carousel-item">
-                      <img src="../assets/imagenes-rem/proyecto-1-cajas-articuladas/imagen-4-cajas-articuladas (1).jpg" class="d-block w-100" alt="...">
+                      <img src="../assets/imagenes-rem/proyecto-1-cajas-articuladas/imagen-4-cajas-articuladas (1).jpg" class="d-block w-100" alt="imagen de proyecto">
                     </div>
     
                     <div class="carousel-item">
-                      <img src="../assets/imagenes-rem/proyecto-1-cajas-articuladas/imagen-5-cajas-articuladas (1).jpg" class="d-block w-100" alt="...">
+                      <img src="../assets/imagenes-rem/proyecto-1-cajas-articuladas/imagen-5-cajas-articuladas (1).jpg" class="d-block w-100" alt="imagen de proyecto">
                     </div>
                   
                   </div>
@@ -204,502 +191,500 @@
               
               
               </div>
+    
             </div>
     
           </div>
     
+    
+    
+          <div data-aos="fade-up-right" class="card-body">
+    
+            <p class="card-text">
+              
+              <p class="titulocard">rfm. cajas articuladas</p>
+              <p class="textocard">Ampliación y rehabilitación de vivienda.</p>
+    
+            </p>
+          </div>
         </div>
     
-        <div>
     
-          <div class="card" style="width: 18rem;">  
-          
-            <button class="imagenButton" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop2" aria-controls="staticBackdrop">
+        <div class="card" style="width: 18rem;">
     
-            <img src="../assets/imagenes-rem/proyecto-2-la-lucila/portada-la-lucila- (1).jpg" alt="reforma en la lucila">
-          
-            </button>
-    
-            <div class="card-body">
-    
-              <h5 class="card-title">RFM. EN LA LUCILA</h5>
-    
-              <div class="card-text" >
-               
-                <p>Ciudad : La Lucila </p>
-                <p>Pais : Argentina </p>
-              
-              </div>
-              
-            </div>
-          </div>  
+          <button data-aos="fade-up-right" class="btn " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions2" aria-controls="offcanvasWithBothOptions">
             
-          <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop2" aria-labelledby="staticBackdropLabel">
+            <img src="../assets/imagenes-rem/proyecto-2-la-lucila/portada-la-lucila- (1).jpg" class="card-img-top" alt="proyecto reforma en la lucila">
+          
+          </button>
     
-    
+          <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions2" aria-labelledby="offcanvasWithBothOptionsLabel">
             <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="staticBackdropLabel">RFM. EN LA LUCILA</h5>
+              <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">rfm. en la lucila</h5>
               <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
-    
-    
-            <div class="informaciondeproyecto offcanvas-body">
-              <div>
-    
-                <div class="d-flex flex-column justify-content-center">
-    
-                  <i class="bi bi-people-fill"> Arquitecta: Kiara Alfaro</i>
-                  <i class="bi bi-square"> Area: 145 m2</i>
-                  <i class="bi bi-table"> Año: 2021</i>
-                  <i class="bi bi-pin"> Ubicacion: Argentina</i>
-    
-                </div>
-    
-                <p>El encargo consiste en la reforma integral de una vivienda preexistente sumado a una pequeña ampliación de la misma.l proyecto opera principalmente sobre las cubiertas. En la casa original pueden leerse tres fajas perpendiculares a la calle, de izquierda a derecha, una de pasillo lateral o garaje, otra de espacio privado de la vivienda y por último el espacio público de la vivienda. El proyecto conserva esa configuración conceptualmente, pero opera sobre el desmonte de sus cubiertas a dos aguas para realizar un recambio de material y generar las alteraciones formales que permitirán responder a las premisas del nuevo encargo.</p>
-    
-                <div id="carouselExampleFade2" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                  <div class="carousel-inner">
-                  
-                    <div class="carousel-item active">
-                      <img src="../assets/imagenes-rem/proyecto-2-la-lucila/imagen-1-en-la-lucila (1).jpg" class="d-block w-100" alt="...">
-                    </div>
-                    
-                    <div class="carousel-item">
-                      <img src="../assets/imagenes-rem/proyecto-2-la-lucila/imagen-2-la-lucila (1).jpg" class="d-block w-100" alt="...">
-                    </div>
-                    
-                    <div class="carousel-item">
-                      <img src="../assets/imagenes-rem/proyecto-2-la-lucila/imagen-3-la-lucila (1).jpg" class="d-block w-100" alt="...">
-                    </div>
-    
-                    <div class="carousel-item">
-                      <img src="../assets/imagenes-rem/proyecto-2-la-lucila/imagen-4-la-lucila (1).jpg" class="d-block w-100" alt="...">
-                    </div>
-    
-                    <div class="carousel-item">
-                      <img src="../assets/imagenes-rem/proyecto-2-la-lucila/imagen-5-la-lucila (1).jpg" class="d-block w-100" alt="...">
-                    </div>
-                  
+            <div class="offcanvas-body">
+              
+                <div>
+      
+                  <div class="d-flex flex-column justify-content-center">
+      
+                    <i class="bi bi-people-fill"> Arquitecta: Kiara Alfaro</i>
+                    <i class="bi bi-square"> Area: 145 m2</i>
+                    <i class="bi bi-table"> Año: 2021</i>
+      
                   </div>
-                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade2" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                  </button>
-                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade2" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                  </button>
-                </div>
-              
-              
-              </div>
-            </div>
-    
-          </div>
-    
-        </div>
-    
-        <div>
-    
-          <div class="card" style="width: 18rem;">  
-          
-            <button class="imagenButton" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop3" aria-controls="staticBackdrop">
-    
-            <img src="../assets/imagenes-rem/proyecto-3-cocina-pequena/portada-cocina-pequena- (1).jpg" alt="cocina isla pequeña">
-          
-            </button>
-    
-            <div class="card-body">
-    
-              <h5 class="card-title">COCINA ISLA PEQUENA</h5>
-    
-              <div class="card-text" >
-               
-                <p>Cocina con una</p>
-                <p>distribución en U </p>
-              
-              </div>
-              
-            </div>
-          </div>  
-            
-          <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop3" aria-labelledby="staticBackdropLabel">
-    
-    
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="staticBackdropLabel">COCINA ISLA PEQUENA</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-    
-    
-            <div class="informaciondeproyecto offcanvas-body">
-              <div>
-    
-                <div class="d-flex flex-column justify-content-center">
-    
-                  <i class="bi bi-people-fill"> Arquitecta: Kiara Alfaro</i>
-                  <i class="bi bi-square"> Area: 9 m2</i>
-                  <i class="bi bi-table"> Año: 2022</i>
-                  
-    
-                </div>
-    
-                <p>La distribución de esta cocina ha sido todo un reto, pero se ha logrado lo imposible: ahora, los propietarios tienen el espacio de almacenaje que buscaban junto con una bonita barra para desayunar, electrodomésticos de calidad y una larga encimera para trabajar.Todo queda muy bien recogido con el separador de madera, el cual es original y cumple perfectamente su función.</p>
-    
-                <div id="carouselExampleFade3" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                  <div class="carousel-inner">
-                  
-                    <div class="carousel-item active">
-                      <img src="../assets/imagenes-rem/proyecto-3-cocina-pequena/imagen-1-cocina-pequena (1).jpg" class="d-block w-100" alt="...">
-                    </div>
+      
+                  <p>El encargo consiste en la reforma integral de una vivienda preexistente sumado a una pequeña ampliación de la misma.l proyecto opera principalmente sobre las cubiertas. En la casa original pueden leerse tres fajas perpendiculares a la calle, de izquierda a derecha, una de pasillo lateral o garaje, otra de espacio privado de la vivienda y por último el espacio público de la vivienda. El proyecto conserva esa configuración conceptualmente, pero opera sobre el desmonte de sus cubiertas a dos aguas para realizar un recambio de material y generar las alteraciones formales que permitirán responder a las premisas del nuevo encargo.</p>
+      
+                  <div id="carouselExampleFade2" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-inner">
                     
-                    <div class="carousel-item">
-                      <img src="../assets/imagenes-rem/proyecto-3-cocina-pequena/imagen-2-cocina-pequena (1).jpg" class="d-block w-100" alt="...">
-                    </div>
+                      <div class="carousel-item active">
+                        <img src="../assets/imagenes-rem/proyecto-2-la-lucila/imagen-1-en-la-lucila (1).jpg" class="d-block w-100" alt="imagen de proyecto">
+                      </div>
+                      
+                      <div class="carousel-item">
+                        <img src="../assets/imagenes-rem/proyecto-2-la-lucila/imagen-2-la-lucila (1).jpg" class="d-block w-100" alt="imagen de proyecto">
+                      </div>
+                      
+                      <div class="carousel-item">
+                        <img src="../assets/imagenes-rem/proyecto-2-la-lucila/imagen-3-la-lucila (1).jpg" class="d-block w-100" alt="imagen de proyecto">
+                      </div>
+      
+                      <div class="carousel-item">
+                        <img src="../assets/imagenes-rem/proyecto-2-la-lucila/imagen-4-la-lucila (1).jpg" class="d-block w-100" alt="imagen de proyecto">
+                      </div>
+      
+                      <div class="carousel-item">
+                        <img src="../assets/imagenes-rem/proyecto-2-la-lucila/imagen-5-la-lucila (1).jpg" class="d-block w-100" alt="imagen de proyecto">
+                      </div>
                     
-                    <div class="carousel-item">
-                      <img src="../assets/imagenes-rem/proyecto-3-cocina-pequena/imagen-3-cocina-pequena (1).jpg" class="d-block w-100" alt="...">
                     </div>
-    
-                    <div class="carousel-item">
-                      <img src="../assets/imagenes-rem/proyecto-3-cocina-pequena/imagen-4-cocina-pequena (1).jpg" class="d-block w-100" alt="...">
-                    </div>
-    
-                    <div class="carousel-item">
-                      <img src="../assets/imagenes-rem/proyecto-3-cocina-pequena/imagen-5-cocina-pequena (1).jpg" class="d-block w-100" alt="...">
-                    </div>
-                  
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade2" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade2" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
                   </div>
-                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade3" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                  </button>
-                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade3" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                  </button>
-                </div>
-              
-              
-              </div>
-            </div>
-    
-          </div>
-    
-        </div>
-    
-        <div>
-    
-          <div class="card" style="width: 18rem;">  
-          
-            <button class="imagenButton" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop4" aria-controls="staticBackdrop">
-    
-            <img src="../assets/imagenes-rem/proyecto-4-bano/portada-bano (1).jpg" alt="bano">
-          
-            </button>
-    
-            <div class="card-body">
-    
-              <h5 class="card-title">RFM. BAÑO</h5>
-    
-              <div class="card-text" >
                 
-                <p>Fiel alos tonos claros y</p>
-                <p>neutros que dan paz a la estancia.</p>
-              
-              </div>
-              
-            </div>
-          </div>  
-            
-          <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop4" aria-labelledby="staticBackdropLabel">
-    
-    
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="staticBackdropLabel">RFM. BAÑO</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-    
-    
-            <div class="informaciondeproyecto offcanvas-body">
-              <div>
-    
-                <div class="d-flex flex-column justify-content-center">
-    
-                  <i class="bi bi-people-fill"> Arquitecta: Kiara Alfaro</i>
-                  <i class="bi bi-square"> Area: 4 m2</i>
-                  <i class="bi bi-table"> Año: 2022</i>
-                  
-    
+                
                 </div>
     
-                <p>Para poder aprovechar mejor el espacio y ganar en amplitud, se deshicieron del bidé y váter que aparecen en el plano de la izquierda, e incorporaron un plato de ducha de pared a pared, de fácil acceso y muy funcional.Además, donde antes estaba la grifería desfasada y la mini ducha, que parecía de todo menos cómoda, instalaron un váter moderno y práctico al lado de un bonito mueble de madera para el lavamanos, dando así un toque actual a la estancia. </p>
-    
-                <div id="carouselExampleFade4" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                  <div class="carousel-inner">
-                  
-                    <div class="carousel-item active">
-                      <img src="../assets/imagenes-rem/proyecto-4-bano/imagen-1-bano (1).jpg" class="d-block w-100" alt="...">
-                    </div>
-                    
-                    <div class="carousel-item">
-                      <img src="../assets/imagenes-rem/proyecto-4-bano/imagen-2-bano (1).jpg" class="d-block w-100" alt="...">
-                    </div>
-                    
-                    <div class="carousel-item">
-                      <img src="../assets/imagenes-rem/proyecto-4-bano/imagen-3-bano (1).jpg" class="d-block w-100" alt="...">
-                    </div>
-    
-                    <div class="carousel-item">
-                      <img src="../assets/imagenes-rem/proyecto-4-bano/imagen-4-bano (1).jpg" class="d-block w-100" alt="...">
-                    </div>
-                  
-                  </div>
-                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade4" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                  </button>
-                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade4" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                  </button>
-                </div>
-              
-              
-              </div>
             </div>
-    
           </div>
     
+    
+    
+          <div data-aos="fade-up-right" class="card-body">
+    
+            <p class="card-text">
+              
+              <p class="titulocard">rfm. en la lucila</p>
+              <p class="textocard">Reforma integral de una vivienda preexistente sumado a una pequeña ampliación de la misma.</p>
+    
+            </p>
+          </div>
         </div>
     
-        <div>
     
-          <div class="card" style="width: 18rem;">  
-          
-            <button class="imagenButton" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop5" aria-controls="staticBackdrop">
+        <div class="card" style="width: 18rem;">
     
-            <img src="../assets/imagenes-rem/proyecto-5-duplex/portada-cocina (1).jpg" alt="cocina">
-          
-            </button>
-    
-            <div class="card-body">
-    
-              <h5 class="card-title">RFM. COCINA </h5>
-    
-              <div class="card-text" >
-               
-                <p>Cambio de cocina</p>
-                <p>de 14m2 </p>
-              
-              </div>
-              
-            </div>
-          </div>  
+          <button data-aos="fade-up-right" class="btn " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions3" aria-controls="offcanvasWithBothOptions">
             
-          <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop5" aria-labelledby="staticBackdropLabel">
+            <img src="../assets/imagenes-rem/proyecto-3-cocina-pequena/portada-cocina-pequena- (1).jpg" class="card-img-top" alt="proyecto cocina isla pequeña">
+          
+          </button>
     
-    
+          <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions3" aria-labelledby="offcanvasWithBothOptionsLabel">
             <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="staticBackdropLabel">RFM. COCINA </h5>
+              <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">cocina isla pequeña</h5>
               <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
+            <div class="offcanvas-body">
     
-    
-            <div class="informaciondeproyecto offcanvas-body">
               <div>
-    
-                <div class="d-flex flex-column justify-content-center">
-    
-                  <i class="bi bi-people-fill"> Arquitecta: Kiara Alfaro</i>
-                  <i class="bi bi-square"> Area: 14 m2</i>
-                  <i class="bi bi-table"> Año: 2022</i>
-                  
-    
+      
+                  <div class="d-flex flex-column justify-content-center">
+      
+                    <i class="bi bi-people-fill"> Arquitecta: Kiara Alfaro</i>
+                    <i class="bi bi-square"> Area: 9 m2</i>
+                    <i class="bi bi-table"> Año: 2022</i>
+                    
+      
+                  </div>
+      
+                  <p>La distribución de esta cocina ha sido todo un reto, pero se ha logrado lo imposible: ahora, los propietarios tienen el espacio de almacenaje que buscaban junto con una bonita barra para desayunar, electrodomésticos de calidad y una larga encimera para trabajar.Todo queda muy bien recogido con el separador de madera, el cual es original y cumple perfectamente su función.</p>
+      
+                  <div id="carouselExampleFade3" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                    
+                      <div class="carousel-item active">
+                        <img src="../assets/imagenes-rem/proyecto-3-cocina-pequena/imagen-1-cocina-pequena (1).jpg" class="d-block w-100" alt="imagen de proyecto">
+                      </div>
+                      
+                      <div class="carousel-item">
+                        <img src="../assets/imagenes-rem/proyecto-3-cocina-pequena/imagen-2-cocina-pequena (1).jpg" class="d-block w-100" alt="imagen de proyecto">
+                      </div>
+                      
+                      <div class="carousel-item">
+                        <img src="../assets/imagenes-rem/proyecto-3-cocina-pequena/imagen-3-cocina-pequena (1).jpg" class="d-block w-100" alt="imagen de proyecto">
+                      </div>
+      
+                      <div class="carousel-item">
+                        <img src="../assets/imagenes-rem/proyecto-3-cocina-pequena/imagen-4-cocina-pequena (1).jpg" class="d-block w-100" alt="imagen de proyecto">
+                      </div>
+      
+                      <div class="carousel-item">
+                        <img src="../assets/imagenes-rem/proyecto-3-cocina-pequena/imagen-5-cocina-pequena (1).jpg" class="d-block w-100" alt="imagen de proyecto">
+                      </div>
+                    
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade3" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade3" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                
+                
                 </div>
     
-                <p>Para poder conectar los espacios como deseaban, se deshicieron del cuarto de la limpieza, y redistribuyeron la cocina, de modo que pudieran abrir una parte de la pared principal y retirar las puertas hasta el techo del salón.</p>
+            </div>
+          </div>
     
-                <div id="carouselExampleFade5" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                  <div class="carousel-inner">
-                  
-                    <div class="carousel-item active">
-                      <img src="../assets/imagenes-rem/proyecto-5-duplex/imagen-1-cocina (1).jpg" class="d-block w-100" alt="...">
-                    </div>
+    
+    
+          <div data-aos="fade-up-right" class="card-body">
+    
+            <p class="card-text">
+              
+              <p class="titulocard">cocina isla pequeña</p>
+              <p class="textocard">Distribución de cocina para mejorar el espacio de almacenaje.</p>
+    
+            </p>
+          </div>
+        </div>
+    
+    
+        <div class="card" style="width: 18rem;">
+    
+          <button data-aos="fade-up-right" class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions4" aria-controls="offcanvasWithBothOptions">
+            
+            <img src="../assets/imagenes-rem/proyecto-4-bano/portada-bano (1).jpg" class="card-img-top" alt="proyecto reforma bano">
+          
+          </button>
+    
+          <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions4" aria-labelledby="offcanvasWithBothOptionsLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">rfm. baño</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+    
+              <div>
+      
+                  <div class="d-flex flex-column justify-content-center">
+      
+                    <i class="bi bi-people-fill"> Arquitecta: Kiara Alfaro</i>
+                    <i class="bi bi-square"> Area: 4 m2</i>
+                    <i class="bi bi-table"> Año: 2022</i>
                     
-                    <div class="carousel-item">
-                      <img src="../assets/imagenes-rem/proyecto-5-duplex/imagen-2-cocina (1).jpg" class="d-block w-100" alt="...">
-                    </div>
+      
+                  </div>
+      
+                  <p>Para poder aprovechar mejor el espacio y ganar en amplitud, se deshicieron del bidé y váter que aparecen en el plano de la izquierda, e incorporaron un plato de ducha de pared a pared, de fácil acceso y muy funcional.Además, donde antes estaba la grifería desfasada y la mini ducha, que parecía de todo menos cómoda, instalaron un váter moderno y práctico al lado de un bonito mueble de madera para el lavamanos, dando así un toque actual a la estancia. </p>
+      
+                  <div id="carouselExampleFade4" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-inner">
                     
-                    <div class="carousel-item">
-                      <img src="../assets/imagenes-rem/proyecto-5-duplex/imagen-3-cocina (1).jpg" class="d-block w-100" alt="...">
+                      <div class="carousel-item active">
+                        <img src="../assets/imagenes-rem/proyecto-4-bano/imagen-1-bano (1).jpg" class="d-block w-100" alt="...">
+                      </div>
+                      
+                      <div class="carousel-item">
+                        <img src="../assets/imagenes-rem/proyecto-4-bano/imagen-2-bano (1).jpg" class="d-block w-100" alt="...">
+                      </div>
+                      
+                      <div class="carousel-item">
+                        <img src="../assets/imagenes-rem/proyecto-4-bano/imagen-3-bano (1).jpg" class="d-block w-100" alt="...">
+                      </div>
+      
+                      <div class="carousel-item">
+                        <img src="../assets/imagenes-rem/proyecto-4-bano/imagen-4-bano (1).jpg" class="d-block w-100" alt="...">
+                      </div>
+                    
                     </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade4" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade4" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                
+                
+                </div>
+              
     
-                    <div class="carousel-item">
-                      <img src="../assets/imagenes-rem/proyecto-5-duplex/imagen-4-cocina (1).jpg" class="d-block w-100" alt="...">
-                    </div>
+            </div>
+          </div>
     
-                    <div class="carousel-item">
-                      <img src="../assets/imagenes-rem/proyecto-5-duplex/imagen-5-cocina (1).jpg" class="d-block w-100" alt="...">
-                    </div>
+    
+    
+          <div data-aos="fade-up-right" class="card-body">
+    
+            <p class="card-text">
+              
+              <p class="titulocard">rfm. baño</p>
+              <p class="textocard">Vivienda ubicada en Buenos Aires.</p>
+    
+            </p>
+          </div>
+        </div>
+    
+    
+        <div class="card" style="width: 18rem;">
+    
+          <button data-aos="fade-up-right" class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions5" aria-controls="offcanvasWithBothOptions">
+            
+            <img src="../assets/imagenes-rem/proyecto-5-cocina/portada-cocina (1).jpg" class="card-img-top" alt="proyecto reforma cocina">
+          
+          </button>
+    
+          <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions5" aria-labelledby="offcanvasWithBothOptionsLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">rfm cocina</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              
+                <div>
+      
+                  <div class="d-flex flex-column justify-content-center">
+      
+                    <i class="bi bi-people-fill"> Arquitecta: Kiara Alfaro</i>
+                    <i class="bi bi-square"> Area: 14 m2</i>
+                    <i class="bi bi-table"> Año: 2022</i>
+                    
+      
+                  </div>
+      
+                  <p>Para poder conectar los espacios como deseaban, se deshicieron del cuarto de la limpieza, y redistribuyeron la cocina, de modo que pudieran abrir una parte de la pared principal y retirar las puertas hasta el techo del salón.</p>
+      
+                  <div id="carouselExampleFade5" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                    
+                      <div class="carousel-item active">
+                        <img src="../assets/imagenes-rem/proyecto-5-cocina/imagen-1-cocina (1).jpg (1).jpg" class="d-block w-100" alt="imagen de proyecto">
+                      </div>
+                      
+                      <div class="carousel-item">
+                        <img src="../assets/imagenes-rem/proyecto-5-cocina/imagen-2-cocina (1).jpg" class="d-block w-100" alt="imagen de proyecto">
+                      </div>
+                      
+                      <div class="carousel-item">
+                        <img src="../assets/imagenes-rem/proyecto-5-cocina/imagen-3-cocina (1).jpg" class="d-block w-100" alt="imagen de proyecto">
+                      </div>
+      
+                      <div class="carousel-item">
+                        <img src="../assets/imagenes-rem/proyecto-5-cocina/imagen-4-cocina (1).jpg" class="d-block w-100" alt="imagen de proyecto">
+                      </div>
+      
+                      <div class="carousel-item">
+                        <img src="../assets/imagenes-rem/proyecto-cocina/imagen-5-cocina (1).jpg" class="d-block w-100" alt="imagen de proyecto">
+                      </div>
 
-                    <div class="carousel-item">
-                      <img src="../assets/imagenes-rem/proyecto-5-duplex/imagen-6-cocina (1).jpg" class="d-block w-100" alt="...">
+                      <div class="carousel-item">
+                        <img src="../assets/imagenes-rem/proyecto-5-cocina/imagen-6-cocina (1).jpg" class="d-block w-100" alt="imagen de proyecto">
+                      </div>
+                    
                     </div>
-                  
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade5" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade5" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
                   </div>
-                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade5" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                  </button>
-                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade5" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                  </button>
+                
+                
                 </div>
-              
-              
-              </div>
-            </div>
     
+    
+            </div>
           </div>
     
+    
+    
+          <div data-aos="fade-up-right" class="card-body">
+    
+            <p class="card-text">
+              
+              <p class="titulocard">rfm. cocina</p>
+              <p class="textocard">Reforma para poder conectar los espacios como deseaban.</p>
+    
+            </p>
+          </div>
         </div>
     
-        <div>
     
-          <div class="card" style="width: 18rem;">  
-          
-            <button class="imagenButton" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop6" aria-controls="staticBackdrop">
+        <div class="card" style="width: 18rem;">
     
-            <img src="../assets/imagenes-rem/proyecto-6-oficina/portada-oficina (1).jpg" alt="reforma oficina">
-          
-            </button>
-    
-            <div class="card-body">
-    
-              <h5 class="card-title">RFM.OFICINA RPLM</h5>
-    
-              <div class="card-text" >
-               
-                <p>Barrio :Palermo</p>
-                <p>Ciudad : Buenos Aires </p>
-              
-              </div>
-              
-            </div>
-          </div>  
+          <button data-aos="fade-up-right" class="btn " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions6" aria-controls="offcanvasWithBothOptions">
             
-          <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop6" aria-labelledby="staticBackdropLabel">
+            <img src="../assets/imagenes-rem/proyecto-6-oficina/portada-oficina (1).jpg" class="card-img-top" alt="proyecto reforma oficina">
+          
+          </button>
     
-    
+          <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions6" aria-labelledby="offcanvasWithBothOptionsLabel">
             <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="staticBackdropLabel">RFM. OFICINAS RPLM </h5>
+              <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">rfm. oficina rplm</h5>
               <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
+            <div class="offcanvas-body">
     
     
-            <div class="informaciondeproyecto offcanvas-body">
+              
               <div>
-    
-                <div class="d-flex flex-column justify-content-center">
-    
-                  <i class="bi bi-people-fill"> Arquitecta: Kiara Alfaro</i>
-                  <i class="bi bi-square"> Area: . m2</i>
-                  <i class="bi bi-table"> Año: 2022</i>
-                  <i class="bi bi-pin"> Ubicacion:Palermo, Bs As</i>
-    
-                </div>
-    
-                <p>En esta ocasión renovamos las oficinas de la radio, terminaciones, mobiliario, iluminación y los estudios propiamente dichos.Nos ocupamos de todo, desde el proyecto hasta contratar y supervisar todos los gremios. </p>
-    
-                <div id="carouselExampleFade6" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                  <div class="carousel-inner">
-                  
-                    <div class="carousel-item active">
-                      <img src="../assets/imagenes-rem/proyecto-6-oficina/imagen-1-oficina (1).jpg" class="d-block w-100" alt="...">
-                    </div>
-                    
-                    <div class="carousel-item">
-                      <img src="../assets/imagenes-rem/proyecto-6-oficina/imagen-2-oficina (1).jpg" class="d-block w-100" alt="...">
-                    </div>
-                    
-                    <div class="carousel-item">
-                      <img src="../assets/imagenes-rem/proyecto-6-oficina/imagen-3-oficina (1).jpg" class="d-block w-100" alt="...">
-                    </div>
-    
-                    <div class="carousel-item">
-                      <img src="../assets/imagenes-rem/proyecto-6-oficina/imagen-4-oficina (1).jpg" class="d-block w-100" alt="...">
-                    </div>
-    
-                    <div class="carousel-item">
-                      <img src="../assets//imagenes-rem/proyecto-6-oficina/imagen-5-oficina (1).jpg" class="d-block w-100" alt="...">
-                    </div>
-                  
+      
+                  <div class="d-flex flex-column justify-content-center">
+      
+                    <i class="bi bi-people-fill"> Arquitecta: Kiara Alfaro</i>
+                    <i class="bi bi-square"> Area: . m2</i>
+                    <i class="bi bi-table"> Año: 2022</i>
+                    <i class="bi bi-pin"> Ubicacion:Palermo, Bs As</i>
+      
                   </div>
-                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade6" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                  </button>
-                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade6" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                  </button>
+      
+                  <p>En esta ocasión renovamos las oficinas de la radio, terminaciones, mobiliario, iluminación y los estudios propiamente dichos.Nos ocupamos de todo, desde el proyecto hasta contratar y supervisar todos los gremios. </p>
+      
+                  <div id="carouselExampleFade6" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                    
+                      <div class="carousel-item active">
+                        <img src="../assets/imagenes-rem/proyecto-6-oficina/imagen-1-oficina (1).jpg" class="d-block w-100" alt="imagen de proyecto">
+                      </div>
+                      
+                      <div class="carousel-item">
+                        <img src="../assets/imagenes-rem/proyecto-6-oficina/imagen-2-oficina (1).jpg" class="d-block w-100" alt="imagen de proyecto">
+                      </div>
+                      
+                      <div class="carousel-item">
+                        <img src="../assets/imagenes-rem/proyecto-6-oficina/imagen-3-oficina (1).jpg" class="d-block w-100" alt="imagen de proyecto">
+                      </div>
+      
+                      <div class="carousel-item">
+                        <img src="../assets/imagenes-rem/proyecto-6-oficina/imagen-4-oficina (1).jpg" class="d-block w-100" alt="imagen de proyecto">
+                      </div>
+      
+                      <div class="carousel-item">
+                        <img src="../assets//imagenes-rem/proyecto-6-oficina/imagen-5-oficina (1).jpg" class="d-block w-100" alt="imagen de proyecto">
+                      </div>
+                    
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade6" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade6" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                
+                
                 </div>
+    
+            </div>
+          </div>
+    
+    
+    
+          <div data-aos="fade-up-right" class="card-body">
+    
+            <p class="card-text">
               
-              
+              <p class="titulocard">rfm. oficina rplm</p>
+              <p class="textocard">En esta ocasión renovamos las oficinas de la radio.</p>
+    
+            </p>
+          </div>
+        </div>
+    
+      </div>
+
+
+      <aside class="asidesecciones d-flex flex-column justify-content-around ">
+
+
+        <button class=" btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">NOSOTROS</button>
+    
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+          <div class="offcanvas-header">
+            
+            <h5 class="offcanvas-title" id="offcanvasRightLabel">NOSOTROS</h5>
+    
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    
+          </div>
+          <div class="offcanvas-body">
+    
+            <div  class="atencion d-flex flex-row align-items-center" >
+    
+              <div class="imgatencion"><img src="../assets/aside-seccion-proyectos/aside-escuchamos.jpg" alt="escuchamos"></div>
+        
+              <div class="d-flex flex-column align-items-center">
+        
+                <h5>ESCUCHAMOS</h5>
+        
+                <p>Nos caracterizamos por la atención personalizada que brindamos a nuestros clientes; escuchamos y evaluamos atentamente sus necesidades para ofrecerle una solución 100% a medida.</p>
+        
+              </div>  
+            </div>
+        
+            <div class="atencion d-flex flex-row align-items-center">
+        
+              <div class="imgatencion"><img src="../assets/aside-seccion-proyectos/aside-proponemos.jpg" alt="proponemos"></div>
+        
+              <div class="d-flex flex-column align-items-center">
+        
+                <h5>PROPONEMOS</h5>
+        
+                <p>Transformamos ideas en verdaderas experiencias. Brindamos soluciones integrales y versátiles, hechas a medida. Nuestra flexibilidad y trabajo continuo con el cliente dan como resultado propuestas que superan sus expectativas.</p>
+        
+              </div> 
+        
+            </div>
+        
+            <div class="atencion d-flex flex-row align-items-center">
+        
+              <div class="imgatencion"><img src="../assets/aside-seccion-proyectos/aside-desarrollamos.jpg" alt="desarrollamos"></div>
+        
+              <div class="d-flex flex-column align-items-center">
+        
+                <h5>DESARROLLAMOS</h5>
+        
+                <p>La supervisión constante en el gerenciamiento y ejecución integral de las obras sumado a una amplia trayectoria ha consolidado nuestra especialización en la creación de ambientes óptimos para el desarrollo del capital humano.</p>
+        
               </div>
+        
             </div>
     
           </div>
-    
         </div>
     
-      </section>
-    
-      <aside class="asidesecciones d-flex flex-column justify-content-around ">
-    
-        <div class="atencion d-flex flex-row align-items-center" >
-    
-          <div class="imgatencion"><img src="../assets/aside-seccion-proyectos/aside-escuchamos.jpg" alt="escuchamos"></div>
-    
-          <div class="d-flex flex-column align-items-center">
-    
-            <h5>ESCUCHAMOS</h5>
-    
-            <p>Nos caracterizamos por la atención personalizada que brindamos a nuestros clientes; escuchamos y evaluamos atentamente sus necesidades para ofrecerle una solución 100% a medida.</p>
-    
-          </div>  
-        </div>
-    
-        <div class="atencion d-flex flex-row align-items-center">
-    
-          <div class="imgatencion"><img src="../assets/aside-seccion-proyectos/aside-proponemos.jpg" alt="proponemos"></div>
-    
-          <div class="d-flex flex-column align-items-center">
-    
-            <h5>PROPONEMOS</h5>
-    
-            <p>Transformamos ideas en verdaderas experiencias. Brindamos soluciones integrales y versátiles, hechas a medida. Nuestra flexibilidad y trabajo continuo con el cliente dan como resultado propuestas que superan sus expectativas.</p>
-    
-          </div> 
-    
-        </div>
-    
-        <div class="atencion d-flex flex-row align-items-center">
-    
-          <div class="imgatencion"><img src="../assets/aside-seccion-proyectos/aside-desarrollamos.jpg" alt="desarrollamos"></div>
-    
-          <div class="d-flex flex-column align-items-center">
-    
-            <h5>DESARROLLAMOS</h5>
-    
-            <p>La supervisión constante en el gerenciamiento y ejecución integral de las obras sumado a una amplia trayectoria ha consolidado nuestra especialización en la creación de ambientes óptimos para el desarrollo del capital humano.</p>
-    
-          </div>
-    
-        </div>
-    
+        
       </aside>
      
     </main>
@@ -709,71 +694,93 @@
 
     <footer class="row">
 
-      
+      <section class="seccionmobile">
+  
+        
+        <a href="https://goo.gl/maps/byVVMgsuDNyeyyY98" target="_blank"><i class="bi bi-geo-alt"></i></a>
+  
+        <a href="mailto:arcealfarokiara@gmail.com" target="_blank"><i class="bi bi-envelope"></i></a>
+  
+  
+        <a href="https://wa.me/1121789061?text=Contactame%20por%20mas%20imformacion%20!" target="_blank"><i class="bi bi-whatsapp"></i></a>
+  
+        <a href=https://www.instagram.com/alfaroarcekiara_/ target="_blank"><i class="bi-instagram"></i></a>
+  
+        <a href="https://www.facebook.com/katrina.alfaro.75" target="_blank"><i class="bi-facebook"></i></a>
+  
+        <a href="https://ar.pinterest.com/arcealfarokiara/_saved/" target="_blank"><i class="bi-pinterest"></i></a>
+  
+      </section>
+  
       <section class=" seccion1 d-flex flex-row justify-content-around">
           
-        <div class="d-flex flex-column align-items-center">
-
-          <h5>LLAMANOS AL</h5>
-          <i class="bi bi-telephone"> 11-2178-9062</i>
-          
-        </div>
-
-        <div class="d-flex flex-column align-items-center">
-          
-          <h5>WHATSAPP</h5>
-          <i class="bi bi-whatsapp"> <a href="https://wa.me/1121789061?text=Contactame%20por%20mas%20imformacion%20!" target="_blank">Whatsapp</a></i>
-
-        </div>
-
-        <div class="d-flex flex-column align-items-center">
-
-          <h5>CONTACTO</h5>
-          <i class="bi bi-envelope"> <a href="mailto:arcealfarokiara@gmail.com" target="_blank">arcealfarokiara@gmail.com</a></i>
-        </div>
-
-        <div class="d-flex flex-column align-items-center">
-
-          <h5>UBICACION</h5>
-          <i class="bi bi-geo-alt"> <a href="https://goo.gl/maps/byVVMgsuDNyeyyY98" target="_blank">Corrales 2312</a></i>
-
-        </div>
-        
-        <div class="d-flex flex-column align-items-center">
-
-          <h5>SEGUINOS EN LAS REDES</h5>
-
-          <div>
-
-            <a href=https://www.instagram.com/alfaroarcekiara_/ target="_blank"><i class="bi-instagram"></i></a>
-            <a href="https://www.facebook.com/katrina.alfaro.75" target="_blank"><i class="bi-facebook"></i></a>
-            <a href="https://ar.pinterest.com/arcealfarokiara/_saved/" target="_blank"><i class="bi-pinterest"></i></a>
-
+          <div class="d-flex flex-column align-items-center">
+  
+            <h5>LLAMANOS AL</h5>
+            <i class="bi bi-telephone"> 11-2178-9062</i>
+            
           </div>
-        </div>
-
-      </section> 
-
-      <div class="seccion2 col-12 d-flex flex-column align-items-center justify-content-center ">
-        
-        <div class="d-flex flex-row align-items-baseline">
-
-          <a href="../index.html"><img src="../assets/logo-arqui.png" alt="logo arki"></a>
-          <h6>STUDIO ARQUITECTURA</h6>
-
-        </div>
-        
-        <p>&#169 2022 Todos los derechos reservados</p>
-        
-
-      </div>
-
+  
+          <div class="d-flex flex-column align-items-center">
+            
+            <h5>WHATSAPP</h5>
+            <i class="bi bi-whatsapp"> <a href="https://wa.me/1121789061?text=Contactame%20por%20mas%20imformacion%20!" target="_blank">Whatsapp</a></i>
+  
+          </div>
+  
+          <div class="d-flex flex-column align-items-center">
+  
+            <h5>CONTACTO</h5>
+            <i class="bi bi-envelope"> <a href="mailto:arcealfarokiara@gmail.com" target="_blank">arcealfarokiara@gmail.com</a></i>
+          </div>
+  
+          <div class="d-flex flex-column align-items-center">
+  
+            <h5>UBICACION</h5>
+            <i class="bi bi-geo-alt"> <a href="https://goo.gl/maps/byVVMgsuDNyeyyY98" target="_blank">Corrales 2312</a></i>
+  
+          </div>
+          
+          <div class="d-flex flex-column align-items-center">
+  
+            <h5>SEGUINOS EN LAS REDES</h5>
+  
+            <div>
+  
+              <a href=https://www.instagram.com/alfaroarcekiara_/ target="_blank"><i class="bi-instagram"></i></a>
+              <a href="https://www.facebook.com/katrina.alfaro.75" target="_blank"><i class="bi-facebook"></i></a>
+              <a href="https://ar.pinterest.com/arcealfarokiara/_saved/" target="_blank"><i class="bi-pinterest"></i></a>
+  
+            </div>
+          </div>
+  
+      </section>
+  
+  
+      <section class="seccion2 col-12 d-flex flex-column align-items-center justify-content-center ">
+          
+          <div class=" tituloarki d-flex flex-row align-items-baseline">
+  
+            <a href="../index.html"><img src="../assets/logo-arqui.png" alt="logo arki"></a>
+            <h6>STUDIO ARQUITECTURA</h6>
+  
+          </div>
+          
+          <p>&#169 2022 Todos los derechos reservados</p>
+          
+  
+      </section>
+  
     </footer>
 
 
     <script src="../js/bootstrap.js"></script>
-        <script src="../js/bootstrap.min.js"></script>
-        <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
 </body>
 </html>

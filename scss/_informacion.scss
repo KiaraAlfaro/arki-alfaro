@@ -1,34 +1,35 @@
 
 .informacion{ display: none !important; }
+
 .seccioninformacion{
 
     background-color: $color-principal;
-}
-.informacion, .carousel{ 
 
-    
+    .informacion, .carousel{ 
 
-    .card-title{
+        
 
-        height: 30px;
-        width: 200px;
-        border-bottom: solid red 1px;
-    }
-    .card{
+        .card-title{
 
-        background-color: inherit !important;
-        border: inherit !important;
-        color: white !important;
+            height: 30px;
+            width: 200px;
+            border-bottom: solid $color-sub 1px;
+        }
+        .card{
 
-        img:hover{
+            background-color: inherit !important;
+            border: inherit !important;
+            color: white !important;
 
-            filter: opacity(70%);
-            transform: scale(1.1);
+            img:hover{
+
+                filter: opacity(70%);
+                transform: scale(1.1);
+                
+            }
             
         }
-        
     }
-}
 
 
 
@@ -71,9 +72,16 @@
 
 }
 
+}
+
 @media (min-width: 1064px) {
 
-    .carousel{display: none;}
+    .seccioninformacion{
+
+        .carousel{display: none;}
+
+   
+
     .informacion{
         
         display: flex !important;
@@ -83,5 +91,6 @@
         background-color: $color-principal;
         padding-top: 30px;
     }
+}
    
 }
