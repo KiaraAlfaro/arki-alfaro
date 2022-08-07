@@ -545,6 +545,7 @@ footer::before {
       line-height: 0.9em;
       letter-spacing: -2.5px;
       font-weight: bolder !important; } }
+/*listo*/
 .mainproyectos {
   display: grid;
   grid-template-columns: 1fr 25px;
