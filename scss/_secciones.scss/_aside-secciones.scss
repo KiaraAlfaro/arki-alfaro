@@ -1,38 +1,48 @@
-
+/*listo*/
 
 .asidesecciones{
 
-    grid-row: 2/3;
-    grid-column: 2/3;
-    z-index: 1;
+    grid-row: 2/3 !important;
+    grid-column: 2/3 !important;
+    background-color: $color-principal;
 
-    
-    
     .btn{
 
-        height: 50px;
-        width: 100%;
-        
+       
+        width: 25px;
+        height: 80px;
         border: inherit;
         border-radius: 0%;
         background-color: $color-secundario ;
-        transform: rotate(90deg);
+        padding: inherit;
+        position: fixed;
+        top: 50%;
+
+        i{
+
+            font-size: 30px;
+            
+        }
         
-       
     }
     
     
     .atencion{
 
         color:white;
-        margin-top: 50px;
+        display: flex;
+        flex-direction: column ;
+        text-align: center ;
+        align-items: center;
+
         .imgatencion{
 
             border-radius: 50%;
             width: 200px;
             height: 200px;
             overflow: hidden;
-            
+            margin-bottom: 20px;
+
             img{
 
                 border-radius: 50%;
@@ -52,10 +62,11 @@
         h5{
 
             font-style: oblique;
+            width: 80%;
         }
+
         p{
-            width: 380px;
-            margin-left: 30px;
+            width: 80%;
         }
     }
     
@@ -77,18 +88,23 @@
     
 }
 
-@media(max-width:768px){
+@media (min-width:1064px){
 
     .asidesecciones{
 
-        .btn{
+        .atencion{
 
-            height: 25px !important;
+            display: flex;
+            flex-direction: row ;
+            align-items: center;
+
+            p{
+                width: 380px;
+                margin-left: 30px;
+            }
+
         }
-    
-    }    
-    
-
+         
+    }
 
 }
-

@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="seccion cotizaciones">
+        <link rel="shortcut icon" href="../assets/img/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="stylesheet" href="../css/newStyles.css">
+        <title>Cotiza tu casa</title>
+    </head>
+<body>
+    
+     <!--HEADER-->
+
+     <header class="row" >
+      
+        <nav  class="navbar  navbar-expand-lg col-12">
+  
+          <div class="container-fluid ">
+  
+            <a id="logo" class="navbar-brand rounded-2 opacity-75 " href="../index.html">
+              
+              <img  src="../assets/logo-arqui.png" alt="logo arki" width="60" height="54" class="d-inline-block rounded-2 ">
+              
+            </a>
+  
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              
+              <span class="navbar-toggler-icon"><i class="bi bi-list"></i> </span>
+            
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+  
+                <li class="nav-item">
+  
+                  <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                
+                </li>
+  
+                <li class="nav-item dropdown">
+                  
+                  <a class="nav-link dropdown-toggle" href="../pages.html/arquitectura.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Arquitectura
+                  </a>
+                  
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+  
+                    <li><a class="dropdown-item" href="../pages.html/arquitectura.html">Proyectos</a></li>
+                    <li><a class="dropdown-item" href="../pages.html/cotizacion.html">Cotiza tu casa</a></li>
+                
+                  </ul>
+                
+                </li>
+  
+                <li class="nav-item dropdown">
+                  
+                  <a class="nav-link dropdown-toggle" href="../pages.html/remodelacion.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Remodelacion
+                  </a>
+                  
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+  
+                    <li><a class="dropdown-item" href="../pages.html/remodelacion.html">Proyectos</a></li>
+                    <li><a class="dropdown-item" href="../pages.html/cotizacion.html">Cotiza tu remodelacion</a></li>
+                
+                  </ul>
+                
+                </li>
+  
+                <li class="nav-item">
+                  
+                  <a class="nav-link" href="../pages.html/cotizacion.html">Cotiza tu proyecto</a>
+                
+                </li>
+  
+                <li class="nav-item">
+                  
+                  <a class="nav-link" href="../pages.html/contacto.html">Contactanos</a>
+                
+                </li>
+  
+              </ul>
+              
+            </div>
+  
+            <div class="logosNav">
+  
+              <a href="https://www.instagram.com/alfaroarcekiara_/" target="_blank"><i class="bi-instagram"></i></a>
+              <a href="https://www.facebook.com/katrina.alfaro.75" target="_blank"><i class="bi-facebook"></i></a>
+              <a href="https://ar.pinterest.com/arcealfarokiara/_saved/" target="_blank"><i class="bi-pinterest"></i></a>
+              <a href="https://wa.me/1121789061?text=Contactame%20por%20mas%20imformacion%20!" target="_blank"><i class="bi-whatsapp"></i></a>
+  
+            </div>
+  
+          </div>
+        </nav>
+         
+      </header>
+
+      <main class="mainform">
+
+        <div class=" titulos d-flex flex-column justify-content-center text-black " >
+    
+            <span data-aos="fade-up-right" > tu vivienda desde 0 </span>
+            
+        </div> 
+
+        <form data-aos="fade-up-right" class="formularioscoti" >
+
+            <p class="tituloform "> con estos formularios podremos mandarte un presupuesto estimado a base de las nesecidades de tu proyecto</p>
+  
+            <div class="mb-3">
+  
+              <label for="exampleInputPassword1" class="form-label">nombre</label>
+              <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Kiara" required>
+  
+            </div>
+  
+            <div class="mb-3">
+  
+              <label for="exampleInputPassword1" class="form-label">apellido</label>
+              <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Alfaro" required>
+  
+            </div>
+  
+            <div class="mb-3">
+  
+              <label for="exampleInputPassword1" class="form-label">e-mail</label>
+              <input type="email" class="form-control" id="exampleInputPassword1" placeholder="ejemplo@gmail.com" required>
+  
+            </div>
+  
+            <div class="mb-3">
+  
+              <label for="exampleInputPassword1" class="form-label">telefono / numero celular</label>
+              <input type="number" class="form-control" id="exampleInputPassword1" placeholder="15 1111-1111" required>
+  
+            </div>
+  
+            <div class="mb-3">
+  
+              <label for="exampleInputPassword1" class="form-label">ubicacion del terreno</label>
+              <input type="text" class="form-control" id="exampleInputPassword1" placeholder="En Corrales 1234" required>
+  
+            </div>
+  
+        
+            <div class="mb-3">
+  
+              <label for="exampleFormControlTextarea1" class="form-label">caracteristicas del terreno</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Ejemplo: Se encuentra en una esquina, con pendiente, entre medianeras...etc"></textarea>
+  
+            </div>
+  
+            <div class="mb-3">
+  
+              <label for="exampleInputPassword1" class="form-label">area o perimetro del terreno</label>
+              <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Ejemplo: area:24m2 / perimetro: 14m x 18m" required>
+  
+            </div>
+  
+            <div class="mb-3">
+  
+              <label for="exampleInputPassword1" class="form-label">m2 a proyectar en tu terreno</label>
+              <select class="form-select" id="inputGroupSelect01">
+                <option selected>m2...</option>
+                <option value="1">100m2 0 menos</option>
+                <option value="2">200m2 0 menos</option>
+                <option value="3">300m2 0 menos</option>
+                <option value="4">Mas de 300m2</option>
+              </select>
+  
+            </div>
+  
+            <div class="mb-3">
+  
+              <label for="exampleFormControlTextarea1" class="form-label">caracteristicas para tu terreno a proyectar</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Ejemplo: Debe tener un patio interno, espacios integrados...etc"></textarea>
+  
+            </div>
+  
+            <div class="mb-3">
+  
+              <label for="exampleFormControlTextarea1" class="form-label">cantidad de ambientes para tu terreno a proyectar</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Ejemplo: Debe tener un patio interno, espacios integrados...etc"></textarea>
+  
+            </div>
+  
+            <div class="mb-3">
+  
+              <label for="exampleFormControlTextarea1" class="form-label">subsuelo</label>
+  
+              <div class="form-check form-switch">
+                <input class="input2 form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                <label class="form-check-label" for="flexSwitchCheckDefault">si</label>
+              </div>
+  
+            </div>
+  
+            <div class="mb-3">
+  
+              <label for="exampleFormControlTextarea2" class="form-label">cantidad de plantas</label>
+  
+              <div class="form-check">
+  
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" checked>
+  
+                <label class="form-check-label" for="flexRadioDefault2">
+                  Solo P.Baja
+                </label>
+  
+              </div>
+              
+              <div class="form-check">
+  
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4">
+  
+                <label class="form-check-label" for="flexRadioDefault1">
+                  P.Baja + 1planta
+                </label>
+  
+              </div>
+  
+              <div class="form-check">
+  
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault5" checked>
+  
+                <label class="form-check-label" for="flexRadioDefault2">
+                  P.Baja + 2planta
+                </label>
+  
+              </div>
+  
+              <div class="form-check">
+  
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault6" checked>
+  
+                <label class="form-check-label" for="flexRadioDefault2">
+                  P.Baja + 3planta
+                </label>
+  
+              </div>
+  
+              <div class="botones mb-3">
+  
+                <button type="submit" class="btn">Enviar</button>
+                <button type="reset" class="btn ">Reestablecer</button>
+  
+              </div>
+  
+            </div>
+  
+          </form>
+
+        
+      </main>
+
+      <!--FOOTER-->    
+
+    <footer class="row">
+
+        <section class="seccionmobile">
+    
+          
+          <a href="https://goo.gl/maps/byVVMgsuDNyeyyY98" target="_blank"><i class="bi bi-geo-alt"></i></a>
+    
+          <a href="mailto:arcealfarokiara@gmail.com" target="_blank"><i class="bi bi-envelope"></i></a>
+    
+    
+          <a href="https://wa.me/1121789061?text=Contactame%20por%20mas%20imformacion%20!" target="_blank"><i class="bi bi-whatsapp"></i></a>
+    
+          <a href=https://www.instagram.com/alfaroarcekiara_/ target="_blank"><i class="bi-instagram"></i></a>
+    
+          <a href="https://www.facebook.com/katrina.alfaro.75" target="_blank"><i class="bi-facebook"></i></a>
+    
+          <a href="https://ar.pinterest.com/arcealfarokiara/_saved/" target="_blank"><i class="bi-pinterest"></i></a>
+    
+        </section>
+    
+        <section class=" seccion1 d-flex flex-row justify-content-around">
+            
+            <div class="d-flex flex-column align-items-center">
+    
+              <h5>LLAMANOS AL</h5>
+              <i class="bi bi-telephone"> 11-2178-9062</i>
+              
+            </div>
+    
+            <div class="d-flex flex-column align-items-center">
+              
+              <h5>WHATSAPP</h5>
+              <i class="bi bi-whatsapp"> <a href="https://wa.me/1121789061?text=Contactame%20por%20mas%20imformacion%20!" target="_blank">Whatsapp</a></i>
+    
+            </div>
+    
+            <div class="d-flex flex-column align-items-center">
+    
+              <h5>CONTACTO</h5>
+              <i class="bi bi-envelope"> <a href="mailto:arcealfarokiara@gmail.com" target="_blank">arcealfarokiara@gmail.com</a></i>
+            </div>
+    
+            <div class="d-flex flex-column align-items-center">
+    
+              <h5>UBICACION</h5>
+              <i class="bi bi-geo-alt"> <a href="https://goo.gl/maps/byVVMgsuDNyeyyY98" target="_blank">Corrales 2312</a></i>
+    
+            </div>
+            
+            <div class="d-flex flex-column align-items-center">
+    
+              <h5>SEGUINOS EN LAS REDES</h5>
+    
+              <div>
+    
+                <a href=https://www.instagram.com/alfaroarcekiara_/ target="_blank"><i class="bi-instagram"></i></a>
+                <a href="https://www.facebook.com/katrina.alfaro.75" target="_blank"><i class="bi-facebook"></i></a>
+                <a href="https://ar.pinterest.com/arcealfarokiara/_saved/" target="_blank"><i class="bi-pinterest"></i></a>
+    
+              </div>
+            </div>
+    
+        </section>
+    
+    
+        <section class="seccion2 col-12 d-flex flex-column align-items-center justify-content-center ">
+            
+            <div class=" tituloarki d-flex flex-row align-items-baseline">
+    
+              <a href="../index.html"><img src="../assets/logo-arqui.png" alt="logo arki"></a>
+              <h6>STUDIO ARQUITECTURA</h6>
+    
+            </div>
+            
+            <p>&#169 2022 Todos los derechos reservados</p>
+            
+    
+        </section>
+    
+      </footer>
+      
+      <script src="../js/bootstrap.js"></script>
+      <script src="../js/bootstrap.min.js"></script>
+      <script src="../js/bootstrap.bundle.min.js"></script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
+
+
+
+
+</body>
+</html>

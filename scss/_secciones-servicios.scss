@@ -1,18 +1,15 @@
 
-@import "maps";
+/*--listo--*/
+
 @import "mixin";
-@import "variables";
+@import "./_extras.scss/variables";
 
 
-.seccionProyectos2{
+.seccionservicios{
         
     background-color: $color-principal;
-    display: flex!important;
     padding-top: 20px;
     padding-bottom: 20px;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
         
 
     .contenedor{
@@ -21,18 +18,23 @@
             
     }
 
-    p , h5{ color:map-get($colores,"principal");}
+    p , h5{ color:white;}
 
     h5{
+
         margin-top: 20px;
         border-bottom: solid 2px $color-sub;
         font-size: 17px ;
+
+        @extend .tipografia-subtitulo;
+        text-decoration: none !important;
     }
     
     p{
         line-height:0.02px;
         margin-top: 10px;
         font-size: 13px;
+        font-weight: bolder;
     }
     
 
@@ -41,9 +43,10 @@
 
 @media(min-width:480px){
 
-    .seccionProyectos2{
-  
-        h5{font-size: 12px !important;}
+    .seccionservicios{
+
+        
+        h5{font-size: 20px !important;}
     
     }
      
@@ -54,25 +57,30 @@
 
 @media(min-width:1064px){
 
-    .seccionProyectos2{
+    .seccionservicios{
         
-    .contenedor{
-            
-        @include contenedor (50%,250px,250px !important);
-            
-    }
-    h5{
-       
-        font-size: 20px !important;
-    }
+        display: flex!important;
+        flex-direction: row !important;
+        justify-content: space-around;
+  
+        .contenedor{
+                
+            @include contenedor (50%,250px,250px !important);
+                
+        }
+
+        h5{
+        
+            font-size: 20px !important;
+        }
     
    
-    p{
-        line-height:0.05px;
-       
-        font-size: 18px;
+        p{
+
+            line-height:0.05px;
+            font-size: 18px;
+        }
     }
-}
 }
 
 

@@ -20,7 +20,7 @@ nav {
   nav a {
     color: #dbdbdb !important; }
   nav a:hover {
-    color: #7184a7 !important; }
+    color: #114453 !important; }
   nav .dropdown-menu {
     background-color: #181818; }
   nav .container-fluid {
@@ -66,13 +66,40 @@ body::-webkit-scrollbar {
   background-color: #181818; }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #7184a7;
+  background-color: #114453;
   border-radius: 7px; }
 
+/*-------- tipografias-----------*/
+.tipografia-titulo-portada, .portada .portadatitulo span, .titulos span {
+  font-weight: 300;
+  text-transform: uppercase;
+  line-height: 0.9em;
+  letter-spacing: -2px;
+  font-weight: bolder;
+  position: relative; }
+
+.tipografia-titulo, .principalesProyectos .tituloproyectos, .funcion .titulofuncion, .mainform .formularioscoti label, .mainform .formularioscoti .tituloform {
+  font-weight: 300;
+  text-transform: uppercase;
+  line-height: 1.5rem;
+  font-weight: bolder;
+  position: relative;
+  font-size: 20px;
+  text-decoration: underline #114453; }
+
+.tipografia-subtitulo, .seccionservicios h5, .seccioninformacion .informacion .card-title, .seccioninformacion .carousel .card-title, .postitulocotizacion aside .asidoinformacioncotizacion, .funcion {
+  font-weight: 300;
+  text-transform: uppercase;
+  line-height: 0.9em;
+  font-weight: bolder;
+  position: relative;
+  font-size: 15px; }
+
 /*----------------------------Index----------------------------*/
+/*listo*/
 .portada {
-  background-image: url(../assets/img/fondo-nuestros-proyectos.jpg);
-  background-position-x: center;
+  background-image: url(../assets/img/fondo-portada.jpg);
+  background-position: center;
   background-repeat: no-repeat;
   background-size: 100% 245px;
   position: relative;
@@ -85,11 +112,6 @@ body::-webkit-scrollbar-thumb {
     padding-left: 30px; }
     .portada .portadatitulo span {
       font-size: 30px;
-      font-weight: 300;
-      text-transform: uppercase;
-      line-height: 0.9em;
-      letter-spacing: -2.5px;
-      font-weight: bolder !important;
       position: relative; }
 
 .portada::before {
@@ -104,17 +126,45 @@ body::-webkit-scrollbar-thumb {
 .imgportada {
   display: none; }
 
-@media (min-width: 1064px) {
+/*-------- responsive-----------*/
+@media (min-width: 480px) {
+  .imgportada {
+    display: none; }
+
   .portada {
-    background-size: 100% 670px;
-    height: 670px; }
+    background-size: 100% 300px;
+    height: 300px; }
 
   .portada::before {
-    height: 670px; }
+    height: 300px; } }
+@media (min-width: 600px) {
+  .imgportada {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-right: 10%;
+    margin-top: 20px;
+    margin-bottom: 20px; }
+    .imgportada img {
+      width: 130px; }
+    .imgportada .img2 {
+      grid-row: 2/3;
+      grid-column: 2/3; } }
+@media (min-width: 768px) {
+  .portadatitulo {
+    margin-left: 10%; } }
+@media (min-width: 1064px) {
+  .portada {
+    background-size: 100% 600px;
+    height: 600px; }
+
+  .portada::before {
+    height: 600px; }
 
   .portadatitulo {
     padding-top: 150px !important;
-    padding-left: 50px; }
+    padding-left: 50px;
+    margin-left: inherit !important; }
     .portadatitulo span {
       font-size: 60px !important;
       font-weight: 300;
@@ -127,90 +177,113 @@ body::-webkit-scrollbar-thumb {
     padding-left: 100px !important; }
 
   .imgportada {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    margin-right: 80px;
-    margin-top: 20px;
-    margin-bottom: 20px; }
+    margin-right: 80px; }
+    .imgportada img {
+      width: 250px; }
     .imgportada .img2 {
       grid-row: 2/3;
       grid-column: 2/3; } }
 /*---secciones servicios---*/
-.seccionProyectos2 {
+/*--listo--*/
+.seccionservicios {
   background-color: #181818;
-  display: flex !important;
   padding-top: 20px;
-  padding-bottom: 20px;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-around; }
-  .seccionProyectos2 .contenedor {
+  padding-bottom: 20px; }
+  .seccionservicios .contenedor {
     border-radius: 50%;
     overflow: hidden; }
-    .seccionProyectos2 .contenedor img {
+    .seccionservicios .contenedor img {
       height: 200px;
       width: 200px;
       border-radius: 50%; }
-      .seccionProyectos2 .contenedor img:hover {
+      .seccionservicios .contenedor img:hover {
         filter: opacity(60%);
         transform: scale(1.2);
         transition-duration: 2s; }
-  .seccionProyectos2 p, .seccionProyectos2 h5 {
+  .seccionservicios p, .seccionservicios h5 {
     color: white; }
-  .seccionProyectos2 h5 {
+  .seccionservicios h5 {
     margin-top: 20px;
-    border-bottom: solid 2px #7184a7;
-    font-size: 17px; }
-  .seccionProyectos2 p {
+    border-bottom: solid 2px #114453;
+    font-size: 17px;
+    text-decoration: none !important; }
+  .seccionservicios p {
     line-height: 0.02px;
     margin-top: 10px;
-    font-size: 13px; }
+    font-size: 13px;
+    font-weight: bolder; }
 
 @media (min-width: 480px) {
-  .seccionProyectos2 h5 {
-    font-size: 12px !important; } }
+  .seccionservicios h5 {
+    font-size: 20px !important; } }
 @media (min-width: 1064px) {
-  .seccionProyectos2 .contenedor {
-    border-radius: 50%;
-    overflow: hidden; }
-    .seccionProyectos2 .contenedor img {
-      height: 250px;
-      width: 250px !important;
-      border-radius: 50%; }
-      .seccionProyectos2 .contenedor img:hover {
-        filter: opacity(60%);
-        transform: scale(1.2);
-        transition-duration: 2s; }
-  .seccionProyectos2 h5 {
-    font-size: 20px !important; }
-  .seccionProyectos2 p {
-    line-height: 0.05px;
-    font-size: 18px; } }
+  .seccionservicios {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-around; }
+    .seccionservicios .contenedor {
+      border-radius: 50%;
+      overflow: hidden; }
+      .seccionservicios .contenedor img {
+        height: 250px;
+        width: 250px !important;
+        border-radius: 50%; }
+        .seccionservicios .contenedor img:hover {
+          filter: opacity(60%);
+          transform: scale(1.2);
+          transition-duration: 2s; }
+    .seccionservicios h5 {
+      font-size: 20px !important; }
+    .seccionservicios p {
+      line-height: 0.05px;
+      font-size: 18px; } }
 /*---muestra proyectos--*/
+/*listo*/
+/*-------- tipografias-----------*/
+.tipografia-titulo-portada, .portada .portadatitulo span, .titulos span {
+  font-weight: 300;
+  text-transform: uppercase;
+  line-height: 0.9em;
+  letter-spacing: -2px;
+  font-weight: bolder;
+  position: relative; }
+
+.tipografia-titulo, .principalesProyectos .tituloproyectos, .funcion .titulofuncion, .mainform .formularioscoti label, .mainform .formularioscoti .tituloform {
+  font-weight: 300;
+  text-transform: uppercase;
+  line-height: 1.5rem;
+  font-weight: bolder;
+  position: relative;
+  font-size: 20px;
+  text-decoration: underline #114453; }
+
+.tipografia-subtitulo, .seccionservicios h5, .seccioninformacion .informacion .card-title, .seccioninformacion .carousel .card-title, .postitulocotizacion aside .asidoinformacioncotizacion, .funcion {
+  font-weight: 300;
+  text-transform: uppercase;
+  line-height: 0.9em;
+  font-weight: bolder;
+  position: relative;
+  font-size: 15px; }
+
 .proyectos2 {
   display: none; }
 
-.fondos, .principalesProyectos {
+.principalesProyectos {
+  background-image: url(../assets/img/fondo-portada.jpg);
   background-position: center;
   background-size: cover;
-  position: relative; }
-
-.principalesProyectos {
-  background-image: url(../assets/img/fondo-nuestros-proyectos.jpg);
+  position: relative;
   width: 100%;
   height: 320px;
   display: flex;
   flex-direction: column;
   align-items: center; }
   .principalesProyectos .tituloproyectos {
-    font-size: 15px;
-    margin-top: 5px;
     color: white;
+    font-size: 15px;
     position: relative;
     text-align: center;
-    align-self: center;
-    font-weight: bolder; }
+    align-self: center; }
   .principalesProyectos #carouselExampleFade {
     width: 250px;
     height: 250px;
@@ -225,61 +298,83 @@ body::-webkit-scrollbar-thumb {
   left: 0;
   right: 0; }
 
+/*----responsive-------*/
 @media (min-width: 1064px) {
   .principalesProyectos {
-    height: auto;
-    display: grid;
-    grid-template-columns: 1fr 540px 540px 1fr;
-    grid-template-rows: 60px 220px 140px 210px 90px 30px;
-    grid-column-gap: 5px; }
+    height: auto; }
     .principalesProyectos #carouselExampleFade {
       display: none; }
-    .principalesProyectos .contenedor {
-      border-radius: 0%;
-      overflow: hidden; }
-      .principalesProyectos .contenedor img {
-        height: auto;
-        width: auto;
-        border-radius: 0%; }
-        .principalesProyectos .contenedor img:hover {
-          filter: opacity(60%);
-          transform: scale(1.2);
-          transition-duration: 2s; }
-    .principalesProyectos div {
-      color: white;
-      position: relative;
-      grid-row: 5/6;
-      grid-column: 3/4;
-      align-self: center; }
-      .principalesProyectos div a {
-        color: white !important; }
-    .principalesProyectos .tituloproyectos {
-      font-size: 25PX;
-      grid-row: 1/2;
-      grid-column: 2/4; }
-    .principalesProyectos .proyecto1 {
-      grid-row: 2/4;
-      grid-column: 2/3; }
-    .principalesProyectos .proyecto2 {
-      grid-row: 2/4;
-      grid-column: 3/4;
-      align-self: start; }
-    .principalesProyectos .proyecto3 {
-      grid-row: 4/6;
-      grid-column: 2/3; }
-    .principalesProyectos .proyecto4 {
-      grid-row: 3/5;
-      grid-column: 3/4; } }
+    .principalesProyectos p {
+      font-size: 25px !important;
+      margin-top: 30px; }
+    .principalesProyectos .proyectos2 {
+      display: grid;
+      grid-template-columns: 1fr 500px 500px 1fr;
+      grid-template-rows: 30px 165px 80px 150px 80px 20px;
+      grid-column-gap: 5px; }
+      .principalesProyectos .proyectos2 img {
+        width: 500px; }
+      .principalesProyectos .proyectos2 .contenedor {
+        border-radius: 0%;
+        overflow: hidden; }
+        .principalesProyectos .proyectos2 .contenedor img {
+          height: auto;
+          width: auto;
+          border-radius: 0%; }
+          .principalesProyectos .proyectos2 .contenedor img:hover {
+            filter: opacity(60%);
+            transform: scale(1.2);
+            transition-duration: 2s; }
+      .principalesProyectos .proyectos2 div {
+        color: white;
+        position: relative;
+        grid-row: 5/6;
+        grid-column: 3/4;
+        align-self: center; }
+        .principalesProyectos .proyectos2 div a {
+          color: white !important; }
+      .principalesProyectos .proyectos2 .tituloproyectos {
+        grid-row: 1/2;
+        grid-column: 2/4; }
+      .principalesProyectos .proyectos2 .proyecto1 {
+        grid-row: 2/4;
+        grid-column: 2/3; }
+        .principalesProyectos .proyectos2 .proyecto1 img {
+          width: 500px;
+          height: 240px; }
+      .principalesProyectos .proyectos2 .proyecto2 {
+        grid-row: 2/4;
+        grid-column: 3/4;
+        align-self: start; }
+        .principalesProyectos .proyectos2 .proyecto2 img {
+          width: 500px;
+          height: 150px; }
+      .principalesProyectos .proyectos2 .proyecto3 {
+        grid-row: 4/6;
+        grid-column: 2/3; }
+        .principalesProyectos .proyectos2 .proyecto3 img {
+          width: 500px;
+          height: 220px; }
+      .principalesProyectos .proyectos2 .proyecto4 {
+        grid-row: 3/5;
+        grid-column: 3/4; }
+        .principalesProyectos .proyectos2 .proyecto4 img {
+          width: 500px;
+          height: 240px; } }
 /*---informacion---*/
+/*listo*/
 .informacion {
   display: none !important; }
 
 .seccioninformacion {
   background-color: #181818; }
   .seccioninformacion .informacion .card-title, .seccioninformacion .carousel .card-title {
-    height: 30px;
+    text-decoration: none;
+    height: 25px;
     width: 200px;
-    border-bottom: solid #7184a7 1px; }
+    border-bottom: solid #114453 1px; }
+  .seccioninformacion .informacion .card-text, .seccioninformacion .carousel .card-text {
+    font-weight: bolder; }
   .seccioninformacion .informacion .card, .seccioninformacion .carousel .card {
     background-color: inherit !important;
     border: inherit !important;
@@ -306,9 +401,20 @@ body::-webkit-scrollbar-thumb {
     .seccioninformacion .carousel .card {
       width: 120px !important; }
 
-@media (min-width: 1064px) {
+@media (min-width: 600px) {
   .seccioninformacion .carousel {
     display: none; }
+  .seccioninformacion .card {
+    width: 120px !important; }
+  .seccioninformacion .card-title {
+    font-size: 10px;
+    width: 120px !important;
+    height: 38px !important; }
+  .seccioninformacion .card-text {
+    font-size: 10px; }
+  .seccioninformacion .card-body {
+    padding: inherit;
+    margin-top: 10px; }
   .seccioninformacion .informacion {
     display: flex !important;
     flex-direction: row;
@@ -316,6 +422,15 @@ body::-webkit-scrollbar-thumb {
     justify-content: space-around;
     background-color: #181818;
     padding-top: 30px; } }
+@media (min-width: 1064px) {
+  .seccioninformacion .card {
+    width: 200px !important; }
+  .seccioninformacion .card-title {
+    font-size: 20px;
+    width: 200px !important;
+    height: 20px !important; }
+  .seccioninformacion .card-text {
+    font-size: 13px; } }
 /*---footer---*/
 footer {
   right: 0;
@@ -396,15 +511,12 @@ footer::before {
       padding-bottom: 5px; }
       footer .seccionmobile a i {
         color: #b1b0b0; } }
-/* realizado solo vista mobile de index */
 /*----------------------------secciones----------------------------*/
 .titulos {
   width: 100%;
   height: 300px;
-  grid-row: 1/2;
-  grid-column: 1/3;
   text-align: center;
-  background-image: url(../../assets/imagenes-arq/portada-seccion.jpg);
+  background-image: url(../assets/img/portada.jpg);
   background-position-x: center;
   background-repeat: no-repeat;
   background-size: 100% 300px;
@@ -412,11 +524,7 @@ footer::before {
   padding-bottom: 120px; }
   .titulos span {
     font-size: 30px;
-    font-weight: 300;
-    text-transform: uppercase;
-    line-height: 0.9em;
-    letter-spacing: -2.5px;
-    font-weight: bolder !important; }
+    color: black; }
   .titulos .ahora {
     color: #181818; }
 
@@ -439,8 +547,11 @@ footer::before {
       font-weight: bolder !important; } }
 .mainproyectos {
   display: grid;
-  grid-template-columns: 1fr 50px;
+  grid-template-columns: 1fr 25px;
   grid-template-rows: 300px 1fr; }
+  .mainproyectos .titulos {
+    grid-column: 1/3;
+    grid-row: 1/2; }
   .mainproyectos .presentacionproyectos {
     grid-column: 1/2;
     grid-row: 2/3;
@@ -477,7 +588,7 @@ footer::before {
         text-transform: uppercase;
         font-weight: bolder;
         font-size: 18px;
-        border-bottom: solid 1px #7184a7;
+        border-bottom: solid 1px #114453;
         width: 250px; }
       .mainproyectos .presentacionproyectos .card .offcanvas-title {
         text-transform: uppercase;
@@ -512,40 +623,49 @@ footer::before {
     display: grid;
     grid-template-rows: 150px 1fr; }
     .mainproyectos .card {
-      width: 150px !important; }
+      width: 200px !important; }
       .mainproyectos .card .btn {
-        height: 150px !important;
-        width: 150px !important; }
+        height: 200px !important;
+        width: 200px !important; }
         .mainproyectos .card .btn img {
-          height: 150px !important;
-          width: 150px !important; }
+          height: 200px !important;
+          width: 200px !important; }
       .mainproyectos .card .titulocard {
         font-size: 15px !important;
-        width: 150px !important; }
+        width: 200px !important; }
       .mainproyectos .card .textocard {
         font-size: 13px !important;
-        width: 150px !important; }
+        width: 200px !important; }
       .mainproyectos .card .card-body {
-        width: 150PX  !important; } }
+        width: 200PX  !important; } }
+/*listo*/
 .asidesecciones {
-  grid-row: 2/3;
-  grid-column: 2/3;
-  z-index: 1; }
+  grid-row: 2/3 !important;
+  grid-column: 2/3 !important;
+  background-color: #181818; }
   .asidesecciones .btn {
-    height: 50px;
-    width: 100%;
+    width: 25px;
+    height: 80px;
     border: inherit;
     border-radius: 0%;
     background-color: #444444;
-    transform: rotate(90deg); }
+    padding: inherit;
+    position: fixed;
+    top: 50%; }
+    .asidesecciones .btn i {
+      font-size: 30px; }
   .asidesecciones .atencion {
     color: white;
-    margin-top: 50px; }
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center; }
     .asidesecciones .atencion .imgatencion {
       border-radius: 50%;
       width: 200px;
       height: 200px;
-      overflow: hidden; }
+      overflow: hidden;
+      margin-bottom: 20px; }
       .asidesecciones .atencion .imgatencion img {
         border-radius: 50%;
         width: 200px;
@@ -555,10 +675,10 @@ footer::before {
           transform: scale(1.2);
           transition-duration: 2s; }
     .asidesecciones .atencion h5 {
-      font-style: oblique; }
+      font-style: oblique;
+      width: 80%; }
     .asidesecciones .atencion p {
-      width: 380px;
-      margin-left: 30px; }
+      width: 80%; }
   .asidesecciones .offcanvas {
     width: 650PX !important;
     background-color: #444444;
@@ -569,154 +689,264 @@ footer::before {
       font-size: 18px;
       border-bottom: solid 1px black; }
 
-@media (max-width: 768px) {
-  .asidesecciones .btn {
-    height: 25px !important; } }
+@media (min-width: 1064px) {
+  .asidesecciones .atencion {
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+    .asidesecciones .atencion p {
+      width: 380px;
+      margin-left: 30px; } }
 /*----------------------------Cotizacion----------------------------*/
-/*mobile*/
-video {
-  display: none; }
-
-.form1 {
-  background-color: #181818; }
-
-.form2 {
-  background-color: #1e1e1e; }
-
-.form3 {
-  background-color: #282828; }
-
-.form1, .form2, .form3 {
+.postitulocotizacion {
+  background-color: #181818;
   display: grid;
-  grid-template-rows: 50px 1fr; }
-  .form1 .aside, .form2 .aside, .form3 .aside {
-    grid-row: 1/2; }
-  .form1 .texto, .form2 .texto, .form3 .texto {
-    margin-top: 15px;
-    font-size: 25px;
-    font-weight: 300;
-    text-transform: uppercase;
-    line-height: 0.9em;
-    letter-spacing: -2.5px;
-    font-weight: bolder;
-    color: white;
-    text-align: center !important;
-    position: relative;
-    font-style: oblique;
-    width: 100%; }
-  .form1 form, .form2 form, .form3 form {
-    justify-self: center;
-    background-color: #7184a7;
-    width: 100%;
-    height: 400px;
-    border: solid 2px #444444;
-    overflow: hidden;
-    overflow: auto; }
-    .form1 form .tituloform, .form2 form .tituloform, .form3 form .tituloform {
-      font-size: 20px;
-      font-weight: 300;
-      text-transform: uppercase;
-      line-height: 0.9em;
-      letter-spacing: -2.5px;
-      font-weight: bolder;
-      color: white;
-      text-align: center;
-      margin-top: 20px;
-      position: relative; }
-    .form1 form label, .form2 form label, .form3 form label {
-      font-size: 13px;
-      position: relative;
-      font-weight: 300;
-      text-transform: uppercase;
-      line-height: 0.9em;
-      font-weight: bolder;
-      color: white; }
-    .form1 form label, .form1 form input, .form1 form textarea, .form1 form select, .form2 form label, .form2 form input, .form2 form textarea, .form2 form select, .form3 form label, .form3 form input, .form3 form textarea, .form3 form select {
-      position: relative;
-      width: 90%;
-      margin-left: 5%; }
-    .form1 form .form-check, .form2 form .form-check, .form3 form .form-check {
-      position: relative; }
-      .form1 form .form-check input, .form2 form .form-check input, .form3 form .form-check input {
-        width: 16px !important;
-        margin-left: 5px; }
-      .form1 form .form-check label, .form2 form .form-check label, .form3 form .form-check label {
-        width: 200px !important;
-        margin-left: 5px !important; }
-      .form1 form .form-check .input2, .form2 form .form-check .input2, .form3 form .form-check .input2 {
-        width: 30px !important; }
-    .form1 form .form-switch, .form2 form .form-switch, .form3 form .form-switch {
-      padding-left: 23px !important; }
-  .form1 .botones, .form2 .botones, .form3 .botones {
-    position: relative;
-    margin-left: 20px; }
-    .form1 .botones button, .form2 .botones button, .form3 .botones button {
-      color: white;
-      border: solid 1px white;
-      margin-top: 20px; }
-      .form1 .botones button:hover, .form2 .botones button:hover, .form3 .botones button:hover {
-        background-color: #444444;
-        color: white !important; }
-  .form1 form::-webkit-scrollbar, .form2 form::-webkit-scrollbar, .form3 form::-webkit-scrollbar {
-    width: 7px; }
-  .form1 form::-webkit-scrollbar-thumb, .form2 form::-webkit-scrollbar-thumb, .form3 form::-webkit-scrollbar-thumb {
-    background-color: #b2cfd9;
-    border-radius: 7px; }
+  grid-template-rows: 600px 250px 1fr;
+  grid-template-columns: 100%; }
+  .postitulocotizacion aside {
+    grid-row: 1/2;
+    margin-top: inherit !important; }
+  .postitulocotizacion .formulariocotiza {
+    grid-row: 2/3;
+    margin-top: inherit !important; }
+  .postitulocotizacion .funcion {
+    grid-row: 3/4;
+    margin-top: 80px; }
 
-@keyframes laterales {
+@media (min-width: 1064px) {
+  .postitulocotizacion {
+    display: grid;
+    grid-template-rows: 1fr 500px;
+    grid-template-columns: 1fr 1fr; }
+    .postitulocotizacion aside {
+      grid-row: 1/2;
+      grid-column: 1/2; }
+    .postitulocotizacion .formulariocotiza {
+      grid-row: 1/3;
+      grid-column: 2/3; }
+    .postitulocotizacion .funcion {
+      grid-column: 1/2;
+      grid-row: 2/3; } }
+.postitulocotizacion aside {
+  color: white;
+  padding-bottom: 50px;
+  padding-top: 30px;
+  text-align: center; }
+  .postitulocotizacion aside .asidevideos {
+    height: 200px;
+    overflow: hidden;
+    width: 100% !important;
+    animation-name: laterales;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    transition: 5s;
+    animation-timing-function: linear; }
+    .postitulocotizacion aside .asidevideos video {
+      border-radius: 50%;
+      width: 250px; }
+
+@keyframes laterales2 {
   0% {
     margin-left: 0; }
   50% {
-    margin-left: 200px; }
+    margin-left: 20px; }
   100% {
-    margin-left: 0; } }
+    margin-right: 40px; } }
 @media (min-width: 1064px) {
-  .form1, .form2, .form3 {
-    height: 500px; }
+  .postitulocotizacion aside {
+    margin-top: 100px; }
+  .postitulocotizacion .videos {
+    display: flex;
+    flex-direction: row; } }
+@keyframes laterales2 {
+  0% {
+    margin-left: 0; }
+  50% {
+    margin-left: 80px; }
+  100% {
+    margin-right: 160px; } }
+.funcion {
+  color: white;
+  text-align: center;
+  margin-top: 50px;
+  font-size: 13px;
+  line-height: 1rem;
+  width: 80%;
+  margin-left: 10%;
+  padding-bottom: 25px; }
+  .funcion .titulofuncion {
+    font-size: 17px;
+    text-decoration: none !important; }
+  .funcion img {
+    width: 150px;
+    height: 150px; }
 
-  video {
-    display: flex; }
-
-  .form2 .aside {
-    grid-column: 1/2 !important; }
-
-  .form1, .form2, .form3 {
-    display: grid;
-    grid-template-columns: 50% 50%; }
-    .form1 .aside, .form2 .aside, .form3 .aside {
-      justify-self: center;
+@media (min-width: 1064px) {
+  .funcion {
+    padding-bottom: inherit !important; }
+    .funcion .tarjeta {
       display: flex;
-      flex-direction: column;
-      grid-column: 2/3; }
-    .form1 video, .form2 video, .form3 video {
-      margin-top: 50px;
-      border-radius: 10px;
-      animation-name: laterales;
-      animation-duration: 5s;
-      animation-iteration-count: infinite;
-      transition: 5s;
-      animation-timing-function: linear; }
-    .form1 .texto, .form2 .texto, .form3 .texto {
-      font-size: 30px;
-      margin-top: 50px; }
-    .form1 form, .form2 form, .form3 form {
-      margin-left: 30px;
-      margin-top: 50px;
-      width: 600px;
-      border-radius: 10px; }
-      .form1 form .tituloform, .form2 form .tituloform, .form3 form .tituloform {
-        font-size: 30px; }
-      .form1 form label, .form2 form label, .form3 form label {
-        font-size: 15px; }
-      .form1 form label, .form1 form input, .form1 form textarea, .form1 form select, .form2 form label, .form2 form input, .form2 form textarea, .form2 form select, .form3 form label, .form3 form input, .form3 form textarea, .form3 form select {
-        width: 500px;
-        margin-left: 50px; }
-      .form1 form .form-check input, .form2 form .form-check input, .form3 form .form-check input {
-        margin-left: 50px; }
-      .form1 form .botones, .form2 form .botones, .form3 form .botones {
-        margin-left: 230px; }
-        .form1 form .botones button, .form2 form .botones button, .form3 form .botones button {
-          margin-left: 20px; } }
+      flex-direction: row;
+      margin-top: 30px;
+      justify-content: space-around; }
+      .funcion .tarjeta p {
+        width: 300px; } }
+.formulariocotiza {
+  background-image: url(../../assets/img-cotizacion/fondo-seccion.jpg);
+  background-color: #444444;
+  background-position-x: center;
+  background-repeat: no-repeat;
+  width: 80%;
+  margin-left: 10%;
+  color: white;
+  text-align: center;
+  overflow: hidden; }
+  .formulariocotiza p {
+    background-color: #114453;
+    padding: 10px;
+    position: relative;
+    width: 80%; }
+  .formulariocotiza .linkform {
+    width: 80%;
+    margin-left: 10%;
+    background-color: #114453;
+    margin-bottom: 20px;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 2px;
+    color: white; }
+  .formulariocotiza .imagenes {
+    display: none; }
+
+/*
+.formulariocotiza::before{
+
+    content: "";        
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.3);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+}
+*/
+.formulariocotiza .linkform:hover {
+  background-color: #3d6674; }
+
+@media (min-width: 1064px) {
+  .formulariocotiza {
+    margin-top: 200px !important;
+    height: 780px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .formulariocotiza .imagenes {
+      display: grid !important;
+      grid-template-rows: 170px 170px 170px;
+      grid-template-columns: 125px 40px 185px 20px 130px;
+      grid-row-gap: 10px;
+      width: 90%;
+      overflow: hidden; }
+      .formulariocotiza .imagenes img {
+        height: 170px !important; }
+      .formulariocotiza .imagenes .img7 {
+        grid-row: 1/2;
+        grid-column: 1/4;
+        width: 345px; }
+      .formulariocotiza .imagenes .img4 {
+        grid-row: 1/2;
+        grid-column: 4/5;
+        width: 130px; }
+      .formulariocotiza .imagenes .img2 {
+        grid-row: 2/3;
+        grid-column: 1/2;
+        width: 120px; }
+      .formulariocotiza .imagenes .img1 {
+        grid-row: 2/3;
+        grid-column: 2/5;
+        width: 240px; }
+      .formulariocotiza .imagenes .img3 {
+        grid-row: 2/3;
+        grid-column: 5/6; }
+      .formulariocotiza .imagenes .img5 {
+        grid-row: 3/4;
+        grid-column: 1/3; }
+      .formulariocotiza .imagenes .img6 {
+        grid-row: 3/4;
+        grid-column: 3/6;
+        width: 320px; } }
+.mainform {
+  background-color: #181818; }
+  .mainform .formularioscoti {
+    background-image: url(../../assets/img-cotizacion/fondo-seccion.jpg);
+    width: 90%;
+    margin-left: 5%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    padding-bottom: 30px;
+    margin-top: 50px; }
+    .mainform .formularioscoti label {
+      color: white;
+      text-decoration: none;
+      font-size: 15px; }
+    .mainform .formularioscoti label, .mainform .formularioscoti input, .mainform .formularioscoti textarea, .mainform .formularioscoti select {
+      width: 90%;
+      margin-left: 5%;
+      position: relative; }
+    .mainform .formularioscoti .form-check {
+      position: relative; }
+      .mainform .formularioscoti .form-check input {
+        width: 16px !important;
+        margin-left: 5%; }
+      .mainform .formularioscoti .form-check label {
+        width: 200px !important;
+        margin-left: 5% !important; }
+      .mainform .formularioscoti .form-check .input2 {
+        width: 30px !important; }
+    .mainform .formularioscoti .form-switch {
+      padding-left: 23px !important; }
+    .mainform .formularioscoti .botones {
+      margin-left: 5%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      position: relative; }
+      .mainform .formularioscoti .botones button {
+        color: white;
+        border: solid 1px white;
+        margin-top: 20px; }
+        .mainform .formularioscoti .botones button:hover {
+          background-color: #114453;
+          color: white !important; }
+    .mainform .formularioscoti .tituloform {
+      color: white;
+      text-decoration: none;
+      background-color: #114453;
+      padding: 20px;
+      text-align: center;
+      border-top-right-radius: 20px;
+      border-top-left-radius: 20px;
+      font-size: 15px; }
+
+.formularioscoti::before {
+  content: "";
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.6);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px; }
+
+@media (min-width: 1064px) {
+  .tituloform, label {
+    font-size: 20px !important; }
+
+  .botones {
+    margin-left: 60% !important;
+    width: 500px !important; } }
 /*----------------------------Contacto----------------------------*/
 .seccionformulario {
   margin-top: 50px;
@@ -745,9 +975,11 @@ video {
   background-color: #181818; }
   .posttitulo .seccionformulario {
     grid-row: 1/2;
-    justify-self: center; }
+    justify-self: center;
+    margin-bottom: 30px !important; }
   .posttitulo aside {
-    grid-row: 2/3; }
+    grid-row: 2/3;
+    margin-bottom: 30px !important; }
   .posttitulo .ubicacion {
     grid-column: 1/2;
     grid-row: 3/4; }
@@ -763,13 +995,13 @@ video {
   line-height: 0.9em;
   letter-spacing: -1px;
   font-weight: bolder !important;
-  text-decoration: underline #7184a7;
+  text-decoration: underline #114453;
   text-align: center; }
 
 @media (min-width: 1064px) {
   .posttitulo {
     display: grid;
-    grid-template-rows: 700px  200px;
+    grid-template-rows: 750px  200px;
     grid-template-columns: 1fr 1fr; }
 
   aside {
@@ -783,37 +1015,33 @@ video {
   .ubicacion {
     grid-column: 1/3 !important;
     grid-row: 2/3 !important; } }
-aside {
+.posttitulo aside {
   margin-top: 50px;
   text-align: center;
   width: 80%;
   margin-left: 10%; }
-  aside i {
+  .posttitulo aside i {
     color: white;
     font-size: 20px; }
-  aside a:hover {
-    color: #7184a7 !important; }
-  aside .nosotros {
+  .posttitulo aside a:hover {
+    color: #114453 !important; }
+  .posttitulo aside .nosotros {
     margin-top: 20PX; }
-    aside .nosotros p {
+    .posttitulo aside .nosotros p {
       color: white;
       font-size: 15px;
       font-weight: 300;
       font-weight: bolder !important; }
-    aside .nosotros i {
+    .posttitulo aside .nosotros i {
       font-size: 15px; }
-      aside .nosotros i a {
+      .posttitulo aside .nosotros i a {
         color: white;
         text-decoration: none; }
-  aside .logoaside img {
+  .posttitulo aside .logoaside img {
     background-color: #aaa;
     border-radius: 10px;
     margin-top: 50px;
     width: 140px;
     height: 140px; }
-
-@media (max-width: 1064px) {
-  .asidePagesContacto {
-    display: none !important; } }
 
 /*# sourceMappingURL=newStyles.css.map */

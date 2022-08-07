@@ -1,0 +1,49 @@
+.funcion{
+
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+    @extend .tipografia-subtitulo;
+    font-size: 13px;
+    line-height: 1rem;
+    width: 80%;
+    margin-left: 10%;
+    padding-bottom: 25px;
+
+    .titulofuncion{
+
+        @extend .tipografia-titulo;
+
+        font-size: 17px;
+        text-decoration: none !important;
+    }
+    img{
+
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media(min-width:1064px){
+
+    .funcion{
+
+        padding-bottom: inherit !important;
+        .tarjeta{
+
+            display: flex;
+            flex-direction: row;
+            margin-top: 30px;
+            justify-content: space-around;
+
+            p{
+
+                width: 300px;
+            }
+
+
+        }
+        
+    }
+
+}

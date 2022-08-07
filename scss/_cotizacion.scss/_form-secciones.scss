@@ -1,0 +1,135 @@
+
+.mainform{
+
+    background-color: $color-principal;
+
+    .formularioscoti{
+
+        background-image: url(../../assets/img-cotizacion/fondo-seccion.jpg);
+    
+        width: 90%;
+        margin-left: 5%;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+        padding-bottom: 30px;
+        margin-top: 50px;
+
+        label{
+
+            @extend .tipografia-titulo;
+            color: white;
+            text-decoration: none;
+            font-size: 15px;
+        }
+
+        label, input, textarea, select{
+
+        width: 90%;
+        margin-left: 5%;
+        position: relative;
+
+        }
+
+        .form-check{
+
+            position: relative;
+    
+            input{
+    
+                width:16px !important;
+                margin-left: 5%;
+            }
+    
+            label{
+    
+                
+                width: 200px !important;
+                margin-left: 5% !important;
+            }
+    
+            .input2{
+    
+                width: 30px !important;
+               
+            }
+    
+            
+        }
+    
+        .form-switch{ padding-left: 23px !important;}
+
+        .botones{
+
+
+            margin-left: 5%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            position: relative;
+
+            button {
+    
+                color: white;
+                border: solid 1px white;
+                margin-top: 20px;
+             
+    
+                &:hover{
+    
+                    background-color: $color-sub;
+                    color: white !important;
+                }
+            }
+    
+        }
+
+
+        .tituloform{
+
+            @extend .tipografia-titulo;
+            color: white;
+            text-decoration: none;
+            background-color: $color-sub;
+            padding: 20px;
+            text-align: center;
+            border-top-right-radius: 20px;
+            border-top-left-radius: 20px;
+            font-size: 15px;
+        }
+       
+    }
+}
+
+.formularioscoti::before{
+
+    content: "";        
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+
+
+}
+
+@media(min-width:1064px){
+
+    .tituloform , label{
+
+       font-size: 20px !important;
+    }
+
+
+    .botones{
+
+
+        margin-left: 60% !important;
+        width: 500px !important;
+       
+
+    }
+}

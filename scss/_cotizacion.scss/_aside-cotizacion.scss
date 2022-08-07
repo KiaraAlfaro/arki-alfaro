@@ -1,0 +1,106 @@
+
+.postitulocotizacion{
+
+
+    aside{
+
+        color: white;
+        padding-bottom: 50px;
+        padding-top: 30px;
+        text-align: center;
+       
+
+        .asidoinformacioncotizacion{
+
+            @extend .tipografia-subtitulo;
+           
+        }
+
+        .asidevideos{
+
+            height: 200px;
+            overflow: hidden;
+            width: 100% !important;
+
+            animation-name: laterales;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            transition: 5s;
+            animation-timing-function: linear;
+            
+            video{
+
+                border-radius: 50%;
+                width: 250px;
+                
+                
+            }
+
+        }
+    }
+}
+
+
+
+@keyframes laterales2{
+
+    0%{
+   margin-left: 0;
+    }
+
+    50%{
+
+   margin-left: 20px;
+    
+    }
+
+    100%{
+    
+   margin-right: 40px;
+    }
+    
+
+}
+
+@media(min-width:1064px){
+
+    .postitulocotizacion{
+
+
+        aside{
+        
+            margin-top: 100px;
+        
+        }
+
+        .videos{
+
+            display: flex;
+            flex-direction: row;
+
+            
+        }
+    }    
+
+}
+
+
+@keyframes laterales2{
+
+    0%{
+   margin-left: 0;
+    }
+
+    50%{
+
+   margin-left: 80px;
+    
+    }
+
+    100%{
+    
+   margin-right: 160px;
+    }
+    
+
+}

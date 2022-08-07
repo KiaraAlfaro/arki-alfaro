@@ -7,11 +7,14 @@
 
 
 
-@import "variables";
-@import "row";
-@import "header";
-@import "main";
-@import "body";
+@import "./_extras.scss/variables";
+@import "./_extras.scss/row";
+@import "./_extras.scss/header";
+@import "./_extras.scss/main";
+@import "./_extras.scss/body";
+@import "./_extras.scss/extend-y-class";
+
+
 /*----------------------------Index----------------------------*/
 
 @import "portada";
@@ -33,8 +36,6 @@
 @import "footer";
 
 
-/* realizado solo vista mobile de index */
-
 /*----------------------------secciones----------------------------*/
 
 
@@ -50,6 +51,12 @@
 
 
 @import "../scss/_cotizacion.scss/main-cotizacion";
+@import "./_cotizacion.scss/aside-cotizacion";
+@import "./_cotizacion.scss/funcion-cotizacion";
+@import "./_cotizacion.scss/formulario-cotizacion";
+@import "./_cotizacion.scss/form-secciones";
+
+
 /*----------------------------Contacto----------------------------*/
 @import "../scss/_contacto.scss/formulario";
 @import "../scss/_contacto.scss/cuerpo-contacto";

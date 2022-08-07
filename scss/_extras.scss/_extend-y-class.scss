@@ -1,0 +1,35 @@
+
+/*-------- tipografias-----------*/
+
+.tipografia-titulo-portada{
+
+        font-weight: 300 ;
+        text-transform: uppercase ;
+        line-height: 0.9em  ;
+        letter-spacing: -2px ;
+        font-weight: bolder ;
+        position: relative;
+}
+
+.tipografia-titulo{
+
+    font-weight: 300 ;
+    text-transform: uppercase ;
+    line-height: 1.5rem  ;
+    font-weight: bolder ;
+    position: relative;
+    font-size: 20px;
+    text-decoration: underline $color-sub;
+}
+
+.tipografia-subtitulo{
+
+    font-weight: 300 ;
+    text-transform: uppercase ;
+    line-height: 0.9em  ;
+    font-weight: bolder ;
+    position: relative;
+    font-size: 15px;
+}
+
+

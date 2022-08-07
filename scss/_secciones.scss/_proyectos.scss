@@ -3,8 +3,14 @@
 
     
     display: grid;
-    grid-template-columns: 1fr 50px;
+    grid-template-columns: 1fr 25px;
     grid-template-rows: 300px 1fr;
+
+    .titulos{
+
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
 
     .presentacionproyectos{
 
@@ -151,21 +157,21 @@
         .card{
 
            
-            width: 150px !important;
+            width: 200px !important;
             
           
 
             .btn{
             
-                height: 150px !important;
-                width: 150px !important;
+                height: 200px !important;
+                width: 200px !important;
                
 
                 img{ 
                     
                     
-                    height: 150px !important;
-                    width: 150px !important;
+                    height: 200px !important;
+                    width: 200px !important;
                     
                    
                 }
@@ -174,19 +180,19 @@
             .titulocard {
 
                 font-size: 15px !important;
-                width: 150px !important;
+                width: 200px !important;
                
             }
 
             .textocard{
 
                 font-size: 13px !important;
-                width: 150px !important;
+                width: 200px !important;
             }
 
             .card-body{
 
-               width: 150PX  !important;
+               width: 200PX  !important;
             }
 
             

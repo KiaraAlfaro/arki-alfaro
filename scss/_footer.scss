@@ -1,8 +1,6 @@
 
-@import "variables";
-
+@import "./_extras.scss/variables";
 @import "mixin";
-@import "maps";
 
 footer{ 
     
@@ -29,7 +27,7 @@ footer{
 
         h5{
 
-            color: map-get($colores, "footer");
+            color: $letras-footer;
             font-style: oblique;
             
         }
@@ -53,16 +51,17 @@ footer{
     .seccion2{
 
         position: relative;
-        border-top: solid 2px map-get($colores,"footer");
+        border-top: solid 2px $letras-footer;
 
         
 
         a, h6{
 
             position: relative;
-            color: map-get($colores,"footer");
+            color: $letras-footer;
             font-style: oblique;
         }
+
         img{
 
             background-color:$color-logo!important;
@@ -71,9 +70,10 @@ footer{
             width: 40px;
             height:40px;
         }
+
         p{ 
 
-         color: map-get($colores, "footer" );
+         color:$letras-footer;
          margin-top: 10px;
          height: 10px;
         
@@ -101,8 +101,6 @@ footer::before{
 
         height: 90px;
 
-        
-
         .seccion1{display: none !important;}
 
         .seccion2{
@@ -110,6 +108,7 @@ footer::before{
             border-top:inherit !important;
 
             .tituloarki{ margin-top: 5px;}
+            
             a{
 
                 img{
@@ -141,7 +140,7 @@ footer::before{
 
             a{
                 i{
-                    color: map-get($colores,"footer");
+                    color:$letras-footer;
 
                 }
             }

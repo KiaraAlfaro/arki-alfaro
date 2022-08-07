@@ -1,88 +1,66 @@
 
-aside{
 
+
+.posttitulo{
+
+
+    aside{
     
-    margin-top: 50px;
-    text-align: center;
-    width: 80% ;
-    margin-left: 10%;
- 
-
-  i{
-
-    color: white;
-    font-size: 20px;
+        
+        margin-top: 50px;
+        text-align: center;
+        width: 80% ;
+        margin-left: 10%;
+     
     
-  }
-
-  
-
-  a:hover{
-
-    color: $color-sub !important;}
-
-    .nosotros{
-
-        margin-top: 20PX;
-        p{
-
-            color: white;
-        font-size: 15px ;
-        font-weight: 300 ;
-        font-weight: bolder !important;
-
-        }
-
-        i{
-
-            font-size: 15px;
-            a{
+      i{
+    
+        color: white;
+        font-size: 20px;
+        
+      }
+    
+      
+    
+      a:hover{
+    
+        color: $color-sub !important;}
+    
+        .nosotros{
+    
+            margin-top: 20PX;
+            p{
+    
                 color: white;
-                text-decoration:none ;
+            font-size: 15px ;
+            font-weight: 300 ;
+            font-weight: bolder !important;
+    
+            }
+    
+            i{
+    
+                font-size: 15px;
+                a{
+                    color: white;
+                    text-decoration:none ;
+                }
+            }
+        }
+    
+        .logoaside{
+    
+            img{
+    
+                background-color:$color-logo;
+                border-radius: 10px;
+                margin-top: 50px;
+                width: 140px;
+                height: 140px;
             }
         }
     }
-
-    .logoaside{
-
-        img{
-
-            background-color:$color-logo;
-            border-radius: 10px;
-            margin-top: 50px;
-            width: 140px;
-            height: 140px;
-        }
+    
     }
-}
-
-
-       
     
     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media(max-width:1064px){
-
-    .asidePagesContacto{display: none !important;}
-}

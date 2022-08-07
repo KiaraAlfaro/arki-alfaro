@@ -1,21 +1,20 @@
 
-@import "variables";
+/*listo*/
+
+@import "./_extras.scss/variables";
+@import "./_extras.scss/extend-y-class";
 
 .proyectos2{ display: none;}
 
-.fondos{
 
-    background-position:center;
-    background-size: cover;
-    position: relative;
-
-}
 
 .principalesProyectos{
 
-    @extend.fondos;
-    background-image: url(../assets/img/fondo-nuestros-proyectos.jpg);
-
+   
+    background-image: url(../assets/img/fondo-portada.jpg);
+    background-position:center;
+    background-size: cover;
+    position: relative;
     width: 100%;
     height: 320px;
 
@@ -25,13 +24,12 @@
 
     .tituloproyectos{
 
-        font-size:15px ;
-        margin-top: 5px;
+        @extend .tipografia-titulo;
         color: white;
+        font-size: 15px;
         position: relative;
         text-align: center;
         align-self: center;
-        font-weight: bolder;
     }
     
     #carouselExampleFade{
@@ -56,78 +54,116 @@
 
 }
 
-
+/*----responsive-------*/
 
 
 @media(min-width:1064px){
 
    
-    
     .principalesProyectos{
 
         #carouselExampleFade {display: none;}
+
+        height: auto;
+
+        p{
+
+            font-size: 25px !important;
+            margin-top: 30px;
+        }
+   
+        .proyectos2{ 
+    
     
    
-
-        .contenedor{ @include contenedor (0%,auto,auto )}
-
-        div{
-
-            color: white;
-            position: relative;
-            grid-row: 5/6;
-            grid-column: 3/4;
-            align-self: center;
-
-            a{color: white !important;}
-        }
-
-       
-        height: auto;
-        display: grid;
-        grid-template-columns: 1fr 540px 540px 1fr;
-        grid-template-rows: 60px 220px 140px 210px 90px 30px;
-        grid-column-gap: 5px;
-        
-        .tituloproyectos{
-
-            font-size: 25PX;
-            grid-row: 1/2;
-            grid-column: 2/4;
-           
-
-        }
-
-        .proyecto1{
-
-            grid-row: 2/4;
-            grid-column: 2/3;
+            display: grid;
+            grid-template-columns: 1fr 500px 500px 1fr;
+            grid-template-rows: 30px 165px 80px 150px 80px 20px;
+            grid-column-gap: 5px;
             
-        }
+            img{
 
-        .proyecto2{
+                width: 500px;
+            }
 
-            grid-row: 2/4;
-            grid-column: 3/4;
-            align-self: start;
-        }
+            .contenedor{ @include contenedor (0%,auto,auto )}
 
-        .proyecto3{
+            div{
 
-            grid-row: 4/6;
-            grid-column: 2/3;
-        }
+                color: white;
+                position: relative;
+                grid-row: 5/6;
+                grid-column: 3/4;
+                align-self: center;
 
-        .proyecto4{
+                a{color: white !important;}
+            }
 
-            grid-row: 3/5;
-            grid-column: 3/4;
-        }
-       
         
-    }
-    
+            .tituloproyectos{
 
+                grid-row: 1/2;
+                grid-column: 2/4;
+                
+            }
+
+            .proyecto1{
+
+                grid-row: 2/4;
+                grid-column: 2/3;
+               img{
+
+                
+                width: 500px;
+               height: 240px;
+               }
+            }
+
+            .proyecto2{
+
+                grid-row: 2/4;
+                grid-column: 3/4;
+                align-self: start;
+
+                img{
+
+                
+                    width: 500px;
+                   height: 150px;
+                   }
+            }
+
+            .proyecto3{
+
+                grid-row: 4/6;
+                grid-column: 2/3;
+
+                img{
+
+                
+                    width: 500px;
+                   height: 220px;
+                   }
+            }
+
+            .proyecto4{
+
+                grid-row: 3/5;
+                grid-column: 3/4;
+
+                img{
+
+                
+                    width: 500px;
+                   height: 240px;
+                   }
+                
+            }
+        
+        
+        }
+    
+    }
 }
 
 
