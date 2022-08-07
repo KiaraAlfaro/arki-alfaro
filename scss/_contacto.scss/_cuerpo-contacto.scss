@@ -1,4 +1,6 @@
 
+/*listo*/
+
 .posttitulo{
 
     display: grid;
@@ -38,14 +40,8 @@
 
 .titulocontacto{
 
+    @extend .tipografia-titulo; 
     color: white;
-    font-size: 20px !important;
-    font-weight: 300 ;
-    text-transform: uppercase ;
-    line-height: 0.9em  ;
-    letter-spacing: -1px ;
-    font-weight: bolder !important;
-    text-decoration:underline $color-sub;
     text-align: center;
     
 }
@@ -56,8 +52,9 @@
     .posttitulo{
 
         display: grid;
-    grid-template-rows: 750px  200px;
-    grid-template-columns: 1fr 1fr;
+        grid-template-rows: 750px  200px;
+        grid-template-columns: 1fr 1fr;
+
     }
 
     aside{
@@ -80,4 +77,5 @@
 
       
     }
-  }
+
+}

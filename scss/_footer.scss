@@ -119,7 +119,7 @@ footer::before{
             }
             
             h6,p {
-                @include texto(10px);
+                font-size: 10px;
             }
             
             p{

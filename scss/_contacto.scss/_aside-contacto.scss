@@ -1,37 +1,43 @@
 
-
+/*listo*/
 
 .posttitulo{
 
 
     aside{
-    
-        
+     
         margin-top: 50px;
         text-align: center;
         width: 80% ;
         margin-left: 10%;
      
     
-      i{
+        i{
     
-        color: white;
-        font-size: 20px;
+            color: white;
+            font-size: 20px;
         
-      }
+            &:hover{
+        
+                color: $color-sub !important;
+
+            }
+
+        }
     
-      
     
-      a:hover{
+        a:hover{
     
-        color: $color-sub !important;}
+        color: $color-sub !important;
+        }
     
         .nosotros{
     
             margin-top: 20PX;
+
             p{
     
-                color: white;
+            color: white;
             font-size: 15px ;
             font-weight: 300 ;
             font-weight: bolder !important;
@@ -41,6 +47,7 @@
             i{
     
                 font-size: 15px;
+
                 a{
                     color: white;
                     text-decoration:none ;
@@ -61,6 +68,6 @@
         }
     }
     
-    }
+}
     
     
