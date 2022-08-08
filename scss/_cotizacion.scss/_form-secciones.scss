@@ -6,7 +6,8 @@
     .formularioscoti{
 
         background-image: url(../../assets/img-cotizacion/fondo-seccion.jpg);
-    
+        background-position-x: center;
+        background-size: cover;
         width: 90%;
         margin-left: 5%;
         border-top-right-radius: 20px;
@@ -24,9 +25,9 @@
 
         label, input, textarea, select{
 
-        width: 90%;
-        margin-left: 5%;
-        position: relative;
+            width: 90%;
+            margin-left: 5%;
+            position: relative;
 
         }
 
@@ -132,4 +133,6 @@
        
 
     }
+
+   
 }

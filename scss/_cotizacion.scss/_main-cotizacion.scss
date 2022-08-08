@@ -6,28 +6,28 @@
 
     
    
-        display: grid;
-        grid-template-rows: 600px 250px 1fr;
-        grid-template-columns: 100%;
+    display: grid;
+    grid-template-rows: 600px 250px 1fr;
+    grid-template-columns: 100%;
     
-        aside{
+    aside{
     
-            grid-row: 1/2;
-            margin-top: inherit !important;
-        }
+        grid-row: 1/2;
+        margin-top: inherit !important;
+    }
     
-        .formulariocotiza{
+    .formulariocotiza{
     
-            grid-row: 2/3;
-            margin-top: inherit !important;
-        }
+        grid-row: 2/3;
+        margin-top: inherit !important;
+    }
     
-        .funcion{
+    .funcion{
     
-            grid-row: 3/4;
-            margin-top: 80px;
-            
-        }
+        grid-row: 3/4;
+        margin-top: 80px;
+        
+    }
 
        
     

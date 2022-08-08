@@ -1,8 +1,11 @@
 
+
 .postitulocotizacion{
 
 
     aside{
+
+        align-self: center;
 
         color: white;
         padding-bottom: 50px;
@@ -25,7 +28,7 @@
             animation-name: laterales;
             animation-duration: 5s;
             animation-iteration-count: infinite;
-            transition: 5s;
+
             animation-timing-function: linear;
             
             video{
@@ -38,29 +41,41 @@
 
         }
     }
+
+
+    @keyframes laterales{
+
+        0%{
+       padding: 0;
+        }
+    
+        25%{
+
+            padding-left: 40PX;
+
+        }
+        50%{
+
+            padding: 0;
+        }
+
+        75%{
+
+            padding-right: 40px;
+        }
+
+        100%{
+
+            padding: 0;
+        }
+        
+    
+    }
 }
 
 
 
-@keyframes laterales2{
 
-    0%{
-   margin-left: 0;
-    }
-
-    50%{
-
-   margin-left: 20px;
-    
-    }
-
-    100%{
-    
-   margin-right: 40px;
-    }
-    
-
-}
 
 @media(min-width:1064px){
 
@@ -71,15 +86,27 @@
         
             margin-top: 100px;
         
+            .asidevideos{
+
+                
+                animation-name: laterales2;
+                animation-duration: 5s;
+                animation-iteration-count: infinite;
+    
+                animation-timing-function: linear;
+                
+                .videos{
+
+                    display: flex;
+                    flex-direction: row;
+        
+                    
+                }
+    
+            }
         }
 
-        .videos{
-
-            display: flex;
-            flex-direction: row;
-
-            
-        }
+        
     }    
 
 }
@@ -88,18 +115,27 @@
 @keyframes laterales2{
 
     0%{
-   margin-left: 0;
+   padding: 0;
     }
 
+    25%{
+
+        padding-left: 100PX;
+
+    }
     50%{
 
-   margin-left: 80px;
-    
+        padding: 0;
+    }
+
+    75%{
+
+        padding-right: 100px;
     }
 
     100%{
-    
-   margin-right: 160px;
+
+        padding: 0;
     }
     
 

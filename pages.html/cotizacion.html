@@ -1,321 +1,324 @@
 <!DOCTYPE html>
 <html lang="es" >
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="seccion cotizaciones">
-        <link rel="shortcut icon" href="../assets/img/favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
-        <link rel="stylesheet" href="../css/bootstrap.min.css">
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-        <link rel="stylesheet" href="../css/newStyles.css">
-        <title>ARKI.Cotizacion.com</title>
-    </head>
 
-<body class="pageBodyCotizacion">
+  <head>
+        
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="seccion cotizaciones">
+    <link rel="shortcut icon" href="../assets/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/newStyles.css">
+    <title>ARKI.Cotizacion.com</title>
+
+  </head>
+
+  <body class="pageBodyCotizacion container-fluid">
 
     <!--HEADER-->
 
     <header class="row" >
-      
-      <nav  class="navbar  navbar-expand-lg col-12">
+        
+        <nav  class="navbar  navbar-expand-lg col-12">
 
-        <div class="container-fluid ">
+          <div class="container-fluid ">
 
-          <a id="logo" class="navbar-brand rounded-2 opacity-75 " href="../index.html">
+            <a id="logo" class="navbar-brand rounded-2 opacity-75 " href="../index.html">
+              
+              <img  src="../assets/logo-arqui.png" alt="logo arki" width="60" height="54" class="d-inline-block rounded-2 ">
+              
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              
+              <span class="navbar-toggler-icon"><i class="bi bi-list"></i> </span>
             
-            <img  src="../assets/logo-arqui.png" alt="logo arki" width="60" height="54" class="d-inline-block rounded-2 ">
+            </button>
             
-          </a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            
-            <span class="navbar-toggler-icon"><i class="bi bi-list"></i> </span>
-          
-          </button>
-          
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
 
-              <li class="nav-item">
-
-                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-              
-              </li>
-
-              <li class="nav-item dropdown">
+                  <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
                 
-                <a class="nav-link dropdown-toggle" href="../pages.html/arquitectura.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Arquitectura
-                </a>
+                </li>
+
+                <li class="nav-item dropdown">
+                  
+                  <a class="nav-link dropdown-toggle" href="../pages.html/arquitectura.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Arquitectura
+                  </a>
+                  
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+                    <li><a class="dropdown-item" href="../pages.html/arquitectura.html">Proyectos</a></li>
+                    <li><a class="dropdown-item" href="../pages.html/cotizacion.html">Cotiza tu casa</a></li>
                 
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-
-                  <li><a class="dropdown-item" href="../pages.html/arquitectura.html">Proyectos</a></li>
-                  <li><a class="dropdown-item" href="../pages.html/cotizacion.html">Cotiza tu casa</a></li>
-              
-                </ul>
-              
-              </li>
-
-              <li class="nav-item dropdown">
+                  </ul>
                 
-                <a class="nav-link dropdown-toggle" href="../pages.html/remodelacion.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Remodelacion
-                </a>
+                </li>
+
+                <li class="nav-item dropdown">
+                  
+                  <a class="nav-link dropdown-toggle" href="../pages.html/remodelacion.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Remodelacion
+                  </a>
+                  
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+                    <li><a class="dropdown-item" href="../pages.html/remodelacion.html">Proyectos</a></li>
+                    <li><a class="dropdown-item" href="../pages.html/cotizacion.html">Cotiza tu remodelacion</a></li>
                 
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-
-                  <li><a class="dropdown-item" href="../pages.html/remodelacion.html">Proyectos</a></li>
-                  <li><a class="dropdown-item" href="../pages.html/cotizacion.html">Cotiza tu remodelacion</a></li>
-              
-                </ul>
-              
-              </li>
-
-              <li class="nav-item">
+                  </ul>
                 
-                <a class="nav-link" href="../pages.html/cotizacion.html">Cotiza tu proyecto</a>
-              
-              </li>
+                </li>
 
-              <li class="nav-item">
+                <li class="nav-item">
+                  
+                  <a class="nav-link" href="../pages.html/cotizacion.html">Cotiza tu proyecto</a>
                 
-                <a class="nav-link" href="../pages.html/contacto.html">Contactanos</a>
-              
-              </li>
+                </li>
 
-            </ul>
-            
+                <li class="nav-item">
+                  
+                  <a class="nav-link" href="../pages.html/contacto.html">Contactanos</a>
+                
+                </li>
+
+              </ul>
+              
+            </div>
+
+            <div class="logosNav">
+
+              <a href="https://www.instagram.com/alfaroarcekiara_/" target="_blank"><i class="bi-instagram"></i></a>
+              <a href="https://www.facebook.com/katrina.alfaro.75" target="_blank"><i class="bi-facebook"></i></a>
+              <a href="https://ar.pinterest.com/arcealfarokiara/_saved/" target="_blank"><i class="bi-pinterest"></i></a>
+              <a href="https://wa.me/1121789061?text=Contactame%20por%20mas%20imformacion%20!" target="_blank"><i class="bi-whatsapp"></i></a>
+
+            </div>
+
           </div>
-
-          <div class="logosNav">
-
-            <a href="https://www.instagram.com/alfaroarcekiara_/" target="_blank"><i class="bi-instagram"></i></a>
-            <a href="https://www.facebook.com/katrina.alfaro.75" target="_blank"><i class="bi-facebook"></i></a>
-            <a href="https://ar.pinterest.com/arcealfarokiara/_saved/" target="_blank"><i class="bi-pinterest"></i></a>
-            <a href="https://wa.me/1121789061?text=Contactame%20por%20mas%20imformacion%20!" target="_blank"><i class="bi-whatsapp"></i></a>
-
-          </div>
-
-        </div>
-      </nav>
-       
+        </nav>
+        
     </header>
 
     <!--MAIN-->
 
-    <main >
-       
+    <main class="row" >
+        
       <div class="titulos d-flex flex-column justify-content-center text-white">
-    
+      
         <span data-aos="fade-up-right" >comienza a cotizar</span>
         <span data-aos="fade-up-right" >con nosotros!!</span>
-        
-    
+          
+      
       </div> 
 
       <div class="postitulocotizacion">
 
-      <aside>
+        <aside>
 
-        <p class="tipografia-titulo">necesitas remodelaciones y arquitectura?</p>
+          <p class="tipografia-titulo">necesitas remodelaciones y arquitectura?</p>
 
-        <div class="asidoinformacioncotizacion">
+          <div class="asidoinformacioncotizacion">
 
 
-        <p>Encontrá profesionales verificados y solicita </p>
-        <p>presupuestos de manera directa sin costos</p>
+          <p>Encontrá profesionales verificados y solicita </p>
+          <p>presupuestos de manera directa sin costos</p>
 
-        </div>
+          </div>
 
-        
-        <div class="asidevideos">
-
-          <video class="video1" data-aos="fade-up-right" src="../assets/videos/pages-cotizacion/video1.mp4" width="500" height="260" autoplay muted loop ></video>
-        
-        </div>
-
-        <div class="asidevideos">
-
-          <video data-aos="fade-up-right" class="video2" src="../assets/videos/pages-cotizacion/video4.mp4" width="500" height="260" autoplay muted loop></video>
-        
-        </div>
-
-       
           
-        
+          <div class="asidevideos">
 
-      </aside>
-
-      <section class="formulariocotiza ">
-        
-        
-          <p class="tipografia-titulo" >cotiza gratis <i class="bi bi-caret-down-fill"></i> </p>
-
-          <div class=" tipografia-subtitulo d-flex flex-column ">
-
-          <a class="linkform" href="./form-arq-1.html" target="_blank">tu vivienda desde 0</a>
-
-          <a class="linkform" href="./form-rem-1.html" target="_blank">remodela un sector de tu vivienda</a>
-
-          <a class="linkform" href="./form-rem-2.html" target="_blank">remodela tu vivienda completa</a>
+            <video class="video1" data-aos="fade-up-right" src="../assets/videos/pages-cotizacion/video1.mp4" width="500" height="260" autoplay muted loop ></video>
           
+          </div>
+
+          <div class="asidevideos">
+
+            <video data-aos="fade-up-right" class="video2" src="../assets/videos/pages-cotizacion/video4.mp4" width="500" height="260" autoplay muted loop></video>
+          
+          </div>
+
+        
+            
           
 
+        </aside>
+
+        <section class="formulariocotiza ">
+          
+          
+            <p class="tipografia-titulo" >cotiza gratis <i class="bi bi-caret-down-fill"></i> </p>
+
+            <div class=" tipografia-subtitulo d-flex flex-column ">
+
+            <a class="linkform" href="./form-arq-1.html" target="_blank">tu vivienda desde 0</a>
+
+            <a class="linkform" href="./form-rem-1.html" target="_blank">remodela un sector de tu vivienda</a>
+
+            <a class="linkform" href="./form-rem-2.html" target="_blank">remodela tu vivienda completa</a>
+            
+            
+
+          
+          <div class="imagenes">
+
+            <img class="img1" src="../assets/img-cotizacion/proyecto-1.jpg" alt="proyecto 1">
+
+            <img class="img2" src="../assets/img-cotizacion/proyecto-2.jpg" alt="proyecto 2">
+            
+            <img class="img3" src="../assets/img-cotizacion/proyecto-3.jpg" alt="proyecto 3">
+
+            <img class="img4" src="../assets/img-cotizacion/proyecto-4.jpg" alt="proyecto 4">
+
+            <img class="img5" src="../assets/img-cotizacion/proyecto-5.jpg" alt="proyecto 5">
+
+            <img class="img6" src="../assets/img-cotizacion/proyecto-6.jpg" alt="proyecto 6">
+
+            <img class="img7" src="../assets/img-cotizacion/proyecto-7.jpg" alt="proyecto 7">
+          </div>
+
+        </section>
+
+
+
+        <section class="funcion">
+
         
-        <div class="imagenes">
+          <p class="tipografia-titulo" >como funcionamos?</p>
 
-          <img class="img1" src="../assets/img-cotizacion/proyecto-1.jpg" alt="proyecto 1">
+          <p class="tipografia-titulo" >facil y sencillo</p>
 
-          <img class="img2" src="../assets/img-cotizacion/proyecto-2.jpg" alt="proyecto 2">
-          
-          <img class="img3" src="../assets/img-cotizacion/proyecto-3.jpg" alt="proyecto 3">
+          <div class="tarjeta">
+            
+            <div>
 
-          <img class="img4" src="../assets/img-cotizacion/proyecto-4.jpg" alt="proyecto 4">
+              <img src="../assets/img-cotizacion/presupuesto.svg" alt="recibi presupuesto">
 
-          <img class="img5" src="../assets/img-cotizacion/proyecto-5.jpg" alt="proyecto 5">
+              <p class="titulofuncion">recibi presupuestos</p>
 
-          <img class="img6" src="../assets/img-cotizacion/proyecto-6.jpg" alt="proyecto 6">
+              <div>
 
-          <img class="img7" src="../assets/img-cotizacion/proyecto-7.jpg" alt="proyecto 7">
-        </div>
+                <p>En muy poco tiempo comenzarás a recibir presupuestos. Evaluá la mejor alternativa y compara según tus necesidades</p>
 
-      </section>
-
-
-
-      <section class="funcion">
-
-      
-        <p class="tipografia-titulo" >como funcionamos?</p>
-
-        <p class="tipografia-titulo" >facil y sencillo</p>
-
-        <div class="tarjeta">
-          
-          <div>
-
-            <img src="../assets/img-cotizacion/presupuesto.svg" alt="recibi presupuesto">
-
-            <p class="titulofuncion">recibi presupuestos</p>
+              </div>
+              
+            </div>
 
             <div>
 
-              <p>En muy poco tiempo comenzarás a recibir presupuestos. Evaluá la mejor alternativa y compara según tus necesidades</p>
+              <img src="../assets/img-cotizacion/elegi.svg" alt="elegi tu especialista">
+              
+              <p class="titulofuncion" >elegi</p>
 
+              <div>
+
+                <p>Contratá de manera directaun profesional de nuestra estudio</p>
+
+              </div>
             </div>
-            
-          </div>
 
-          <div>
+        </div>
+        </section>
 
-            <img src="../assets/img-cotizacion/elegi.svg" alt="elegi tu especialista">
-            
-            <p class="titulofuncion" >elegi</p>
-
-            <div>
-
-              <p>Contratá de manera directaun profesional de nuestra estudio</p>
-
-            </div>
-          </div>
+        
 
       </div>
-      </section>
-
-      
-
-    </div>
 
 
-  </main>
+    </main>
 
     <!--FOOTER-->    
 
     <footer class="row">
 
       <section class="seccionmobile">
-  
-        
-        <a href="https://goo.gl/maps/byVVMgsuDNyeyyY98" target="_blank"><i class="bi bi-geo-alt"></i></a>
-  
-        <a href="mailto:arcealfarokiara@gmail.com" target="_blank"><i class="bi bi-envelope"></i></a>
-  
-  
-        <a href="https://wa.me/1121789061?text=Contactame%20por%20mas%20imformacion%20!" target="_blank"><i class="bi bi-whatsapp"></i></a>
-  
-        <a href=https://www.instagram.com/alfaroarcekiara_/ target="_blank"><i class="bi-instagram"></i></a>
-  
-        <a href="https://www.facebook.com/katrina.alfaro.75" target="_blank"><i class="bi-facebook"></i></a>
-  
-        <a href="https://ar.pinterest.com/arcealfarokiara/_saved/" target="_blank"><i class="bi-pinterest"></i></a>
-  
-      </section>
-  
-      <section class=" seccion1 d-flex flex-row justify-content-around">
-          
-          <div class="d-flex flex-column align-items-center">
-  
-            <h5>LLAMANOS AL</h5>
-            <i class="bi bi-telephone"> 11-2178-9062</i>
-            
-          </div>
-  
-          <div class="d-flex flex-column align-items-center">
-            
-            <h5>WHATSAPP</h5>
-            <i class="bi bi-whatsapp"> <a href="https://wa.me/1121789061?text=Contactame%20por%20mas%20imformacion%20!" target="_blank">Whatsapp</a></i>
-  
-          </div>
-  
-          <div class="d-flex flex-column align-items-center">
-  
-            <h5>CONTACTO</h5>
-            <i class="bi bi-envelope"> <a href="mailto:arcealfarokiara@gmail.com" target="_blank">arcealfarokiara@gmail.com</a></i>
-          </div>
-  
-          <div class="d-flex flex-column align-items-center">
-  
-            <h5>UBICACION</h5>
-            <i class="bi bi-geo-alt"> <a href="https://goo.gl/maps/byVVMgsuDNyeyyY98" target="_blank">Corrales 2312</a></i>
-  
-          </div>
-          
-          <div class="d-flex flex-column align-items-center">
-  
-            <h5>SEGUINOS EN LAS REDES</h5>
-  
-            <div>
-  
-              <a href=https://www.instagram.com/alfaroarcekiara_/ target="_blank"><i class="bi-instagram"></i></a>
-              <a href="https://www.facebook.com/katrina.alfaro.75" target="_blank"><i class="bi-facebook"></i></a>
-              <a href="https://ar.pinterest.com/arcealfarokiara/_saved/" target="_blank"><i class="bi-pinterest"></i></a>
-  
-            </div>
-          </div>
-  
-      </section>
-  
-  
-      <section class="seccion2 col-12 d-flex flex-column align-items-center justify-content-center ">
-          
-          <div class=" tituloarki d-flex flex-row align-items-baseline">
-  
-            <a href="../index.html"><img src="../assets/logo-arqui.png" alt="logo arki"></a>
-            <h6>STUDIO ARQUITECTURA</h6>
-  
-          </div>
-          
-          <p>&#169 2022 Todos los derechos reservados</p>
-          
-  
-      </section>
-  
-    </footer>
     
+          
+          <a href="https://goo.gl/maps/byVVMgsuDNyeyyY98" target="_blank"><i class="bi bi-geo-alt"></i></a>
+    
+          <a href="mailto:arcealfarokiara@gmail.com" target="_blank"><i class="bi bi-envelope"></i></a>
+    
+    
+          <a href="https://wa.me/1121789061?text=Contactame%20por%20mas%20imformacion%20!" target="_blank"><i class="bi bi-whatsapp"></i></a>
+    
+          <a href=https://www.instagram.com/alfaroarcekiara_/ target="_blank"><i class="bi-instagram"></i></a>
+    
+          <a href="https://www.facebook.com/katrina.alfaro.75" target="_blank"><i class="bi-facebook"></i></a>
+    
+          <a href="https://ar.pinterest.com/arcealfarokiara/_saved/" target="_blank"><i class="bi-pinterest"></i></a>
+    
+      </section>
+    
+      <section class=" seccion1 d-flex flex-row justify-content-around">
+            
+            <div class="d-flex flex-column align-items-center">
+    
+              <h5>LLAMANOS AL</h5>
+              <i class="bi bi-telephone"> 11-2178-9062</i>
+              
+            </div>
+    
+            <div class="d-flex flex-column align-items-center">
+              
+              <h5>WHATSAPP</h5>
+              <i class="bi bi-whatsapp"> <a href="https://wa.me/1121789061?text=Contactame%20por%20mas%20imformacion%20!" target="_blank">Whatsapp</a></i>
+    
+            </div>
+    
+            <div class="d-flex flex-column align-items-center">
+    
+              <h5>CONTACTO</h5>
+              <i class="bi bi-envelope"> <a href="mailto:arcealfarokiara@gmail.com" target="_blank">arcealfarokiara@gmail.com</a></i>
+            </div>
+    
+            <div class="d-flex flex-column align-items-center">
+    
+              <h5>UBICACION</h5>
+              <i class="bi bi-geo-alt"> <a href="https://goo.gl/maps/byVVMgsuDNyeyyY98" target="_blank">Corrales 2312</a></i>
+    
+            </div>
+            
+            <div class="d-flex flex-column align-items-center">
+    
+              <h5>SEGUINOS EN LAS REDES</h5>
+    
+              <div>
+    
+                <a href=https://www.instagram.com/alfaroarcekiara_/ target="_blank"><i class="bi-instagram"></i></a>
+                <a href="https://www.facebook.com/katrina.alfaro.75" target="_blank"><i class="bi-facebook"></i></a>
+                <a href="https://ar.pinterest.com/arcealfarokiara/_saved/" target="_blank"><i class="bi-pinterest"></i></a>
+    
+              </div>
+            </div>
+    
+      </section>
+    
+    
+      <section class="seccion2 col-12 d-flex flex-column align-items-center justify-content-center ">
+            
+            <div class=" tituloarki d-flex flex-row align-items-baseline">
+    
+              <a href="../index.html"><img src="../assets/logo-arqui.png" alt="logo arki"></a>
+              <h6>STUDIO ARQUITECTURA</h6>
+    
+            </div>
+            
+            <p>&#169 2022 Todos los derechos reservados</p>
+            
+    
+      </section>
+    
+    </footer>
+      
     <script src="../js/bootstrap.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/bootstrap.bundle.min.js"></script>
@@ -324,8 +327,7 @@
       AOS.init();
     </script>
 
-</body>
+  </body>
+
 </html>
 
-
-Con estos formularios podremos mandarte un presupuesto estimado a base de las nesecidades de tu proyecto

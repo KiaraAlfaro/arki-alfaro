@@ -69,6 +69,9 @@ body::-webkit-scrollbar-thumb {
   background-color: #114453;
   border-radius: 7px; }
 
+.container-fluid {
+  --bs-gutter-x: 0 !important; }
+
 /*-------- tipografias-----------*/
 .tipografia-titulo-portada, .portada .portadatitulo span, .titulos span {
   font-weight: 300;
@@ -96,7 +99,6 @@ body::-webkit-scrollbar-thumb {
   font-size: 15px; }
 
 /*----------------------------Index----------------------------*/
-/*listo*/
 .portada {
   background-image: url(../assets/img/fondo-portada.jpg);
   background-position: center;
@@ -184,7 +186,6 @@ body::-webkit-scrollbar-thumb {
       grid-row: 2/3;
       grid-column: 2/3; } }
 /*---secciones servicios---*/
-/*--listo--*/
 .seccionservicios {
   background-color: #181818;
   padding-top: 20px;
@@ -238,7 +239,6 @@ body::-webkit-scrollbar-thumb {
       line-height: 0.05px;
       font-size: 18px; } }
 /*---muestra proyectos--*/
-/*listo*/
 /*-------- tipografias-----------*/
 .tipografia-titulo-portada, .portada .portadatitulo span, .titulos span {
   font-weight: 300;
@@ -362,7 +362,6 @@ body::-webkit-scrollbar-thumb {
           width: 500px;
           height: 240px; } }
 /*---informacion---*/
-/*listo*/
 .informacion {
   display: none !important; }
 
@@ -545,7 +544,6 @@ footer::before {
       line-height: 0.9em;
       letter-spacing: -2.5px;
       font-weight: bolder !important; } }
-/*listo*/
 .mainproyectos {
   display: grid;
   grid-template-columns: 1fr 25px;
@@ -639,7 +637,6 @@ footer::before {
         width: 200px !important; }
       .mainproyectos .card .card-body {
         width: 200PX  !important; } }
-/*listo*/
 .asidesecciones {
   grid-row: 2/3 !important;
   grid-column: 2/3 !important;
@@ -729,6 +726,7 @@ footer::before {
       grid-column: 1/2;
       grid-row: 2/3; } }
 .postitulocotizacion aside {
+  align-self: center;
   color: white;
   padding-bottom: 50px;
   padding-top: 30px;
@@ -740,32 +738,43 @@ footer::before {
     animation-name: laterales;
     animation-duration: 5s;
     animation-iteration-count: infinite;
-    transition: 5s;
     animation-timing-function: linear; }
     .postitulocotizacion aside .asidevideos video {
       border-radius: 50%;
       width: 250px; }
-
-@keyframes laterales2 {
+@keyframes laterales {
   0% {
-    margin-left: 0; }
+    padding: 0; }
+  25% {
+    padding-left: 40PX; }
   50% {
-    margin-left: 20px; }
+    padding: 0; }
+  75% {
+    padding-right: 40px; }
   100% {
-    margin-right: 40px; } }
+    padding: 0; } }
 @media (min-width: 1064px) {
   .postitulocotizacion aside {
     margin-top: 100px; }
-  .postitulocotizacion .videos {
-    display: flex;
-    flex-direction: row; } }
+    .postitulocotizacion aside .asidevideos {
+      animation-name: laterales2;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear; }
+      .postitulocotizacion aside .asidevideos .videos {
+        display: flex;
+        flex-direction: row; } }
 @keyframes laterales2 {
   0% {
-    margin-left: 0; }
+    padding: 0; }
+  25% {
+    padding-left: 100PX; }
   50% {
-    margin-left: 80px; }
+    padding: 0; }
+  75% {
+    padding-right: 100px; }
   100% {
-    margin-right: 160px; } }
+    padding: 0; } }
 .funcion {
   color: white;
   text-align: center;
@@ -794,9 +803,9 @@ footer::before {
         width: 300px; } }
 .formulariocotiza {
   background-image: url(../../assets/img-cotizacion/fondo-seccion.jpg);
-  background-color: #444444;
+  background-color: #181818;
   background-position-x: center;
-  background-repeat: no-repeat;
+  background-size: cover;
   width: 80%;
   margin-left: 10%;
   color: white;
@@ -806,7 +815,7 @@ footer::before {
     background-color: #114453;
     padding: 10px;
     position: relative;
-    width: 80%; }
+    width: 100%; }
   .formulariocotiza .linkform {
     width: 80%;
     margin-left: 10%;
@@ -837,17 +846,16 @@ footer::before {
 
 @media (min-width: 1064px) {
   .formulariocotiza {
-    margin-top: 200px !important;
+    align-self: center;
     height: 780px;
     display: flex;
     flex-direction: column;
-    align-items: center; }
+    align-items: center !important; }
     .formulariocotiza .imagenes {
       display: grid !important;
       grid-template-rows: 170px 170px 170px;
-      grid-template-columns: 125px 40px 185px 20px 130px;
+      grid-template-columns: 125px 40px 185px 20px 110px;
       grid-row-gap: 10px;
-      width: 90%;
       overflow: hidden; }
       .formulariocotiza .imagenes img {
         height: 170px !important; }
@@ -881,6 +889,8 @@ footer::before {
   background-color: #181818; }
   .mainform .formularioscoti {
     background-image: url(../../assets/img-cotizacion/fondo-seccion.jpg);
+    background-position-x: center;
+    background-size: cover;
     width: 90%;
     margin-left: 5%;
     border-top-right-radius: 20px;
@@ -949,7 +959,6 @@ footer::before {
     margin-left: 60% !important;
     width: 500px !important; } }
 /*----------------------------Contacto----------------------------*/
-/*listo*/
 .seccionformulario {
   margin-top: 50px;
   color: white;
@@ -971,7 +980,6 @@ footer::before {
   .seccionformulario .formulario {
     width: 60%;
     margin-left: 20%; } }
-/*listo*/
 .posttitulo {
   display: grid;
   grid-template-rows: 1fr 1fr 200px;
@@ -1011,7 +1019,6 @@ footer::before {
   .ubicacion {
     grid-column: 1/3 !important;
     grid-row: 2/3 !important; } }
-/*listo*/
 .posttitulo aside {
   margin-top: 50px;
   text-align: center;

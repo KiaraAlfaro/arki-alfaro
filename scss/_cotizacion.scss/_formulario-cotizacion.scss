@@ -2,9 +2,9 @@
 .formulariocotiza{
 
     background-image: url(../../assets/img-cotizacion/fondo-seccion.jpg);
-    background-color: $color-secundario;
+    background-color: $color-principal;
     background-position-x: center;
-    background-repeat: no-repeat;
+    background-size: cover;
     
     width: 80%;
     margin-left: 10%;
@@ -17,7 +17,7 @@
         background-color: $color-sub;
         padding: 10px;
         position: relative;
-        width: 80%;
+        width: 100%;
     }
 
     .linkform{
@@ -56,6 +56,7 @@
 
 .formulariocotiza{
 
+
    .linkform:hover{
 
     background-color: $color-sub2;
@@ -67,28 +68,19 @@
 
 
 
-
-
-
-
-
-
-
 @media(min-width:1064px){
 
 
     .formulariocotiza{
 
-        margin-top: 200px !important;
+
+        align-self: center;
         height: 780px;
 
         display:flex;
         flex-direction: column;
-
-        align-items: center;
+        align-items: center !important;
         
-
-
         .imagenes{
 
             img{ 
@@ -98,16 +90,11 @@
     
             display: grid !important;
             grid-template-rows: 170px 170px 170px;
-            grid-template-columns: 125px 40px 185px 20px 130px;
+            grid-template-columns: 125px 40px 185px 20px 110px;
             grid-row-gap: 10px ;
     
-            width: 90%;
-            
             overflow: hidden;
 
-            
-            
-    
             .img7{
     
                 grid-row: 1/2;
@@ -161,7 +148,7 @@
         }
 
        
-}
+    }   
 
-    }
+}
 
