@@ -6,10 +6,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="seccion contacto">
+    <meta name="description" content="seccion remodelacion">
     <link rel="shortcut icon" href="../assets/img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/newStyles.css">
     <title>ARKI.Contacto.com</title>
 
@@ -19,9 +20,8 @@
 
     <!--HEADER-->
 
+   
     <header class="row" >
-      
-      <header class="row" >
         
         <nav  class="navbar  navbar-expand-lg col-12">
   
@@ -108,9 +108,8 @@
   
         </nav>
           
-      </header>
-       
     </header>
+       
 
     <!--MAIN-->
 
@@ -118,7 +117,7 @@
 
       <div class="titulos d-flex flex-column justify-content-center text-white">
     
-        <span >INFORMACION DE CONTACTO</span>
+        <span data-aos="fade-up-right" >INFORMACION DE CONTACTO</span>
            
       </div>
 
@@ -128,9 +127,9 @@
 
           <div class="logosaside">
 
-            <p class="titulocontacto">nuestras redes sociales</p>
+            <p data-aos="fade-up-right" class="titulocontacto">nuestras redes sociales</p>
 
-            <div>
+            <div data-aos="fade-up-right">
               
               <a href=https://www.instagram.com/alfaroarcekiara_/ target="_blank"><i class="bi-instagram"></i></a>
           
@@ -145,19 +144,19 @@
           
           <div class="nosotros">
 
-            <p class="titulocontacto">informacion de nosotros</p>
+            <p data-aos="fade-up-right" class="titulocontacto">informacion de nosotros</p>
 
-            <p>Relizamos cotizaciones,visitas sin cargo,para poder darle un mejor servicio.</p>
+            <p data-aos="fade-up-right">Relizamos cotizaciones,visitas sin cargo,para poder darle un mejor servicio.</p>
               
-            <p>
+            <p data-aos="fade-up-right">
               Si tiene alguna consulta sobre nuestro trabajo puede realizarla completanto el formulario, via 
             </p>
 
-            <p> 
+            <p data-aos="fade-up-right"> 
               <i class="bi bi-envelope"><a href="mailto:arcealfarokiara@gmail.com" target="_blank"> E-mail arcealfarokiara@gmail.com</a></i> o por  <i class="bi bi-whatsapp"> <a href="https://wa.me/1121789061?text=Contactame%20por%20mas%20imformacion%20!" target="_blank"> Whatsapp </a></i>. Y sera respondido lo antes posible.
             </p>
 
-            <p>
+            <p data-aos="fade-up-right">
                 
               Podes encontrarnos en <i class="bi bi-geo-alt"><a href="https://goo.gl/maps/byVVMgsuDNyeyyY98" target="_blank">corrales 2312,Buenos Aires .</a></i>
               
@@ -167,19 +166,19 @@
 
           <div class="logoaside">
 
-            <a href="../index.html"><img src="../assets/logo-arqui.png" alt="logo arki"></a>
+            <a data-aos="fade-up-right" href="../index.html"><img src="../assets/logo-arqui.png" alt="logo arki"></a>
             
           </div>
 
         </aside>
 
-        <section class="seccionformulario d-flex flex-column">
+        <section data-aos="fade-up-right" class="seccionformulario d-flex flex-column">
   
           <p class="titulocontacto">completa y contactanos!</p>
 
-          <form class="formulario">
+          <form data-aos="fade-up-right" class="formulario">
 
-            <div class="mb-3">
+            <div  class="mb-3">
 
               <label for="formGroupExampleInput" class="form-label">Nombre</label>
               <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Kiara">
@@ -233,7 +232,7 @@
 
         <section class="ubicacion">
 
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.92448520935!2d-58.434628785259015!3d-34.65660998044586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb96ce74406b%3A0x82d53b4ae1b5e6f0!2sCorrales%202312%2C%20C1437GMD%20CABA!5e0!3m2!1ses-419!2sar!4v1653619728708!5m2!1ses-419!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe data-aos="fade-up-right" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.92448520935!2d-58.434628785259015!3d-34.65660998044586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb96ce74406b%3A0x82d53b4ae1b5e6f0!2sCorrales%202312%2C%20C1437GMD%20CABA!5e0!3m2!1ses-419!2sar!4v1653619728708!5m2!1ses-419!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
         </section>
 
@@ -326,7 +325,10 @@
     <script src="../js/bootstrap.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/bootstrap.bundle.min.js"></script>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 
 
