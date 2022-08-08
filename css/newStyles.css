@@ -802,7 +802,7 @@ footer::before {
       .funcion .tarjeta p {
         width: 300px; } }
 .formulariocotiza {
-  background-image: url(../../assets/img-cotizacion/fondo-seccion.jpg);
+  background-image: url("../assets/img-cotizacion/fondo-seccion.jpg");
   background-color: #181818;
   background-position-x: center;
   background-size: cover;
